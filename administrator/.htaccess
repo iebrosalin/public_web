@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Want to enter?"
+AuthUserFile D:\OSPanel\domains\localhost\.passwords
+Require valid-user
