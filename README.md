@@ -13,6 +13,7 @@ Components содержит отдельные модули, где каждый
 
 ## Установка
 Минимальный конфиг в apache 2.4 для OpenServer:
+
 <VirtualHost *:%httpport%>
 
     DocumentRoot    "%hostdir%"
@@ -24,6 +25,7 @@ Components содержит отдельные модули, где каждый
     </Directory>
 
 </VirtualHost>
+
 
 ## Используемое dns-имя - localhost
 
