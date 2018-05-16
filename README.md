@@ -25,5 +25,8 @@ Components содержит отдельные модули, где каждый
 
 </VirtualHost>
 ## Используемое dns-имя - localhost
+
 ## Чтобы зайти в панель администратора наберите localhost/admin логин admin пароль Igromania1
+
 ## Логин тестового пользователя test@mail.ru пароль test1234
+
