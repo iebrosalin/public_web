@@ -107,7 +107,7 @@ class AdminUserController extends AdminBase
             $email = $_POST['email'];
             $password = $_POST['password'];
             $role = $_POST['role'];
-            $black_list = $_POST['black_list'];
+            $black_list = $_POST['blocked'];
 
             // Сохраняем изменения
             $result = User::createUserAdmin($name, $email, $password, $role, $black_list);

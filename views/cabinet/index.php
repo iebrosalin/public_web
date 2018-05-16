@@ -4,7 +4,7 @@
             <div class="span6" style="width: 200px;">
                 <h4>Private cabinet</h4><br/>
                 <ul class="nav nav-tabs nav-stacked" >
-                    <li class="active"><a href="http://myballs.ru/cabinet/">Profile</a></li>
+                    <li class="active"><a href="http://localhost/cabinet/">Profile</a></li>
 <!--                    <li><a href="/cabinet/view">View profile</a></li>-->
                     <li><a href="/cabinet/edit">Edit data</a></li>
                 </ul>

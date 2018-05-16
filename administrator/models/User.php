@@ -313,7 +313,7 @@ class User
     {
         // Соединение с БД
         $db = Db::getConnection();
-
+        $password= password_hash($password,PASSWORD_DEFAULT);
         // Текст запроса к БД
         $sql = "UPDATE user 
             SET name = :name, password = :password,
@@ -348,6 +348,7 @@ class User
     {
         // Соединение с БД
         $db = Db::getConnection();
+        $password= password_hash($password,PASSWORD_DEFAULT);
 
         // Текст запроса к БД
         $sql = "INSERT INTO user (name,password,email,role,black_list)"

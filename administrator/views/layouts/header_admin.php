@@ -38,18 +38,18 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </a>
-                            <a class="brand" style="text-shadow: none;" href="http://myballs.ru"> <span style="font-size: 20px; color: #ffffff; font-weight: bold">My</span>
+                            <a class="brand" style="text-shadow: none;" href="http://localhost"> <span style="font-size: 20px; color: #ffffff; font-weight: bold">My</span>
                                 <span style="font-size: 20px; color: #a8080a; font-weight: bold;">Balls</span></a>
                             <div class="nav-collapse">
                                 <ul class="nav">
-                                    <li class="active" ><a href="http://myballs.ru/admin/">Home</a></li>
+                                    <li class="active" ><a href="http://localhost/admin/">Home</a></li>
                                     <li><a href="/admin/product">Products</a></li>
                                     <li><a href="/admin/category">Category</a></li>
                                     <li><a href="/admin/order">Order</a></li>
                                     <li><a href="/admin/user">Users</a></li>
                                     <li><a href="/admin/comment/id">Comments</a></li>
                                     <li><a href="/admin/image">Images</a></li>
-                                    <li class="active"><a href="http://myballs.ru"> Quit</a></li>
+                                    <li class="active"><a href="http://localhost"> Quit</a></li>
                                 </ul>
                             </div><!-- /.nav-collapse -->
                         </div>

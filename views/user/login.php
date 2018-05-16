@@ -1,7 +1,7 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
     <div class="span9">
         <ul class="breadcrumb">
-        <li><a href="http://myballs.ru/">Home</a> <span class="divider">/</span></li>
+        <li><a href="http://localhost/">Home</a> <span class="divider">/</span></li>
         <li class="active">Log in</li>
     </ul>
     <div class="well">

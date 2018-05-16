@@ -2,7 +2,7 @@
 
 <div class="span9" style="height: auto;">
                 <ul class="breadcrumb">
-                    <li><a href="http://myballs.ru">Home</a> <span class="divider">/</span></li>
+                    <li><a href="http://localhost">Home</a> <span class="divider">/</span></li>
                     <li class="active"><?php echo Category::getCategoryById($categoryId)['name']; ?></li>
                 </ul>
                 <h3> <?php echo Category::getCategoryById($categoryId)['name']; ?></h3>

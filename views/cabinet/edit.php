@@ -3,8 +3,8 @@
 
     <div class="span9">
     <ul class="breadcrumb">
-        <li><a href="http://myballs.ru/">Home</a> <span class="divider">/</span></li>
-        <li><a href="http://myballs.ru/cabinet/">Profile</a></li>
+        <li><a href="http://localhost/">Home</a> <span class="divider">/</span></li>
+        <li><a href="http://localhost/cabinet/">Profile</a></li>
         <li class="active"><span class="divider">/</span>Edit</li>
     </ul>
 

@@ -157,14 +157,16 @@ class UserController
      */
     public function actionLogout()
     {
+
+        // Перенаправляем пользователя на главную страницу
+        header("Location: /");
+
         // Стартуем сессию
         session_start();
         
         // Удаляем информацию о пользователе из сессии
         unset($_SESSION["user"]);
-        
-        // Перенаправляем пользователя на главную страницу
-        header("Location: /");
+
     }
 
 }

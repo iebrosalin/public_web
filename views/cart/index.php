@@ -1,11 +1,11 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
             <div class="span9">
                 <ul class="breadcrumb">
-                    <li><a href="http://myballs.ru">Home</a> <span class="divider">/</span></li>
+                    <li><a href="http://localhost">Home</a> <span class="divider">/</span></li>
                     <li class="active"> Shopping cart</li>
                 </ul>
                 <h3>  Shopping cart [ <span><?php echo Cart::countItems(); ?></span> ] Item(s)
-                    <a href="http://myballs.ru" class="btn btn-large pull-right"><i class="icon-arrow-left"></i> Continue Shopping </a></h3>
+                    <a href="http://localhost" class="btn btn-large pull-right"><i class="icon-arrow-left"></i> Continue Shopping </a></h3>
                 <hr class="soft"/>
                 <?php if ($productsInCart): ?>
                 <table class="table table-bordered">
@@ -52,7 +52,7 @@
                     </tbody>
                 </table>
 
-                <a href="http://myballs.ru" class="btn btn-large" style="font-weight: bold;"><i class="icon-arrow-left"></i> Continue Shopping </a>
+                <a href="http://localhost" class="btn btn-large" style="font-weight: bold;"><i class="icon-arrow-left"></i> Continue Shopping </a>
                 <?php if (User::isGuest()): ?>
                     <a href="user/login/" class="btn btn-large pull-right" style="font-weight: bold;">Please log in <i class="icon-arrow-right"></i></a>
                 <?php else: ?>

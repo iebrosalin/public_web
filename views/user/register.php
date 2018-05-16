@@ -2,7 +2,7 @@
 
         <div class="span9">
                 <ul class="breadcrumb">
-                    <li><a href="http://myballs.ru/">Home</a> <span class="divider">/</span></li>
+                    <li><a href="http://localhost/">Home</a> <span class="divider">/</span></li>
                     <li class="active">Registration</li>
                 </ul>
                 <h3> Registration</h3>

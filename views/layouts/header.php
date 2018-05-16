@@ -39,8 +39,8 @@
         <!-- Navbar ================================================== -->
         <div id="logoArea" class="navbar">
             <div class="navbar-inner">
-                <a class="brand" href="http://myballs.ru/"><img src="/template/themes/images/logo.png" alt="Bootsshop"/></a>
-                <a class="brand" href="http://myballs.ru/"><img src="/template/themes/images/vinni5.gif" style="height: 60px;" alt="Vini-puch"/></a>
+                <a class="brand" href="http://localhost/"><img src="/template/themes/images/logo.png" alt="Bootsshop"/></a>
+                <a class="brand" href="http://localhost/"><img src="/template/themes/images/vinni5.gif" style="height: 60px;" alt="Vini-puch"/></a>
                 <ul id="topMenu" class="nav pull-right">
                     <li class=" " style="font-size:20px; color: #FFFFFF; text-align: center; margin-top: 15px; margin-right: 10px;">
                         <p>Никто не может грустить, когда у него есть воздушный шарик!</p>

@@ -1,7 +1,7 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
             <div class="span9">
                 <ul class="breadcrumb">
-                    <li><a href="http://myballs.ru/">Home</a> <span class="divider">/</span></li>
+                    <li><a href="http://localhost/">Home</a> <span class="divider">/</span></li>
                     <li><a href="category/<?php echo $product['category_id']; ?>"><?php echo (Category::getCategoryById( $product['category_id'])['name']); ?>
                         </a> <span class="divider">/</span></li>
                     <li class="active"><?php echo $product['name']; ?></li>
@@ -60,9 +60,9 @@
                                     <h5><?php print_r($comment['comment']); ?></h5>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <em><?php$comment['user_name']?></em>
-                                            <span class="pull-right"><?php$comment['date']?></span>
-                                            <p><?php$comment['comment']?></p>
+                                            <em><?php echo $comment['user_name']?></em>
+                                            <span class="pull-right"><?php echo $comment['date']?></span>
+                                            <p><?php echo $comment['comment']?></p>
                                         </div>
                                     </div>
                                     <hr>
@@ -71,7 +71,7 @@
                             <div class="row" style="margin-left: 0;">
                                 <form action="#" method="post" class="form-contact-alt">
                                     <input type="hidden" name="action" value="addComment">
-                                    <input type="hidden" name="id" value="<?php$_GET['id']?>">
+                                    <input type="hidden" name="id" value="<?php echo $_GET['id']?>">
                                     <div class="form-group">
                                         <label>Оставить отзыв:</label>
                                         <?php if( isset( $errors ) && is_array( $errors ) ):?>
