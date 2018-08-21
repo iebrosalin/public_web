@@ -8,11 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-    <title>Edit admission</title>
+    <title>Допуск на экзамен</title>
 </head>
 <body class="container-fluid">
-<h1>Admission</h1>
-<a href="/">Home</a>
+<h1>Допуск на экзамен</h1>
+<a href="/">Домой</a>
 <form method="POST">
 
     <?php if(!isset($_POST['sub_show'])): ?>
@@ -26,32 +26,30 @@
 
     <?php if(isset($_POST['sub_show']) and isset($_POST['discipline'])): ;?>
         <?php foreach ($groups as $group): ?>
-        <h2> <?php echo "Group ".$group['num_grp']; ?></h2>
+        <h2> <?php echo "Группа ".$group['num_grp']; ?></h2>
         <table class="table table-bordered">
             <thead>
             <tr>
-                <th>Discipline</th>
-                <th>FI student</th>
-                <th>Admission (yes/no)</th>
+                
+                <th>Студент</th>
+                <th>Допуск (Да/Нет)</th>
             </tr>
             </thead>
             <tbody>
             <?php $students=Db::getGroupStud($group['num_grp']); foreach ($students as $stud): ?>
             <tr>
-                <td>
-                    <p><?php echo $_POST['discipline'];?></p>
-                </td>
+                
                 <td>
                     <p><?php  echo $stud['name']." ".$stud['soname']; ?></p>
                 </td>
                 <td>
                         <select name="admission[]">
                            <?php if(Db::getAdmissionByIdStud($stud['id'],$_POST['discipline'])['admission']=="1"): ?>
-                           <option value="<?php echo $stud['id']."/"."1"; ?>">Yes</option>
-                           <option value="<?php echo $stud['id']."/"."0"; ?>">No</option>
+                           <option value="<?php echo $stud['id']."/"."1"; ?>">Да</option>
+                           <option value="<?php echo $stud['id']."/"."0"; ?>">Нет</option>
                            <?php else: ?>
-                            <option value="<?php echo $stud['id']."/"."0"; ?>">No</option>
-                            <option value="<?php echo $stud['id']."/"."1"; ?>">Yes</option>
+                            <option value="<?php echo $stud['id']."/"."0"; ?>">Нет</option>
+                            <option value="<?php echo $stud['id']."/"."1"; ?>">Да</option>
                             <?php endif; ?>
                         </select>
                 </td>
@@ -60,7 +58,7 @@
             </tbody>
         </table>
     <?php endforeach; ?>
-    <button type="submit" class="btn" name="sub_edit" value="<?php echo $_POST['discipline'];?>" >Edit</button>
+    <button type="submit" class="btn" name="sub_edit" value="<?php echo $_POST['discipline'];?>" >Сохранить</button>
     <?php endif; ?>
 
 </form>

@@ -8,14 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-    <title>Menu</title>
+    <title>Меню</title>
 </head>
 <body class="container-fluid">
-<h1>Menu</h1>
+<h1>Меню</h1>
 <nav class="navbar">
     <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a href="admission">Edit student admission</a></li>
-        <li class="nav-item"><a href="exam">Edit exam</a></li>
+        <li class="nav-item"><a href="admission">Допуск на экзамен</a></li>
+        <li class="nav-item"><a href="exam">Экзамен</a></li>
 </nav>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

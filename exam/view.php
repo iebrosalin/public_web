@@ -8,11 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-    <title>Edit exam</title>
+    <title>Экзамен</title>
 </head>
 <body class="container-fluid">
-<h1>Exam</h1>
-<a href="/">Home</a>
+<h1>Экзамен</h1>
+<a href="/">Домой</a>
 <form method="POST">
 
     <?php if(!isset($_POST['sub_show'])): ?>
@@ -33,9 +33,9 @@
         <table class="table table-bordered">
             <thead>
             <tr>
-                <th>FI studente</th>
-                <th>Id zachot</th>
-                <th>Mark</th>
+                <th>Студент</th>
+                <th>Номер зачетки</th>
+                <th>Оценка</th>
             </tr>
             </thead>
             <tbody>
@@ -51,36 +51,33 @@
                         <?php if(Db::getAdmissionByIdStud($stud['id'],$_POST['discipline'])['admission']=="1"): ?>
                             <select name="mark[]">
                             <?php $temp=Db::getMarkByIdStud($stud['id'],$_POST['discipline'])[0]; if($temp==-1):?>
-                                <option value="<?php echo $stud['id']."/"."2"; ?>">2</option>
+                   
                                 <option value="<?php echo $stud['id']."/"."3"; ?>">3</option>
                                 <option value="<?php echo $stud['id']."/"."4"; ?>">4</option>
                                 <option value="<?php echo $stud['id']."/"."5"; ?>">5</option>
                             <?php elseif($temp== 3): ?>
                                 <option value="<?php echo $stud['id']."/"."3"; ?>">3</option>
-                                <option value="<?php echo $stud['id']."/"."2"; ?>">2</option>
                                 <option value="<?php echo $stud['id']."/"."4"; ?>">4</option>
                                 <option value="<?php echo $stud['id']."/"."5"; ?>">5</option>
                             <?php elseif($temp== 4): ?>
                                 <option value="<?php echo $stud['id']."/"."4"; ?>">4</option>
                                 <option value="<?php echo $stud['id']."/"."3"; ?>">3</option>
-                                <option value="<?php echo $stud['id']."/"."2"; ?>">2</option>
                                 <option value="<?php echo $stud['id']."/"."5"; ?>">5</option><
                             <?php elseif($temp== 5): ?>
                                 <option value="<?php echo $stud['id']."/"."5"; ?>">5</option>
                                 <option value="<?php echo $stud['id']."/"."4"; ?>">4</option>
                                 <option value="<?php echo $stud['id']."/"."3"; ?>">3</option>
-                                <option value="<?php echo $stud['id']."/"."2"; ?>">2</option>
                             <?php endif;?>
                         </select>
                         <?php else: ?>
-                            <p>No admission</p>
+                            <p>Не допущен</p>
                         <?php endif; ?>
                     </td>
                 </tr>
             <?php endforeach; ?>
             </tbody>
         </table>
-        <button type="submit" class="btn" name="sub_edit" value="<?php echo $_POST['discipline'];?>" >Edit</button>
+        <button type="submit" class="btn" name="sub_edit" value="<?php echo $_POST['discipline'];?>" >Сохранить</button>
     <?php endif; ?>
 
 </form>
