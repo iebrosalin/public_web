@@ -1,0 +1,9 @@
+{
+    "name": "akva/handbook-postgresql",
+    "autoload": {
+        "psr-4": {
+            "Services\\": "services",
+            "App\\": "app"
+        }
+    }
+}
