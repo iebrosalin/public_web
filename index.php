@@ -1,14 +1,15 @@
 <?php
 require_once './vendor/autoload.php';
 
-function p($data){
-    echo '<pre>'.print_r($data,true).'</pre>';
+function p($data)
+{
+    echo '<pre>' . print_r($data, true) . '</pre>';
 }
-error_reporting(0);
-$db = new Services\MyQuery();
-//$db->create_tables();
-//$db->filling_tables();
 
+//error_reporting(0);
+$db = new Services\MyQuery();
+$db->create_tables();
+$db->filling_tables();
 
 
 ?>
@@ -77,7 +78,7 @@ $db = new Services\MyQuery();
                 </tr>
                 </thead>
             </table>
-            <h6>Таблица  exams</h6>
+            <h6>Таблица exams</h6>
             <table class="table">
                 <thead class="thead-light">
                 <tr>
@@ -105,55 +106,137 @@ $db = new Services\MyQuery();
                 (1432, 'CS305', 4)</pre>
             <h5>Результат:</h5>
             <?php
-            foreach ($db->get_all_tables() as $table_name=>$table):?>
-                <?php                echo \Services\RenderView::table($table,'Таблица '.$table_name);?>
+            foreach ($db->get_all_tables() as $table_name => $table):?>
+                <?php echo \Services\RenderView::table($table, 'Таблица ' . $table_name); ?>
             <?php endforeach; ?>
             <hr>
             <h3>Выборка данных SELECT</h3>
             <h5>Запрос 1:</h5>
             <pre>SELECT title AS course_title, hours FROM courses</pre>
             <h5>Результат:</h5>
-            <?php echo \Services\RenderView::table($db->example_select_as())?>
+            <?php echo \Services\RenderView::table($db->example_select_as()) ?>
             <h5>Запрос 2:</h5>
             <pre>SELECT * FROM courses</pre>
             <h5>Результат:</h5>
-            <?php echo \Services\RenderView::table($db->example_select_all_course())?>
+            <?php echo \Services\RenderView::table($db->example_select_all_course()) ?>
             <h5>Запрос 3:</h5>
             <pre>SELECT start_year FROM students</pre>
             <h5>Результат:</h5>
-            <?php echo \Services\RenderView::table($db->example_select_repeat_column())?>
+            <?php echo \Services\RenderView::table($db->example_select_repeat_column()) ?>
             <h5>Запрос 4:</h5>
             <pre>SELECT DISTINCT start_year FROM students</pre>
             <h5>Результат:</h5>
-            <?php echo \Services\RenderView::table($db->example_select_without_repeat_column())?>
+            <?php echo \Services\RenderView::table($db->example_select_without_repeat_column()) ?>
             <h5>Запрос 5:</h5>
             <pre>SELECT 2+52 FROM result</pre>
             <h5>Результат:</h5>
-            <?php echo \Services\RenderView::table($db->example_select_math())?>
+            <?php echo \Services\RenderView::table($db->example_select_math()) ?>
             <h5>Запрос 6:</h5>
             <pre>SELECT * FROM courses WHERE hours>45</pre>
             <h5>Результат:</h5>
-            <?php echo \Services\RenderView::table($db->example_select_where())?>
+            <?php echo \Services\RenderView::table($db->example_select_where()) ?>
             <hr>
             <h3>Соединения JOIN</h3>
             <h5>Запрос 1:</h5>
             <pre>SELECT * FROM courses, exams</pre>
             <h5>Результат:</h5>
-            <?php echo \Services\RenderView::table($db->example_select_many_tables())?>
+            <?php echo \Services\RenderView::table($db->example_select_many_tables()) ?>
             <h5>Запрос 2:</h5>
             <pre>SELECT * FROM courses, exams</pre>
-            <h5>Результат: логическое произведение двух таблиц (каждой строке сопоставляется все строки другой таблицы). 2 предмета и 4 экзамена дают 8 строк.</h5>
-            <?php echo \Services\RenderView::table($db->example_select_many_tables())?>
+            <h5>Результат: логическое произведение двух таблиц (каждой строке сопоставляется все строки другой таблицы).
+                2 предмета и 4 экзамена дают 8 строк.</h5>
+            <?php echo \Services\RenderView::table($db->example_select_many_tables()) ?>
             <h5>Запрос 3:</h5>
             <pre>SELECT courses.title exams.s_id, exams.score FROM courses, exams WHERE courses.c_no=exams.c_no</pre>
             <h5>Результат: по сравнению с предыдущим запросом отфильтрованы бессмысленные сопоставления</h5>
-            <?php echo \Services\RenderView::table($db->example_select_many_tables_with_where())?>
+            <?php echo \Services\RenderView::table($db->example_select_many_tables_with_where()) ?>
             <h5>Запрос 4:</h5>
             <pre>SELECT students.name, exams.score FROM students
-                JOIN exams ON students.s_id=exams.s_id AND exams.c_no="CS305"</pre>
+                JOIN exams ON students.s_id=exams.s_id AND exams.c_no='CS305'</pre>
             <h5>Результат:</h5>
-            <?php echo \Services\RenderView::table($db->example_select_join())?>
-
+            <?php echo \Services\RenderView::table($db->example_select_join()) ?>
+            <h5>Запрос 5:</h5>
+            <pre>SELECT students.name, exams.score FROM students
+                LEFT JOIN exams ON students.s_id=exams.s_id AND exams.c_no='CS305'</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_select_left_join()) ?>
+            <h5>Запрос 6:</h5>
+            <pre>SELECT students.name, exams.score FROM students
+                LEFT JOIN exams ON students.s_id=exams.s_id WHERE exams.c_no='CS305'</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_select_left_join_where()) ?>
+            <hr>
+            <h3>Подзапросы</h3>
+            <h5>Запрос 1:</h5>
+            <pre>SELECT name, (SELECT score FROM exams WHERE exams.s_id=students.s_id AND exams.c_no ='CS305') FROM students</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_select_subquery_1()) ?>
+            <h5>Запрос 2:</h5>
+            <pre>SELECT * FROM exams WHERE (SELECT start_year FROM students WHERE exams.s_id=students.s_id )>2014</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_select_subquery_2()) ?>
+            <h5>Запрос 3:</h5>
+            <pre>SELECT name, start_year FROM students WHERE s_id IN (SELECT s_id FROM exams WHERE c_no='CS305')</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_select_subquery_3()) ?>
+            <h5>Запрос 4:</h5>
+            <pre>SELECT name, start_year FROM students WHERE s_id NOT IN (SELECT s_id FROM exams WHERE score<5)</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_select_subquery_4()) ?>
+            <h5>Запрос 5:</h5>
+            <pre>SELECT name, start_year FROM students WHERE NOT EXISTS (SELECT s_id FROM exams WHERE exams.s_id=students=s_id AND score<5)</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_select_subquery_5()) ?>
+            <h5>Запрос 6:</h5>
+            <pre>SELECT s.name, ce.score FROM students s FROM students JOIN (SELECT exams.* FROM courses, exams WHERE courses.title='Базы данных') ce ON s.s_id=ce.s_id)</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_select_subquery_6()) ?>
+            <h5>Запрос 7:</h5>
+            <pre>SELECT s.name, e.score FROM students s,  exams e WHERE s.s_id=e.s_id AND e.c_no=s.c_no AND e.title='Базы данных'</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_select_subquery_7()) ?>
+            <hr>
+            <h3>Сортировка</h3>
+            <h5>Запрос 1:</h5>
+            <pre>SELECT * FROM exams ORDER BY score, s_id, c_no DESC</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_select_order_1()) ?>
+            <hr>
+            <h3>Группировка</h3>
+            <h5>Запрос 1:</h5>
+            <pre>SELECT count(*) as count_all, count(DISTINCT s_id), avg(score) FROM exams</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_select_group_1()) ?>
+            <h5>Запрос 2:</h5>
+            <pre>SELECT c_no, count(*) as count_all, count(DISTINCT s_id), avg(score) FROM exams GROUP BY c_no</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_select_group_2()) ?>
+            <h5>Запрос 3:</h5>
+            <pre>SELECT s.name FROM students s, exams e  WHERE s.s_id=e.s_id, e.score=5 ORDER BY s.name HAVING count(*)>1</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_select_group_3()) ?>
+            <hr>
+            <h3>Изменение, удаление</h3>
+            <h5>Запрос 1:</h5>
+            <pre>UPDATE courses SET hours=hours*2 WHERE c_no='CS301'</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_select_all_course()) ?>
+            <hr>
+            <h3>Транзакция</h3>
+            <h5>Запрос 1:</h5>
+            <pre>
+                CREATE TABLE IF NOT EXISTS groups(g_no text PRIMARY KEY, monitor integer NOT NULL REFERENCES students(s_id));
+                ALTER TABLE students ADD g_no text REFERENCES groups(g_no);
+                BEGIN;
+                INSERT INTO groups(g_no,monitor) SELECT 'A-101', s_id FROM students WHERE name='Анна';
+                UPDATE students SET g_no='A-101';
+                COMMIT;
+                SELECT * FROM students;
+            </pre>
+            <h5>Результат:</h5>
+            <?php $db->example_transaction()?>
+            <?php echo \Services\RenderView::table($db->example_get_groups(),'groups') ?>
+            <?php echo \Services\RenderView::table($db->example_get_students(),'student') ?>
         </div>
         <div class="col"></div>
     </div>
