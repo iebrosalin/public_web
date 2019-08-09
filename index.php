@@ -316,7 +316,7 @@ $db->filling_tables();
             <h5>Результат:</h5>
             <?php echo \Services\RenderView::table($db->example_json_5()) ?>
             <hr>
-            <h3>JSON</h3>
+            <h3>JSONB</h3>
             <h5>Запрос 1:</h5>
             <pre>
                 alter table student_details add details_b jsonb;
