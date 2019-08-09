@@ -237,7 +237,107 @@ $db->filling_tables();
             <?php $db->example_transaction()?>
             <?php echo \Services\RenderView::table($db->example_get_groups(),'groups') ?>
             <?php echo \Services\RenderView::table($db->example_get_students(),'student') ?>
+            <hr>
+            <h3>Полнотекстовый поиск</h3>
+            <h5>Создание таблицы для экспериментов:</h5>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_get_course_chapters()) ?>
+            <h5>Запрос 1:</h5>
+            <pre>select txt from course_chapters where txt like '%база данных%' </pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_like_1()) ?>
+            <h5>Запрос 2:</h5>
+            <pre>select txt from course_chapters where txt like '%базу данных%'</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_like_2()) ?>
+            <h5>Добавление полнотекстового поиска:</h5>
+            <pre>
+                alter table course_chapters add txtvector tsvector;
+                update course_chapter set txtvector=to_tsvector('russian',txt);
+                select txtvector from course_chapters;</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_create_fullsearch()) ?>
+            <h5>Модификация полнотекстового поиска:</h5>
+            <pre>
+                update course_chapters set txtvector=setweight(to_tsvector('russian',ch_title),'B') || ''
+                || setweight(to_tsvector('russian',txt),'D');
+                select * from course_chapters
+                </pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_create_fullsearch_2()) ?>
+            <h5>Запрос 3:</h5>
+            <pre>
+                select ch_title from course_chapters
+                where txtvector @@ to_tsquery('russian','базы & данные')</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_fullsearch_1()) ?>
+            <h5>Запрос 4:</h5>
+            <pre>
+                elect ch_title ts_rank_cd('{0.1, 0.0, 1.0, 0.0}',txtvector q) from course_chapters, to_tsquery('russian','базы & данные') q
+                where txtvector @@ q order by ts_rank_cd desc</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_fullsearch_2()) ?>
+            <h5>Запрос 5:</h5>
+            <pre>
+                select ts_headline('russian', txt,
+               to_tsquery('russian','мир'),'StartSel=<b>,StopSel=</b>, MaxWords=50, MinWords=5')
+                from course_chapters where
+                to_tsvector('russian', txt)
+                @@ to_tsquery('russian','мир')</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_fullsearch_3()) ?>
+            <hr>
+            <h3>JSON</h3>
+            <h5>Создание таблицы для экспериментов:</h5>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_get_course_chapters()) ?>
+            <h5>Запрос 1:</h5>
+            <pre>select s.name, sd.details FROM student_details sd, student s WHERE s.s_id=sd.s_id </pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_json_1()) ?>
+            <h5>Запрос 2:</h5>
+            <pre>select s.name, sd.details FROM student_details sd, students s
+                WHERE s.s_id=sd.s_id and sd.details->>'достоинства' is not null</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_json_2()) ?>
+            <h5>Запрос 3:</h5>
+            <pre>select s.name, sd.details FROM student_details sd, students s
+                WHERE s.s_id=sd.s_id and sd.details->>'достоинства' is not null and sd.details ->> 'достоинства'!= 'отсутствуют'</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_json_3()) ?>
+            <h5>Запрос 4:</h5>
+            <pre>select s.name, sd.details FROM student_details sd, students s
+                WHERE s.s_id=sd.s_id and sd.details->>'гитары' is not null</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_json_4()) ?>
+            <h5>Запрос 5:</h5>
+            <pre>select sd.de_id, s.name, sd.details #> 'хобби,гитарист,гитары' FROM student_details sd, students s
+                WHERE s.s_id=sd.s_id and sd.details #> 'хобби,гитарист,гитары' is not null</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_json_5()) ?>
+            <hr>
+            <h3>JSON</h3>
+            <h5>Запрос 1:</h5>
+            <pre>
+                alter table student_details add details_b jsonb;
+                update student_details set details_b=to_jsonb(details);
+                select * from student_details;</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_jsonb_create()) ?>
+            <h5>Запрос 2:</h5>
+            <pre>
+                select s.name, jsonb_pretty(sd.details_b) json FROM student_details sd,students s
+        where s.s_id=sd.s_id and sd.details_b @>'{"достоинства":{"мать-героиня":{}}}'</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_jsonb_select_1()) ?>
+            <h5>Запрос 3:</h5>
+            <pre>
+                select s.name, jsonb_each(sd.details_b) json FROM student_details sd,students s
+        where s.s_id=sd.s_id and sd.details_b @>'{"достоинства":{"мать-героиня":{}}}'</pre>
+            <h5>Результат:</h5>
+            <?php echo \Services\RenderView::table($db->example_jsonb_select_2()) ?>
         </div>
+        <?php ?>
         <div class="col"></div>
     </div>
 </div>

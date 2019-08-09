@@ -33,13 +33,13 @@ SETTINGS;
             title text,
             hours integer 
         )');
-
+        $this->checkFail($query);
         $query = pg_query($this->connection,'CREATE TABLE if not exists  students(
             s_id integer PRIMARY KEY,
             name text,
             start_year integer
         )');
-
+        $this->checkFail($query);
 
         $query = pg_query($this->connection,'CREATE TABLE if not exists  exams(
             s_id integer REFERENCES students(s_id),
@@ -47,6 +47,27 @@ SETTINGS;
             score integer,
             CONSTRAINT pk PRIMARY KEY (s_id,c_no)
         )');
+        $this->checkFail($query);
+
+        $query = pg_query($this->connection,'CREATE TABLE if not exists  course_chapters(
+            c_no text REFERENCES courses(c_no),
+            ch_no text,
+            ch_title text,
+            txt text,
+            CONSTRAINT pkt_ch PRIMARY KEY (ch_no,c_no)
+        )');
+        $query = pg_query($this->connection,'CREATE TABLE IF NOT EXISTS groups(g_no text PRIMARY KEY, monitor integer NOT NULL REFERENCES students(s_id));');
+        $this->checkFail($query);
+
+        $query = pg_query($this->connection,'ALTER TABLE students ADD g_no text REFERENCES groups(g_no);');
+
+        $this->checkFail($query);
+
+        $query = pg_query($this->connection,'create table student_details(
+                    de_id int,
+                    s_id int references students(s_id), 
+                    details json,
+                    CONSTRAINT pk_d primary key (s_id,de_id))');
 
         $this->checkFail($query);
 
@@ -54,13 +75,16 @@ SETTINGS;
 
     public function filling_tables()
     {
+        pg_query($this->connection,"begin");
         $query = pg_query($this->connection,"INSERT INTO  courses(c_no, title, hours)
             VALUES ('CS301', 'Базы данных', 30),
                    ('CS305', 'Сети ЭВМ', 60)");
+        $this->checkFail($query);
         $query= pg_query($this->connection,"INSERT INTO  students(s_id, name, start_year)
             VALUES (1451, 'Анна', 2014),
                    (1432, 'Виктор', 2014),
                    (1556, 'Нина', 2015)");
+        $this->checkFail($query);
         $query = pg_query($this->connection,"INSERT INTO  exams(s_id, c_no, score)
             VALUES (1451, 'CS301', 5),
                    (1556, 'CS301', 5),
@@ -70,6 +94,44 @@ SETTINGS;
 
 
         $this->checkFail($query);
+        $query = pg_query($this->connection,"INSERT INTO  course_chapters(c_no, ch_no,ch_title,txt)
+            VALUES ('CS301', 'I','Базы данных', 'С этой главы начинается наше знакомство с увлекательным миром баз данных'),
+                   ('CS301', 'II','Первые шаги', 'Продолжаем знакомство с миром баз данных.Создадим нашу первую текстовуюбазу данных'),
+                   ('CS305', 'I','Локальные сети', 'Здесь начнётся наше полное приключений путешествие в интригующий мир сетей')
+                   ");
+        $this->checkFail($query);
+        $query = pg_query($this->connection,<<<QUERY
+            INSERT INTO  student_details(de_id, s_id,details)
+            VALUES (1, 1451,'{
+                            "достоинства":"отсутствуют", 
+                            "недостатки":"неумеренное употребление мороженного"
+                            }'),
+                   (2, 1432,'{
+                            "хобби":{
+                            "гитарист":{
+                            "группа":"Постгрессоры",
+                              "гитары": ["страт","телек"]
+                                } 
+                            }
+                            }'),
+                    (3,1556,'{
+                            "хобби":"косплей",
+                            "достоинства":{
+                                    "мать-героиня":{
+                                        "Вася":"м","Семён":"м","Люся":"ж","Макар":"м","Саша":"сведения отсутствуют"
+                                    }
+                                }
+                           }'),
+                           (4, 1451, '{
+                                     "статус":"отчислена"
+                                     }')
+QUERY
+
+                   );
+        $this->checkFail($query);
+        pg_query($this->connection,"commit");
+
+
     }
 
     public function  get_all_tables(){
@@ -219,19 +281,13 @@ SETTINGS;
     }
     public function example_transaction(){
 //        $query=pg_send_query($this->connection,
-//            " CREATE TABLE IF NOT EXISTS groups(g_no text PRIMARY KEY, monitor integer NOT NULL REFERENCES students(s_id));
-//                ALTER TABLE students ADD g_no text REFERENCES groups(g_no);
+//            "
 //                BEGIN;
 //                INSERT INTO groups(g_no,monitor) SELECT 'A-101', s_id FROM students WHERE name='Анна';
 //                UPDATE students SET g_no='A-101';
 //                COMMIT;"
 //        );
-        $query=pg_query($this->connection,
-            " CREATE TABLE IF NOT EXISTS groups(g_no text PRIMARY KEY, monitor integer NOT NULL REFERENCES students(s_id));"
-        );
-        $query=pg_query($this->connection,
-            " ALTER TABLE students ADD g_no text REFERENCES groups(g_no);"
-        );
+
 
         $query=pg_query($this->connection,
             "BEGIN;"
@@ -283,6 +339,109 @@ SETTINGS;
         $this->checkFail($query);
         return $this->fetch($query);
     }
+    public function example_get_course_chapters(){
+        $query=pg_query($this->connection,"select * from course_chapters");
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
+    public function example_like_1(){
+        $query=pg_query($this->connection,"select txt from course_chapters where txt like '%база данных%' ");
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
+    public function example_like_2(){
+        $query=pg_query($this->connection,"select txt from course_chapters where txt like '%базу данных%' ");
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
+    public function example_create_fullsearch(){
+        $query=pg_query($this->connection,"alter table course_chapters add txtvector tsvector");
+        $query=pg_query($this->connection,"update course_chapters set txtvector=to_tsvector('russian',txt)");
+        $query=pg_query($this->connection,"select * from course_chapters ");
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
+    public function example_create_fullsearch_2(){
+        $query=pg_query($this->connection,"update course_chapters set txtvector=setweight(to_tsvector('russian',ch_title),'B') || ''
+            || setweight(to_tsvector('russian',txt),'D')");
+        $query=pg_query($this->connection,"select * from course_chapters ");
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
+    public function example_fullsearch_1(){
+        $query=pg_query($this->connection,"select ch_title from course_chapters
+                where txtvector @@ to_tsquery('russian','базы & данные')");
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
+    public function example_fullsearch_2(){
+        $query=pg_query($this->connection,"select ch_title, ts_rank_cd('{0.1, 0.0, 1.0, 0.0}',txtvector, q) from course_chapters, to_tsquery('russian','базы & данные') q
+                where txtvector @@ q order by ts_rank_cd desc");
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
+    public function example_fullsearch_3(){
+        $query=pg_query($this->connection,"select ts_headline('russian', txt,
+               to_tsquery('russian','мир'),'StartSel=<b>,StopSel=</b>, MaxWords=50, MinWords=5') from course_chapters where to_tsvector('russian', txt) @@ to_tsquery('russian','мир')");
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
+    public function example_json_1(){
+        $query=pg_query($this->connection,"select s.name, sd.details FROM student_details sd, students s WHERE s.s_id=sd.s_id");
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
+    public function example_json_2()
+    {
+        $query = pg_query($this->connection, "select s.name, sd.details FROM student_details sd, students s 
+                WHERE s.s_id=sd.s_id and sd.details->>'достоинства' is not null");
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
+    public function example_json_3(){
+        $query=pg_query($this->connection,"select s.name, sd.details FROM student_details sd, students s
+                WHERE s.s_id=sd.s_id and sd.details->>'достоинства' is not null and sd.details ->> 'достоинства'!= 'отсутствуют'");
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
+    public function example_json_4(){
+        $query=pg_query($this->connection,"select s.name, sd.details FROM student_details sd, students s
+                WHERE s.s_id=sd.s_id and sd.details->>'гитары' is not null");
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
+    public function example_json_5(){
+        $query=pg_query($this->connection,"select sd.de_id, s.name, sd.details #> '{хобби,гитарист,гитары}' FROM student_details sd, students s
+                WHERE s.s_id=sd.s_id and sd.details #> '{хобби,гитарист,гитары}' is not null");
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
+    public function example_jsonb_create(){
+        $query=pg_query($this->connection,"alter table student_details add details_b jsonb");
+        $query=pg_query($this->connection,"update student_details set details_b=to_jsonb(details)");
+        $query=pg_query($this->connection,"select * from student_details");
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
+
+    public function example_jsonb_select_1(){
+        $query=pg_query($this->connection,<<<QUERY
+        select s.name, jsonb_pretty(sd.details_b) json FROM student_details sd,students s 
+        where s.s_id=sd.s_id and sd.details_b @>'{"достоинства":{"мать-героиня":{}}}'
+QUERY
+        );
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
+    public function example_jsonb_select_2(){
+        $query=pg_query($this->connection,<<<QUERY
+        select s.name, jsonb_each(sd.details_b) json FROM student_details sd,students s 
+        where s.s_id=sd.s_id and sd.details_b @>'{"достоинства":{"мать-героиня":{}}}'
+QUERY
+        );
+        $this->checkFail($query);
+        return $this->fetch($query);
+    }
 
     public function fetch($query){
         $res=[];
@@ -299,7 +458,7 @@ SETTINGS;
     }
     public function  __destruct()
     {
-        $query=pg_query($this->connection,"drop table courses, exams, groups, students");
+        $query=pg_query($this->connection,"drop table  course_chapters, courses, exams, groups, students,student_details ");
         $this->checkFail($query);
         return $this->fetch($query);
         pg_close($this->connection);
