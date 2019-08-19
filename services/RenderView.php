@@ -6,7 +6,7 @@ namespace Services;
 
 class RenderView
 {
-    public static function table($data, $name_table='')
+    public static function table(array $data,string $name_table='')
     {
         if (count($data) < 0) {
             return null;
@@ -61,6 +61,26 @@ CONTENT_ROW_END;
                 </tbody>
             </table>
 TABLE_BODY_END;
+        return $res;
+    }
+    public static function query(array $query)
+    {
+        $content='';
+        foreach ($query as $v){
+            $content.=$v."\n";
+        }
+        $res=<<<CONTENT
+        <pre>
+        $content
+        </pre>
+        <h5>Результат:</h5>
+CONTENT;
+
+    }
+    public static function tableWithQuery(array $query,array $data,string $name_table=''){
+        $res='';
+        $res.=self::query($query);
+        $res.=self::table($data,$name_table);
         return $res;
     }
 }

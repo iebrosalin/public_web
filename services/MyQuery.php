@@ -8,9 +8,6 @@ class MyQuery{
     public function __construct()
     {
 
-        /*
-         * Connection settings
-         */
         $host=getenv('DB_HOST');
         $port=getenv('PORT_PG');
         $dbname=getenv('POSTGRES_DB');
@@ -25,82 +22,126 @@ SETTINGS;
             throw new Exception(pg_last_error());
         }
     }
+    private function exec(string $query)
+    {
+        $resQuery=pg_query($this->connection,$query);
+        $this->checkFail($query);
+        return $resQuery;
+    }
 
+    public function execFetch(string $query)
+    {
+        return $this->fetch($this->exec($query));
+    }
     public function create_tables()
     {
-        $query = pg_query($this->connection,'CREATE TABLE if not exists courses(
+        $arQuery=
+            [
+                'CREATE TABLE if not exists courses(
             c_no text PRIMARY KEY,
             title text,
             hours integer 
-        )');
-        $this->checkFail($query);
-        $query = pg_query($this->connection,'CREATE TABLE if not exists  students(
+        )',
+                'CREATE TABLE if not exists  students(
             s_id integer PRIMARY KEY,
             name text,
             start_year integer
-        )');
-        $this->checkFail($query);
-
-        $query = pg_query($this->connection,'CREATE TABLE if not exists  exams(
+        )',
+                'CREATE TABLE if not exists  exams(
             s_id integer REFERENCES students(s_id),
             c_no text REFERENCES courses(c_no),
             score integer,
             CONSTRAINT pk PRIMARY KEY (s_id,c_no)
-        )');
-        $this->checkFail($query);
-
-        $query = pg_query($this->connection,'CREATE TABLE if not exists  course_chapters(
+        )',
+                'CREATE TABLE if not exists  course_chapters(
             c_no text REFERENCES courses(c_no),
             ch_no text,
             ch_title text,
             txt text,
             CONSTRAINT pkt_ch PRIMARY KEY (ch_no,c_no)
-        )');
-        $query = pg_query($this->connection,'CREATE TABLE IF NOT EXISTS groups(g_no text PRIMARY KEY, monitor integer NOT NULL REFERENCES students(s_id));');
-        $this->checkFail($query);
-
-        $query = pg_query($this->connection,'ALTER TABLE students ADD g_no text REFERENCES groups(g_no);');
-
-        $this->checkFail($query);
-
-        $query = pg_query($this->connection,'create table student_details(
+        )',
+                'CREATE TABLE IF NOT EXISTS groups(g_no text PRIMARY KEY, monitor integer NOT NULL REFERENCES students(s_id));',
+                'ALTER TABLE students ADD g_no text REFERENCES groups(g_no);',
+                'create table student_details(
                     de_id int,
                     s_id int references students(s_id), 
                     details json,
-                    CONSTRAINT pk_d primary key (s_id,de_id))');
+                    CONSTRAINT pk_d primary key (s_id,de_id))',
 
-        $this->checkFail($query);
+            ];
+//        $query = pg_query($this->connection,'CREATE TABLE if not exists courses(
+//            c_no text PRIMARY KEY,
+//            title text,
+//            hours integer
+//        )');
+//        $this->checkFail($query);
+//        $query = pg_query($this->connection,'CREATE TABLE if not exists  students(
+//            s_id integer PRIMARY KEY,
+//            name text,
+//            start_year integer
+//        )');
+//        $this->checkFail($query);
+//
+//        $query = pg_query($this->connection,'CREATE TABLE if not exists  exams(
+//            s_id integer REFERENCES students(s_id),
+//            c_no text REFERENCES courses(c_no),
+//            score integer,
+//            CONSTRAINT pk PRIMARY KEY (s_id,c_no)
+//        )');
+//        $this->checkFail($query);
 
+//        $query = pg_query($this->connection,'CREATE TABLE if not exists  course_chapters(
+//            c_no text REFERENCES courses(c_no),
+//            ch_no text,
+//            ch_title text,
+//            txt text,
+//            CONSTRAINT pkt_ch PRIMARY KEY (ch_no,c_no)
+//        )');
+//        $query = pg_query($this->connection,'CREATE TABLE IF NOT EXISTS groups(g_no text PRIMARY KEY, monitor integer NOT NULL REFERENCES students(s_id));');
+//        $this->checkFail($query);
+//
+//        $query = pg_query($this->connection,'ALTER TABLE students ADD g_no text REFERENCES groups(g_no);');
+//
+//        $this->checkFail($query);
+
+//        $query = pg_query($this->connection,'create table student_details(
+//                    de_id int,
+//                    s_id int references students(s_id),
+//                    details json,
+//                    CONSTRAINT pk_d primary key (s_id,de_id))');
+//
+//        $this->checkFail($query);
+
+        foreach ($arQuery as $v)
+        {
+            $this->exec($v);
+        }
     }
 
     public function filling_tables()
     {
-        pg_query($this->connection,"begin");
-        $query = pg_query($this->connection,"INSERT INTO  courses(c_no, title, hours)
+        $arQuery=
+            [
+                "begin",
+                "INSERT INTO  courses(c_no, title, hours)
             VALUES ('CS301', 'Базы данных', 30),
-                   ('CS305', 'Сети ЭВМ', 60)");
-        $this->checkFail($query);
-        $query= pg_query($this->connection,"INSERT INTO  students(s_id, name, start_year)
+                   ('CS305', 'Сети ЭВМ', 60)",
+                "INSERT INTO  students(s_id, name, start_year)
             VALUES (1451, 'Анна', 2014),
                    (1432, 'Виктор', 2014),
-                   (1556, 'Нина', 2015)");
-        $this->checkFail($query);
-        $query = pg_query($this->connection,"INSERT INTO  exams(s_id, c_no, score)
+                   (1556, 'Нина', 2015)",
+                "INSERT INTO  exams(s_id, c_no, score)
             VALUES (1451, 'CS301', 5),
                    (1556, 'CS301', 5),
                    (1451, 'CS305', 5),
                    (1432, 'CS305', 4)
-                   ");
-
-
-        $this->checkFail($query);
-        $query = pg_query($this->connection,"INSERT INTO  course_chapters(c_no, ch_no,ch_title,txt)
+                   ",
+                "INSERT INTO  course_chapters(c_no, ch_no,ch_title,txt)
             VALUES ('CS301', 'I','Базы данных', 'С этой главы начинается наше знакомство с увлекательным миром баз данных'),
                    ('CS301', 'II','Первые шаги', 'Продолжаем знакомство с миром баз данных.Создадим нашу первую текстовуюбазу данных'),
                    ('CS305', 'I','Локальные сети', 'Здесь начнётся наше полное приключений путешествие в интригующий мир сетей')
-                   ");
-        $this->checkFail($query);
-        $query = pg_query($this->connection,<<<QUERY
+                   ",
+                <<<QUERY
             INSERT INTO  student_details(de_id, s_id,details)
             VALUES (1, 1451,'{
                             "достоинства":"отсутствуют", 
@@ -125,64 +166,118 @@ SETTINGS;
                            (4, 1451, '{
                                      "статус":"отчислена"
                                      }')
-QUERY
+QUERY,
+                "commit"
 
-                   );
-        $this->checkFail($query);
-        pg_query($this->connection,"commit");
+            ];
+//        pg_query($this->connection,"begin");
+//        $query = pg_query($this->connection,"INSERT INTO  courses(c_no, title, hours)
+//            VALUES ('CS301', 'Базы данных', 30),
+//                   ('CS305', 'Сети ЭВМ', 60)");
+//        $this->checkFail($query);
+//        $query= pg_query($this->connection,"INSERT INTO  students(s_id, name, start_year)
+//            VALUES (1451, 'Анна', 2014),
+//                   (1432, 'Виктор', 2014),
+//                   (1556, 'Нина', 2015)");
+//        $this->checkFail($query);
+//        $query = pg_query($this->connection,"INSERT INTO  exams(s_id, c_no, score)
+//            VALUES (1451, 'CS301', 5),
+//                   (1556, 'CS301', 5),
+//                   (1451, 'CS305', 5),
+//                   (1432, 'CS305', 4)
+//                   ");
 
+//
+//        $this->checkFail($query);
+//        $query = pg_query($this->connection,"INSERT INTO  course_chapters(c_no, ch_no,ch_title,txt)
+//            VALUES ('CS301', 'I','Базы данных', 'С этой главы начинается наше знакомство с увлекательным миром баз данных'),
+//                   ('CS301', 'II','Первые шаги', 'Продолжаем знакомство с миром баз данных.Создадим нашу первую текстовуюбазу данных'),
+//                   ('CS305', 'I','Локальные сети', 'Здесь начнётся наше полное приключений путешествие в интригующий мир сетей')
+//                   ");
+//        $this->checkFail($query);
+//        $query = pg_query($this->connection,<<<QUERY
+//            INSERT INTO  student_details(de_id, s_id,details)
+//            VALUES (1, 1451,'{
+//                            "достоинства":"отсутствуют",
+//                            "недостатки":"неумеренное употребление мороженного"
+//                            }'),
+//                   (2, 1432,'{
+//                            "хобби":{
+//                            "гитарист":{
+//                            "группа":"Постгрессоры",
+//                              "гитары": ["страт","телек"]
+//                                }
+//                            }
+//                            }'),
+//                    (3,1556,'{
+//                            "хобби":"косплей",
+//                            "достоинства":{
+//                                    "мать-героиня":{
+//                                        "Вася":"м","Семён":"м","Люся":"ж","Макар":"м","Саша":"сведения отсутствуют"
+//                                    }
+//                                }
+//                           }'),
+//                           (4, 1451, '{
+//                                     "статус":"отчислена"
+//                                     }')
+//QUERY
+//
+//                   );
+//        $this->checkFail($query);
+//        pg_query($this->connection,"commit");
+    foreach ($arQuery as $v)
+    {
+        $this->exec($v);
+    }
 
     }
 
     public function  get_all_tables(){
         $res=[];
-        $queryCourse = pg_query($this->connection,"SELECT * FROM courses");
+        $queryCourse = $this->exec("SELECT * FROM courses");
         while($row=pg_fetch_assoc($queryCourse)){
             $res['course'][]=$row;
         }
-        $queryStudent = pg_query($this->connection,"SELECT * FROM students");
+        $queryStudent = $this->exec("SELECT * FROM students");
         while($row=pg_fetch_assoc($queryStudent)){
             $res['student'][]=$row;
         }
-        $queryExam = pg_query($this->connection,"SELECT * FROM exams");
+        $queryExam = $this->exec("SELECT * FROM exams");
         while($row=pg_fetch_assoc($queryExam)){
             $res['exam'][]=$row;
         }
+        $queryExam = $this->exec("SELECT * FROM course_chapters");
+        while($row=pg_fetch_assoc($queryExam)){
+            $res['course_chapters'][]=$row;
+        }
+        $queryExam = $this->exec("SELECT * FROM student_details");
+        while($row=pg_fetch_assoc($queryExam)){
+            $res['student_details'][]=$row;
+        }
         return $res;
     }
-
-    public function simple_query(){
-
-    }
-
     public function example_select_as(){
-        $query=pg_query($this->connection,'SELECT title AS course_title, hours FROM courses');
-        $this->checkFail($query);
+        $query=$this->exec('SELECT title AS course_title, hours FROM courses');
         return $this->fetch($query);
     }
     public function example_select_all_course(){
-        $query=pg_query($this->connection,'SELECT * FROM courses');
-        $this->checkFail($query);
+        $query=$this->exec('SELECT * FROM courses');
         return $this->fetch($query);
     }
     public function example_select_repeat_column(){
-        $query=pg_query($this->connection,'SELECT start_year FROM students');
-        $this->checkFail($query);
+        $query=$this->exec('SELECT start_year FROM students');
         return $this->fetch($query);
     }
     public function example_select_without_repeat_column(){
-        $query=pg_query($this->connection,'SELECT DISTINCT start_year FROM students');
-        $this->checkFail($query);
+        $query=$this->exec('SELECT DISTINCT start_year FROM students');
         return $this->fetch($query);
     }
     public function example_select_math(){
-        $query=pg_query($this->connection,'SELECT 2+52 AS result');
-        $this->checkFail($query);
+        $query=$this->exec('SELECT 2+52 AS result');
         return $this->fetch($query);
     }
     public function example_select_where(){
-        $query=pg_query($this->connection,'SELECT * FROM courses WHERE hours>45');
-        $this->checkFail($query);
+        $query=$this->exec('SELECT * FROM courses WHERE hours>45');
         return $this->fetch($query);
     }
     public function example_select_many_tables(){
@@ -280,15 +375,6 @@ QUERY
         return $this->fetch($query);
     }
     public function example_transaction(){
-//        $query=pg_send_query($this->connection,
-//            "
-//                BEGIN;
-//                INSERT INTO groups(g_no,monitor) SELECT 'A-101', s_id FROM students WHERE name='Анна';
-//                UPDATE students SET g_no='A-101';
-//                COMMIT;"
-//        );
-
-
         $query=pg_query($this->connection,
             "BEGIN;"
         );
@@ -303,31 +389,6 @@ QUERY
         $query=pg_query($this->connection,
             "COMMIT;"
         );
-
-//
-//        try {
-//            $dbh = new PDO('odbc:SAMPLE', 'db2inst1', 'ibmdb2',
-//                array(PDO::ATTR_PERSISTENT => true));
-//            echo "Подключились\n";
-//        } catch (Exception $e) {
-//            die("Не удалось подключиться: " . $e->getMessage());
-//        }
-//
-//        try {
-//            $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//
-//            $dbh->beginTransaction();
-//            $dbh->exec("insert into staff (id, first, last) values (23, 'Joe', 'Bloggs')");
-//            $dbh->exec("insert into salarychange (id, amount, changedate)
-//      values (23, 50000, NOW())");
-//            $dbh->commit();
-//
-//        } catch (Exception $e) {
-//            $dbh->rollBack();
-//            echo "Ошибка: " . $e->getMessage();
-//        }
-
-
     }
     public function example_get_students(){
         $query=pg_query($this->connection,"select * from students");

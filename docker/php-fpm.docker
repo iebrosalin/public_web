@@ -1,5 +1,5 @@
 FROM php:fpm
-WORKDIR /var/www
+WORKDIR /var/www/html
 FROM php:fpm
 
 RUN apt-get update && apt-get install -y \
