@@ -171,7 +171,7 @@ MyQuery::initDb($db);
             <h5>Запрос 3:</h5>
             <?= \Services\RenderView::tableWithQuery("select s.name, sd.details FROM student_details sd, students s
                 WHERE s.s_id=sd.s_id and sd.details->>'достоинства' is not null and sd.details ->> 'достоинства'!= 'отсутствуют'")?>
-            <h5>Запрос 4:</h5>
+            <h5>Запрос 4 (это не баг, таким и должен быть результат):</h5>
             <?= \Services\RenderView::tableWithQuery("select s.name, sd.details FROM student_details sd, students s
                 WHERE s.s_id=sd.s_id and sd.details->>'гитары' is not null")?>
             <h5>Запрос 5:</h5>

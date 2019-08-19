@@ -77,7 +77,7 @@ TABLE_BODY_END;
         }
         $content='';
         foreach ($query as $v){
-            $content.=$v."\n";
+            $content.=$v.";\n";
         }
         $res=<<<CONTENT
         <pre>
