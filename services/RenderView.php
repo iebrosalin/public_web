@@ -63,8 +63,18 @@ CONTENT_ROW_END;
 TABLE_BODY_END;
         return $res;
     }
-    public static function query(array $query)
+    public static function query($query)
     {
+        switch (gettype($query))
+        {
+            case 'array':
+                break;
+            case 'string':
+                $query=[$query];
+                break;
+            default:
+                throw new \Exception('Недопустимый тип запроса');
+        }
         $content='';
         foreach ($query as $v){
             $content.=$v."\n";
@@ -75,12 +85,13 @@ TABLE_BODY_END;
         </pre>
         <h5>Результат:</h5>
 CONTENT;
-
+        return $res;
     }
-    public static function tableWithQuery(array $query,array $data,string $name_table=''){
+    public static function tableWithQuery(string $query,string $name_table=''){
         $res='';
         $res.=self::query($query);
-        $res.=self::table($data,$name_table);
+        $db=new MyQuery();
+        $res.=self::table($db->execFetch($query),$name_table);
         return $res;
     }
 }
