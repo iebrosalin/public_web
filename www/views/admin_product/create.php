@@ -1,113 +1,89 @@
-<?php include ROOT . '/views/layouts/header_admin.php'; ?>
+<?php use Components\View\SimpleView;
 
-<section>
-    <div class="container">
-        <div class="row">
+SimpleView::render('layouts/header_admin.php') ?>
 
-            <br/>
+<?= \Components\Helpers\Helpers::renderTitle('Add product');?>
 
-            <div class="breadcrumbs">
-                <ol class="breadcrumb">
-                    <li><a href="/admin">Home /</a></li>
-                    <li ><a href="/admin/product">Products /</a></li>
-                    <li class="active"> Add product</li>
-                </ol>
-            </div>
+<div class="row justify-content-center">
+<?= \Components\Helpers\Helpers::renderError($options['errors'])?>
 
-<div class="span9">
-            <h4>Add product</h4>
+                <div class="col-xl-6 col-lg-8 col-md-12">
+                        <form  action="" method="post" enctype="multipart/form-data">
 
-            <br/>
+                            <div class="form-group">
+                                <label>Title</label>
+                                <input type="text" class="form-control" name="name" placeholder="Title">
+                            </div>
 
-            <?php if (isset($errors) && is_array($errors)): ?>
-                <ul>
-                    <?php foreach ($errors as $error): ?>
-                        <li> - <?php echo $error; ?></li>
-                    <?php endforeach; ?>
-                </ul>
-            <?php endif; ?>
+                            <div class="form-group">
+                                <label>Code</label>
+                                <input type="text" class="form-control" name="code" placeholder="Code">
+                            </div>
 
-            <div class="col-lg-4">
-                <div class="login-form">
-                    <form class="form-horizontal" action="#" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label>Price</label>
+                                <input type="text" class="form-control" name="price" placeholder="Price">
+                            </div>
 
-                        <p>Name</p>
-                        <input type="text" name="name" placeholder="" value="">
+                            <div class="form-group">
+                            <label>Category</label>
+                            <select class="form-control" name="category_id">
+                                <?php if (is_array($options['categoriesList'])): ?>
+                                    <?php foreach ($options['categoriesList'] as $category): ?>
+                                        <option value="<?php echo $category['id']; ?>">
+                                            <?php echo $category['name']; ?>
+                                        </option>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            </select>
+                            </div>
 
-                        <p>Code</p>
-                        <input type="text" name="code" placeholder="" value="">
+                            <div class="form-group">
+                                <label>Brand</label>
+                                <input type="text" class="form-control" name="brand" placeholder="Brand">
+                            </div>
 
-                        <p>Price</p>
-                        <input type="text" name="price" placeholder="" value="">
+                            <div class="form-group">
+                                <label>Description</label>
+                                <textarea class="form-control" name="description" placeholder="Description"> </textarea>
+                            </div>
 
-                        <p>Category</p>
-                        <select name="category_id">
-                            <?php if (is_array($categoriesList)): ?>
-                                <?php foreach ($categoriesList as $category): ?>
-                                    <option value="<?php echo $category['id']; ?>">
-                                        <?php echo $category['name']; ?>
-                                    </option>
-                                <?php endforeach; ?>
-                            <?php endif; ?>
-                        </select>
+                            <fieldset class="form-group">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="" name="availability">
+                                        Availability
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="" name="is_new">
+                                        New
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="" name="is_recommended">
+                                        Recommended
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="" name="status"">
+                                        Status
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <div class="text-center">
+                                <input type="submit" name="submit" class="btn btn-primary" value="Save">
+                            </div>
+                        </form>
 
-                        <br/><br/>
-
-                        <p>Brand</p>
-                        <input type="text" name="brand" placeholder="" value="">
-
-                        <p>Image</p>
-                        <input type="file" name="image" placeholder="" value="">
-
-                        <p>Description</p>
-                        <textarea name="description"></textarea>
-
-                        <br/><br/>
-
-                        <p>Availability</p>
-                        <select name="availability">
-                            <option value="1" selected="selected">Yes</option>
-                            <option value="0">No</option>
-                        </select>
-
-                        <br/><br/>
-
-                        <p>New</p>
-                        <select name="is_new">
-                            <option value="1" selected="selected">Yes</option>
-                            <option value="0">No</option>
-                        </select>
-
-                        <br/><br/>
-
-                        <p>Recommended</p>
-                        <select name="is_recommended">
-                            <option value="1" selected="selected">Yes</option>
-                            <option value="0">No</option>
-                        </select>
-
-                        <br/><br/>
-
-                        <p>Status</p>
-                        <select name="status">
-                            <option value="1" selected="selected">Displayed</option>
-                            <option value="0">Hidden</option>
-                        </select>
-
-                        <br/><br/>
-
-                        <input type="submit" name="submit" class="btn btn-default" value="Save">
-
-                        <br/><br/>
-
-                    </form>
                 </div>
             </div>
-</div>
 
-        </div>
-    </div>
-</section>
 
-<?php include ROOT . '/views/layouts/footer_admin.php'; ?>
+
+
+<?php SimpleView::render('layouts/footer_admin.php') ?>
 

@@ -2,7 +2,8 @@
 
 namespace Models;
 
-use Db;
+use Components\Db\Db;
+use PDO;
 
 class Category
 {

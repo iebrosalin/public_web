@@ -1,5 +1,6 @@
-<?php include ROOT . '/views/layouts/header_admin.php'; ?>
+<?php use Components\View\SimpleView;
 
+SimpleView::render('layouts/header_admin.php') ?>
 <section>
     <div class="container">
         <div class="row">
@@ -15,7 +16,7 @@
             </div>
 
 
-            <h4>Edit category <?php echo $category['name']; ?></h4>
+            <h4>Edit category <?php echo $options['category'] ['name']; ?></h4>
 
             <br/>
 
@@ -24,19 +25,19 @@
                     <form action="#" method="post">
 
                         <p>Name</p>
-                        <input type="text" name="name" placeholder="" value="<?php echo $category['name']; ?>">
+                        <input type="text" name="name" placeholder="" value="<?php echo $options['category']['name']; ?>">
 
                         <p>Order number</p>
-                        <input type="text" name="sort_order" placeholder="" value="<?php echo $category['sort_order']; ?>">
-                        
+                        <input type="text" name="sort_order" placeholder="" value="<?php echo $options['category']['sort_order']; ?>">
+
                         <p>Status</p>
                         <select name="status">
-                            <option value="1" <?php if ($category['status'] == 1) echo ' selected="selected"'; ?>>Displayed</option>
-                            <option value="0" <?php if ($category['status'] == 0) echo ' selected="selected"'; ?>>Hidden</option>
+                            <option value="1" <?php if ($options['category']['status'] == 1) echo ' selected="selected"'; ?>>Displayed</option>
+                            <option value="0" <?php if ($options['category']['status'] == 0) echo ' selected="selected"'; ?>>Hidden</option>
                         </select>
 
                         <br><br>
-                        
+
                         <input type="submit" name="submit" class="btn btn-default" value="Save">
                     </form>
                 </div>
@@ -44,6 +45,5 @@
         </div>
     </div>
 </section>
-
-<?php include ROOT . '/views/layouts/footer_admin.php'; ?>
+<?php SimpleView::render('layouts/footer_admin.php') ?>
 

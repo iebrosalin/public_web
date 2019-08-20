@@ -3,6 +3,7 @@
 namespace Controllers;
 
 use Components\View\SimpleView;
+use Models\Category;
 use Models\Product;
 
 class AdminProductController
@@ -96,6 +97,7 @@ class AdminProductController
             [
                 'categoriesList'=>$categoriesList,
                 'product'=>$product,
+                'id'=>$id
             ]);
     }
 
@@ -107,7 +109,7 @@ class AdminProductController
             header("Location: /admin/product");
         }
 
-        return SimpleView::render('admin_product/delete.php');
+        return SimpleView::render('admin_product/delete.php',['id'=>$id]);
     }
 
 }

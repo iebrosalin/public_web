@@ -1,4 +1,6 @@
-<?php include ROOT . '/views/layouts/header_admin.php'; ?>
+<?php use Components\View\SimpleView;
+
+SimpleView::render('layouts/header_admin.php') ?>
 
 <section>
     <div class="container">
@@ -19,9 +21,9 @@
 
             <br/>
 
-            <?php if (isset($errors) && is_array($errors)): ?>
+            <?php if (isset($options['errors']) && is_array($options['errors'])): ?>
                 <ul>
-                    <?php foreach ($errors as $error): ?>
+                    <?php foreach ($options['errors'] as $error): ?>
                         <li> <?php echo $error; ?></li>
                     <?php endforeach; ?>
                 </ul>
@@ -55,5 +57,8 @@
     </div>
 </section>
 
-<?php include ROOT . '/views/layouts/footer_admin.php'; ?>
+<?php SimpleView::render('layouts/footer_admin.php') ?>
+
+
+
 

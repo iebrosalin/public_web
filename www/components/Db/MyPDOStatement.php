@@ -4,6 +4,9 @@
 namespace Components\Db;
 
 
+use PDOException;
+use PDOStatement;
+
 class MyPDOStatement extends PDOStatement
 {
     protected $_debugValues = null;
@@ -17,7 +20,15 @@ class MyPDOStatement extends PDOStatement
     {
         $this->_debugValues = $values;
         try {
-            $t = parent::execute($values);
+            if(empty($values))
+            {
+                $t=parent::execute();
+            }
+            else
+            {
+                $t = parent::execute($values);
+
+            }
             // здесь можно добавить логирование успешного запроса
         } catch (PDOException $e) {
             // здесь можно добавить логирование неуспшного запроса

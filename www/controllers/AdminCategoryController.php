@@ -2,6 +2,7 @@
 
 namespace  Controllers;
 
+use Components\View\SimpleView;
 use Models\Category;
 
 class AdminCategoryController
@@ -11,8 +12,10 @@ class AdminCategoryController
     {
         $categoriesList = Category::getCategoriesListAdmin();
 
-        require_once(ROOT . '/views/admin_category/index.php');
-        return true;
+        return SimpleView::render('admin_category/index.php',
+            [
+                'categoriesList'=>$categoriesList
+            ]);
     }
 
     public function create()
@@ -41,8 +44,7 @@ class AdminCategoryController
             }
         }
 
-        require_once(ROOT . '/views/admin_category/create.php');
-        return true;
+        return SimpleView::render('admin_category/create.php');
     }
 
     public function update($id)
@@ -63,8 +65,11 @@ class AdminCategoryController
             header("Location: /admin/category");
         }
 
-        require_once(ROOT . '/views/admin_category/update.php');
-        return true;
+        return  SimpleView::render('admin_category/update.php',
+            [
+                'id'=>$id,
+                'category'=>$category,
+            ]);
     }
 
 
@@ -76,8 +81,8 @@ class AdminCategoryController
             header("Location: /admin/category");
         }
 
-        require_once(ROOT . '/views/admin_category/delete.php');
-        return true;
+
+        return SimpleView::render('admin_category/delete.php',['id'=>$id]);
     }
 
 }

@@ -1,4 +1,6 @@
-<?php include ROOT . '/views/layouts/header_admin.php'; ?>
+<?php use Components\View\SimpleView;
+
+SimpleView::render('layouts/header_admin.php') ?>
 
 <section>
     <div class="container">
@@ -15,7 +17,7 @@
             </div>
 
 
-            <h4>Delete category id<?php echo $id; ?></h4>
+            <h4>Delete category id<?php echo $options['id']; ?></h4>
 
 
             <p>Are you sure?</p>
@@ -28,5 +30,5 @@
     </div>
 </section>
 
-<?php include ROOT . '/views/layouts/footer_admin.php'; ?>
+<?php SimpleView::render('layouts/footer_admin.php') ?>
 

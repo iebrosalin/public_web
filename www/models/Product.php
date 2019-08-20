@@ -1,6 +1,7 @@
 <?php
 namespace Models;
 use Components\Db\Db;
+use PDO;
 
 class Product
 {

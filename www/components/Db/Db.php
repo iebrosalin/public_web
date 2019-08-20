@@ -16,7 +16,7 @@ class Db
         $dsn = "mysql:host={$params['host']};dbname={$params['dbname']};charset=utf8";
         $options = array(
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_STATEMENT_CLASS => array('MyPDOStatement', array()),
+            PDO::ATTR_STATEMENT_CLASS => array('\Components\Db\MyPDOStatement', array()),
         );
         $db = new PDO($dsn, $params['user'], $params['password'],$options);
 
