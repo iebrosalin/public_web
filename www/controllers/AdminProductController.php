@@ -3,11 +3,12 @@
 namespace Controllers;
 
 use Components\View\SimpleView;
+use Product;
 
 class AdminProductController
 {
 
-    public function actionIndex()
+    public function index()
     {
         $productsList = Product::getProductsList();
 
@@ -16,7 +17,7 @@ class AdminProductController
         ]);
     }
 
-    public function actionCreate()
+    public function create()
     {
 
         $categoriesList = Category::getCategoriesListAdmin();
@@ -56,11 +57,15 @@ class AdminProductController
             }
         }
 
-        require_once(ROOT . '/views/admin_product/create.php');
-        return true;
+
+        return SimpleView::render('admin_product/create.php',
+            [
+                'categoriesList'=>$categoriesList,
+                'errors'=>$errors,
+            ]);
     }
 
-    public function actionUpdate($id)
+    public function update($id)
     {
         foreach($_POST as $key=>$val){
             $val=strip_tags($val);
@@ -83,28 +88,9 @@ class AdminProductController
             $options['status'] = $_POST['status'];
 
             if (Product::updateProductById($id, $options)) {
-//                if (is_uploaded_file($_FILES["image"]["tmp_name"])) {
-//
-//                   move_uploaded_file($_FILES["image"]["tmp_name"], $_SERVER['DOCUMENT_ROOT'] . "/upload/images/products/{$id}.jpg");
-//                }
-//                if (is_uploaded_file($_FILES["gallery"]["tmp_name"])) {
-//                    $db=DB::getConnection();
-//                    $sql = "INSERT INTO product_images (products_id,image) VALUE  (:products_id, :image)";
-//                    $result = $db->prepare($sql);
-//                    $result->bindParam(':products_id', $id, PDO::PARAM_INT);
-//                    $result->bindParam(':image', $_FILES["gallery"]["name"], PDO::PARAM_STR);
-//
-//                    if ($result->execute()) {
-//                        $PATHGALLERY="/upload/images/gallery/".$id."/";
-//                        mkdir($_SERVER['DOCUMENT_ROOT'] . $PATHGALLERY,0777,false);
-//                        move_uploaded_file($_FILES["gallery"]["tmp_name"], $_SERVER['DOCUMENT_ROOT'] . $PATHGALLERY.$_FILES["gallery"]["name"]);
-//                    }
-//
-//                }
             }
 
         }
-
 
         return  SimpleView::render('admin_product/update.php',
             [
@@ -113,27 +99,15 @@ class AdminProductController
             ]);
     }
 
-    /**
-     * Action для страницы "Удалить товар"
-     */
-    public function actionDelete($id)
+    public function delete($id)
     {
-        // Проверка доступа
-      //  self::checkAdmin();
 
-        // Обработка формы
         if (isset($_POST['submit'])) {
-            // Если форма отправлена
-            // Удаляем товар
             Product::deleteProductById($id);
-
-            // Перенаправляем пользователя на страницу управлениями товарами
             header("Location: /admin/product");
         }
 
-        // Подключаем вид
-        require_once(ROOT . '/views/admin_product/delete.php');
-        return true;
+        return SimpleView::render('admin_product/delete.php');
     }
 
 }

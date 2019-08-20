@@ -32,6 +32,7 @@ class RegExpRouter implements Router
             if (preg_match("~$uriPattern~", $uri)) {
                 $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
                 $options=$this->extract($internalRoute);
+                var_dump(call_user_func_array(array(new $options['controller'], $options['action']), $options['param']));
                 if (false==@call_user_func_array(array(new $options['controller'], $options['action']), $options['param'])) {
                     call_user_func_array(array(new \Controllers\Errors(), 'error404'),[]);
                 }
