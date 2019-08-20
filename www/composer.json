@@ -1,0 +1,20 @@
+{
+    "name": "akva/www",
+    "authors": [
+        {
+            "name": "iebrosalin",
+            "email": "iebrosalin@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Components\\": "components",
+            "Controllers\\": "controllers",
+            "Models\\": "models"
+        },
+        "files": [
+            "./components/Helpers/functions.php"
+        ]
+    }
+}
