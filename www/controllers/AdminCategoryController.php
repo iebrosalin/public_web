@@ -2,6 +2,8 @@
 
 namespace  Controllers;
 
+use Models\Category;
+
 class AdminCategoryController
 {
 

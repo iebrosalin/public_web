@@ -17,7 +17,13 @@ services:
       - ${VHOSTS_DIR-./config/vhosts}:/etc/apache2/sites-enabled
       - ${LOG_DIR-./logs/apache2}:/var/log/apache2
     environment:
-      DEBUG_APP_MODE: 'true'
+      DEBUG_APP_MODE: ${DEBUG_APP_MODE}
+      DB_HOST: ${DB_HOST}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
   mysql:
     build: bin/mysql
     container_name: '5.7-mysql'

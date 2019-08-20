@@ -1,9 +1,8 @@
 <?php
 
-// Массив с параметрами подключения к базе данных
 return array(
-    'host' => 'localhost',
-    'dbname' => 'stud-asu_smirnov',
-    'user' => '046625165_slava',
-    'password' => '12345',
+    'host' => getenv('DB_HOST'),
+    'dbname' => getenv('MYSQL_DATABASE'),
+    'user' => getenv('MYSQL_USER'),
+    'password' => getenv('MYSQL_PASSWORD'),
 );

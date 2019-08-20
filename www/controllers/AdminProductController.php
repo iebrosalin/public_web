@@ -3,7 +3,7 @@
 namespace Controllers;
 
 use Components\View\SimpleView;
-use Product;
+use Models\Product;
 
 class AdminProductController
 {

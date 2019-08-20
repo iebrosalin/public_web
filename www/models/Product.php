@@ -1,5 +1,7 @@
 <?php
 namespace Models;
+use Components\Db\Db;
+
 class Product
 {
 
