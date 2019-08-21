@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1:3306
--- Время создания: Май 16 2018 г., 23:00
--- Версия сервера: 5.6.38
--- Версия PHP: 5.6.32
+-- Хост: mysql:3306
+-- Время создания: Авг 21 2019 г., 03:35
+-- Версия сервера: 5.7.27
+-- Версия PHP: 7.2.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,8 +19,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `mysite`
+-- База данных: `docker`
 --
+CREATE DATABASE IF NOT EXISTS `docker` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `docker`;
 
 -- --------------------------------------------------------
 
@@ -44,27 +46,6 @@ INSERT INTO `category` (`id`, `name`, `sort_order`, `status`) VALUES
 (14, 'Планшеты', 2, 1),
 (15, 'Мониторы', 3, 1),
 (16, 'Игровые компьютеры', 4, 0);
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `comments`
---
-
-CREATE TABLE `comments` (
-  `id` int(11) NOT NULL,
-  `products_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `comment` varchar(255) CHARACTER SET utf8 NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Дамп данных таблицы `comments`
---
-
-INSERT INTO `comments` (`id`, `products_id`, `user_id`, `date`, `comment`) VALUES
-(6, 44, 21, '2018-05-16 19:04:17', 'First comment edited');
 
 -- --------------------------------------------------------
 
@@ -101,76 +82,7 @@ INSERT INTO `product` (`id`, `name`, `category_id`, `code`, `price`, `availabili
 (43, 'Gazer Tegra Note 7', 14, 683364, 210, 1, 'Gazer', 'Экран 7\" IPS (1280x800) емкостный Multi-Touch / NVIDIA Tegra 4 (1.8 ГГц) / RAM 1 ГБ / 16 ГБ встроенной памяти + поддержка карт памяти microSD / Wi-Fi / Bluetooth 4.0 / основная камера 5 Мп, фронтальная - 0.3 Мп / GPS / ГЛОНАСС / Android 4.4.2 (KitKat) / вес 320 г', 0, 0, 1),
 (44, 'Монитор 23', 15, 355025, 175, 1, 'Dell', 'С расширением Full HD Вы сможете рассмотреть мельчайшие детали. Dell E2314H предоставит Вам резкое и четкое изображение, с которым любая работа будет в удовольствие. Full HD 1920 x 1080 при 60 Гц разрешение (макс.)', 0, 0, 1),
 (45, 'Компьютер Everest Game ', 16, 1563832, 1320, 1, 'Everest', 'Everest Game 9085 — это компьютеры премимум класса, собранные на базе эксклюзивных компонентов, тщательно подобранных и протестированных лучшими специалистами нашей компании. Это топовый сегмент систем, который отвечает наилучшим характеристикам показателей качества и производительности.', 0, 0, 0),
-(46, 'Apple MacBook Pro 13 with Retina display Early 2015', 13, 456102, 1500, 1, 'Apple', 'Mac', 1, 1, 1),
-(47, 'Test', 14, 545, 454, 1, 'Test', 'Test', 1, 1, 1);
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `product_images`
---
-
-CREATE TABLE `product_images` (
-  `id` int(10) NOT NULL,
-  `products_id` int(10) NOT NULL,
-  `image` varchar(255) CHARACTER SET utf8 DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Дамп данных таблицы `product_images`
---
-
-INSERT INTO `product_images` (`id`, `products_id`, `image`) VALUES
-(40, 34, 'asusx200 4.jpg'),
-(41, 34, 'asusx200 5.jpg');
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `product_order`
---
-
-CREATE TABLE `product_order` (
-  `id` int(11) NOT NULL,
-  `user_name` varchar(255) NOT NULL,
-  `user_phone` varchar(255) NOT NULL,
-  `user_comment` text NOT NULL,
-  `user_id` int(11) DEFAULT NULL,
-  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `products` text NOT NULL,
-  `status` int(11) NOT NULL DEFAULT '1'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `product_order`
---
-
-INSERT INTO `product_order` (`id`, `user_name`, `user_phone`, `user_comment`, `user_id`, `date`, `products`, `status`) VALUES
-(49, 'Admin', '1234567891', 'Сделайте скидку админу', 4, '2017-12-21 08:06:21', '{\"34\":2,\"35\":2,\"36\":2}', 1),
-(50, 'test', '3211231231', '', 21, '2018-05-16 18:34:14', '{\"47\":2}', 1);
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `user`
---
-
-CREATE TABLE `user` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `image` varchar(255) DEFAULT '/upload/images/users/standart_noavatar.png',
-  `role` varchar(50) NOT NULL DEFAULT 'user',
-  `black_list` int(1) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `user`
---
-
-INSERT INTO `user` (`id`, `name`, `email`, `password`, `image`, `role`, `black_list`) VALUES
-(21, 'test', 'test@mail.ru', '$2y$10$TbRqGek7rMzP/qF1m5kBGepjbWQ1AQ7y78FzbHt0xf0KOAyiGHzKG', '/upload/images/users/standart_noavatar.png', 'user', 0);
+(46, 'Apple MacBook Pro 13 with Retina display Early 2015', 13, 456102, 1500, 1, 'Apple', 'Mac', 1, 1, 1);
 
 --
 -- Индексы сохранённых таблиц
@@ -183,34 +95,11 @@ ALTER TABLE `category`
   ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `comments`
---
-ALTER TABLE `comments`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Индексы таблицы `product`
 --
 ALTER TABLE `product`
-  ADD PRIMARY KEY (`id`);
-
---
--- Индексы таблицы `product_images`
---
-ALTER TABLE `product_images`
-  ADD PRIMARY KEY (`id`);
-
---
--- Индексы таблицы `product_order`
---
-ALTER TABLE `product_order`
-  ADD PRIMARY KEY (`id`);
-
---
--- Индексы таблицы `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `category_id` (`category_id`);
 
 --
 -- AUTO_INCREMENT для сохранённых таблиц
@@ -223,34 +112,20 @@ ALTER TABLE `category`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT для таблицы `comments`
---
-ALTER TABLE `comments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
 -- AUTO_INCREMENT для таблицы `product`
 --
 ALTER TABLE `product`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
--- AUTO_INCREMENT для таблицы `product_images`
+-- Ограничения внешнего ключа сохраненных таблиц
 --
-ALTER TABLE `product_images`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
--- AUTO_INCREMENT для таблицы `product_order`
+-- Ограничения внешнего ключа таблицы `product`
 --
-ALTER TABLE `product_order`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
-
---
--- AUTO_INCREMENT для таблицы `user`
---
-ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+ALTER TABLE `product`
+  ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

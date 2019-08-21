@@ -1,49 +1,38 @@
 <?php use Components\View\SimpleView;
 
 SimpleView::render('layouts/header_admin.php') ?>
-<section>
-    <div class="container">
-        <div class="row">
+<?= \Components\Helpers\Helpers::renderTitle('Edit category '.$options['category'] ['name']) ?>
 
-            <br/>
+<div class="row justify-content-center">
+    <?= \Components\Helpers\Helpers::renderError($options['errors']) ?>
 
-            <div class="breadcrumbs">
-                <ol class="breadcrumb">
-                    <li><a href="/admin">Home /</a></li>
-                    <li><a href="/admin/category">Category /</a></li>
-                    <li class="active">Edit</li>
-                </ol>
-            </div>
-
-
-            <h4>Edit category <?php echo $options['category'] ['name']; ?></h4>
-
-            <br/>
-
-            <div class="col-lg-4">
-                <div class="login-form">
-                    <form action="#" method="post">
-
-                        <p>Name</p>
-                        <input type="text" name="name" placeholder="" value="<?php echo $options['category']['name']; ?>">
-
-                        <p>Order number</p>
-                        <input type="text" name="sort_order" placeholder="" value="<?php echo $options['category']['sort_order']; ?>">
-
-                        <p>Status</p>
-                        <select name="status">
-                            <option value="1" <?php if ($options['category']['status'] == 1) echo ' selected="selected"'; ?>>Displayed</option>
-                            <option value="0" <?php if ($options['category']['status'] == 0) echo ' selected="selected"'; ?>>Hidden</option>
-                        </select>
-
-                        <br><br>
-
-                        <input type="submit" name="submit" class="btn btn-default" value="Save">
-                    </form>
+    <div class="col-xl-6 col-lg-8 col-md-12">
+        <div class="login-form">
+            <form action="" method="post">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" class="form-control" name="name" placeholder="Title" value="<?php echo $options['category']['name']; ?>">
                 </div>
-            </div>
+                <div class="form-group">
+                    <label>Order number</label>
+                    <input type="text" class="form-control" name="sort_order" value="<?php echo $options['category']['sort_order']; ?>"
+                           placeholder="Order number (numerical value)">
+                </div>
+                <fieldset class="form-group">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="1" <?=($options['product']['status'] == 1)?'checked':'' ?>  name="status"">
+                            Status
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="form-group text-center">
+                <input type="submit" name="submit" class="btn btn-primary" value="Save">
+                </div>
+            </form>
         </div>
     </div>
-</section>
+
+</div>
 <?php SimpleView::render('layouts/footer_admin.php') ?>
 

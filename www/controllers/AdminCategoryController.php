@@ -2,6 +2,7 @@
 
 namespace  Controllers;
 
+use Components\Helpers\Helpers;
 use Components\View\SimpleView;
 use Models\Category;
 
@@ -21,14 +22,13 @@ class AdminCategoryController
     public function create()
     {
 
-        foreach($_POST as $key=>$val){
-            $val=strip_tags($val);
-            $_POST[$key]=htmlspecialchars($val);
-        }
         if (isset($_POST['submit'])) {
+            foreach($_POST as $key=>$val){
+                $_POST[$key]=Helpers::sanitize($val);
+            }
             $name = $_POST['name'];
             $sortOrder = $_POST['sort_order'];
-            $status = $_POST['status'];
+            $status = empty($_POST['status'])?0:1;
 
             $errors = false;
 
@@ -49,16 +49,16 @@ class AdminCategoryController
 
     public function update($id)
     {
-        foreach($_POST as $key=>$val){
-            $val=strip_tags($val);
-            $_POST[$key]=htmlspecialchars($val);
-        }
+
         $category = Category::getCategoryById($id);
 
         if (isset($_POST['submit'])) {
+            foreach($_POST as $key=>$val){
+                $_POST[$key]=Helpers::sanitize($val);
+            }
             $name = $_POST['name'];
             $sortOrder = $_POST['sort_order'];
-            $status = $_POST['status'];
+            $status = empty($_POST['status'])?0:1;
 
             Category::updateCategoryById($id, $name, $sortOrder, $status);
 

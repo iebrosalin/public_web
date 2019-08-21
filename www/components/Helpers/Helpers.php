@@ -102,4 +102,9 @@ CONTENT;
 
         return $str;
     }
+
+    public static function sanitize($value)
+    {
+        return htmlspecialchars(strip_tags($value));
+    }
 }

@@ -17,12 +17,12 @@ SimpleView::render('layouts/header_admin.php') ?>
 
                             <div class="form-group">
                                 <label>Code</label>
-                                <input type="text" class="form-control" name="code" placeholder="Code">
+                                <input type="text" class="form-control" name="code" placeholder="Code (numerical value)">
                             </div>
 
                             <div class="form-group">
                                 <label>Price</label>
-                                <input type="text" class="form-control" name="price" placeholder="Price">
+                                <input type="text" class="form-control" name="price" placeholder="Price (numerical value)">
                             </div>
 
                             <div class="form-group">
@@ -51,25 +51,25 @@ SimpleView::render('layouts/header_admin.php') ?>
                             <fieldset class="form-group">
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="" name="availability">
+                                        <input class="form-check-input" type="checkbox" value="1" name="availability">
                                         Availability
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="" name="is_new">
+                                        <input class="form-check-input" type="checkbox" value="1" name="is_new">
                                         New
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="" name="is_recommended">
+                                        <input class="form-check-input" type="checkbox" value="1" name="is_recommended">
                                         Recommended
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" value="" name="status"">
+                                        <input class="form-check-input" type="checkbox" value="1" name="status"">
                                         Status
                                     </label>
                                 </div>

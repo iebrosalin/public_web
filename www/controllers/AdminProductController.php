@@ -2,6 +2,7 @@
 
 namespace Controllers;
 
+use Components\Helpers\Helpers;
 use Components\View\SimpleView;
 use Models\Category;
 use Models\Product;
@@ -22,21 +23,21 @@ class AdminProductController
     {
 
         $categoriesList = Category::getCategoriesListAdmin();
-        foreach($_POST as $key=>$val){
-            $val=strip_tags($val);
-            $_POST[$key]=htmlspecialchars($val);
-        }
+
         if (isset($_POST['submit'])) {
+            foreach($_POST as $key=>$val){
+                $_POST[$key]=Helpers::sanitize($val);
+            }
             $options['name'] = $_POST['name'];
             $options['code'] = $_POST['code'];
             $options['price'] = $_POST['price'];
             $options['category_id'] = $_POST['category_id'];
             $options['brand'] = $_POST['brand'];
-            $options['availability'] = $_POST['availability'];
             $options['description'] = $_POST['description'];
-            $options['is_new'] = $_POST['is_new'];
-            $options['is_recommended'] = $_POST['is_recommended'];
-            $options['status'] = $_POST['status'];
+            $options['availability'] = empty($_POST['availability'])?0:1;
+            $options['is_new'] =  empty($_POST['is_new'])?0:1;
+            $options['is_recommended'] = empty($_POST['is_recommended'])?0:1;
+            $options['status'] = empty($_POST['status'])?0:1;
 
             $errors = false;
 
@@ -68,27 +69,28 @@ class AdminProductController
 
     public function update($id)
     {
-        foreach($_POST as $key=>$val){
-            $val=strip_tags($val);
-            $_POST[$key]=htmlspecialchars($val);
-        }
-
         $categoriesList = Category::getCategoriesListAdmin();
 
         $product = Product::getProductById($id);
         if (isset($_POST['submit'])) {
-             $options['name'] = $_POST['name'];
+
+            foreach($_POST as $key=>$val){
+                $_POST[$key]=Helpers::sanitize($val);
+            }
+            $options['name'] = $_POST['name'];
             $options['code'] = $_POST['code'];
             $options['price'] = $_POST['price'];
             $options['category_id'] = $_POST['category_id'];
             $options['brand'] = $_POST['brand'];
-            $options['availability'] = $_POST['availability'];
             $options['description'] = $_POST['description'];
-            $options['is_new'] = $_POST['is_new'];
-            $options['is_recommended'] = $_POST['is_recommended'];
-            $options['status'] = $_POST['status'];
+            $options['availability'] = empty($_POST['availability'])?0:1;
+            $options['is_new'] =  empty($_POST['is_new'])?0:1;
+            $options['is_recommended'] = empty($_POST['is_recommended'])?0:1;
+            $options['status'] = empty($_POST['status'])?0:1;
 
             if (Product::updateProductById($id, $options)) {
+                $product = Product::getProductById($id);
+
             }
 
         }

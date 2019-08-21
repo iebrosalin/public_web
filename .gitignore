@@ -1,4 +1,5 @@
 /.idea
-/data/*
+/data/mysql
+/data/redis
 /www/vendor
 /logs/*

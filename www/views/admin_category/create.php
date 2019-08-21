@@ -2,62 +2,40 @@
 
 SimpleView::render('layouts/header_admin.php') ?>
 
-<section>
-    <div class="container">
-        <div class="row">
+<?= \Components\Helpers\Helpers::renderTitle('Add category') ?>
 
-            <br/>
+<div class="row justify-content-center">
+    <?= \Components\Helpers\Helpers::renderError($options['errors']) ?>
 
-            <div class="breadcrumbs">
-                <ol class="breadcrumb">
-                    <li><a href="/admin">Home /</a></li>
-                    <li><a href="/admin/category">Category /</a></li>
-                    <li class="active">Add</li>
-                </ol>
-            </div>
-
-
-            <h4>Add category</h4>
-
-            <br/>
-
-            <?php if (isset($options['errors']) && is_array($options['errors'])): ?>
-                <ul>
-                    <?php foreach ($options['errors'] as $error): ?>
-                        <li> <?php echo $error; ?></li>
-                    <?php endforeach; ?>
-                </ul>
-            <?php endif; ?>
-
-            <div class="col-lg-4">
-                <div class="login-form">
-                    <form action="#" method="post">
-
-                        <p>Name</p>
-                        <input type="text" name="name" placeholder="" value="">
-
-                        <p>Order number</p>
-                        <input type="text" name="sort_order" placeholder="" value="">
-
-                        <p>Status</p>
-                        <select name="status">
-                            <option value="1" selected="selected">Displayed</option>
-                            <option value="0">Hidden</option>
-                        </select>
-
-                        <br><br>
-
-                        <input type="submit" name="submit" class="btn btn-default" value="Save">
-                    </form>
+    <div class="col-xl-6 col-lg-8 col-md-12">
+        <div class="login-form">
+            <form action="" method="post">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" class="form-control" name="name" placeholder="Title">
                 </div>
-            </div>
-
-
+                <div class="form-group">
+                    <label>Order number</label>
+                    <input type="text" class="form-control" name="sort_order"
+                           placeholder="Order number (numerical value)">
+                </div>
+                <fieldset class="form-group">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="1" name="status"">
+                            Status
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="form-group text-center">
+                    <input type="submit" name="submit" class="btn btn-primary" value="Save">
+                </div>
+            </form>
         </div>
     </div>
-</section>
 
-<?php SimpleView::render('layouts/footer_admin.php') ?>
+</div>
+    <?php SimpleView::render('layouts/footer_admin.php') ?>
 
 
 

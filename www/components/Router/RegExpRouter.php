@@ -47,12 +47,12 @@ class RegExpRouter implements Router
 
         $segments=explode('@',$segments[1]);
         $action=$segments[0];
-        $param=(empty($segments[1]))?null:$segments[1];
+        $param=(empty($segments[1]))?[]:[$segments[1]];
 
         return [
           'controller'=>$controller,
           'action'=>$action,
-          'param' => []
+          'param' =>$param
         ];
     }
 

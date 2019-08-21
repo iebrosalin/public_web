@@ -16,8 +16,10 @@ use Components\Helpers\Helpers;
         color: #888888;
     }
 
-    .btn.btn-primary{
-        color: #ffffff;
+    .btn.btn-primary,
+    a.list-group-item.active:hover,
+    a.list-group-item.active {
+        color: #ffffff ;
     }
 </style>
 </head>
@@ -45,6 +47,11 @@ use Components\Helpers\Helpers;
                 <?= (  partUriMatch('/admin/category') )?'active':'' ?>
                 ">
                     <a class="nav-link" href="/admin/category/">Category</a>
+                </li>
+                <li class="nav-item
+                <?= (  partUriMatch('/admin/echo-request') )?'active':'' ?>
+                ">
+                    <a class="nav-link" href="/admin/echo-request/">Echo-request</a>
                 </li>
             </ul>
         </div>

@@ -12,5 +12,3 @@ composer:
 composer-prod:
 	docker-compose exec webserver composer install --no-dev
 	docker-compose exec webserver composer dumpautoload -o
-build:
-	docker-compose up -d --build

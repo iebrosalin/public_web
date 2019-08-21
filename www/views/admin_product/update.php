@@ -1,110 +1,83 @@
 <?php use Components\View\SimpleView;
 
 SimpleView::render('layouts/header_admin.php') ?>
-<section>
-    <div class="container">
-        <div class="row">
 
-            <br/>
+    <div class="row justify-content-center">
+        <?= \Components\Helpers\Helpers::renderError($options['errors'])?>
 
-            <div class="breadcrumbs">
-                <ol class="breadcrumb">
-                    <li><a href="/admin">Home /</a></li>
-                    <li ><a href="/admin/product">Products /</a></li>
-                    <li class="active">Edit</li>
-                </ol>
-            </div>
+        <div class="col-xl-6 col-lg-8 col-md-12">
+            <form  action="" method="post" enctype="multipart/form-data">
 
-
-            <h4>Edit product with id<?php echo $options['id']; ?></h4>
-
-            <br/>
-
-            <div class="col-lg-4">
-                <div class="login-form">
-                    <form action="#" method="post" enctype="multipart/form-data">
-
-                        <p>Name</p>
-                        <input type="text" name="name" placeholder="" value="<?php echo $options['product']['name']; ?>">
-
-
-                        <p>Code</p>
-                        <input type="text" name="code" placeholder="" value="<?php echo $options['product']['code']; ?>">
-                        <p>Price</p>
-                        <input type="text" name="price" placeholder="" value="<?php echo $options['product']['price']; ?>">
-
-                        <p>Category</p>
-                        <select name="category_id">
-                            <?php if (is_array($options['categoriesList'])): ?>
-                                <?php foreach ($options['categoriesList'] as $category): ?>
-                                    <option value="<?php echo $category['id']; ?>"
-                                        <?php if ($options['product']['category_id'] == $category['id']) echo ' selected="selected"'; ?>>
-                                        <?php echo $category['name']; ?>
-                                    </option>
-                                <?php endforeach; ?>
-                            <?php endif; ?>
-                        </select>
-
-                        <br/><br/>
-
-                        <p>Brand</p>
-                        <input type="text" name="brand" placeholder="" value="<?php echo $options['product']['brand']; ?>">
-
-                        <p>Image</p>
-                        <img src="<?php echo Product::getImage($options['product']['id']); ?>" width="200" alt="" />
-                        <div>
-                            <input type="file" name="image" placeholder="" value="">
-                        </div>
-                        <!--                        <br/>-->
-                        <!--                        <p>Gallery</p>-->
-                        <!--                        <input type="file" name="gallery" placeholder="" value="">-->
-
-                        <p>Description</p>
-                        <textarea name="description"><?php echo $options['product']['description']; ?></textarea>
-
-                        <br/><br/>
-
-                        <p>Availability</p>
-                        <select name="availability">
-                            <option value="1" <?php if ($options['product']['availability'] == 1) echo ' selected="selected"'; ?>>Yes</option>
-                            <option value="0" <?php if ($options['product']['availability'] == 0) echo ' selected="selected"'; ?>>No</option>
-                        </select>
-
-                        <br/><br/>
-
-                        <p>New</p>
-                        <select name="is_new">
-                            <option value="1" <?php if ($options['product']['is_new'] == 1) echo ' selected="selected"'; ?>>Yes</option>
-                            <option value="0" <?php if ($options['product']['is_new'] == 0) echo ' selected="selected"'; ?>>No</option>
-                        </select>
-
-                        <br/><br/>
-
-                        <p>Recomended</p>
-                        <select name="is_recommended">
-                            <option value="1" <?php if ($options['product']['is_recommended'] == 1) echo ' selected="selected"'; ?>>Yes</option>
-                            <option value="0" <?php if ($options['product']['is_recommended'] == 0) echo ' selected="selected"'; ?>>No</option>
-                        </select>
-
-                        <br/><br/>
-
-                        <p>Status</p>
-                        <select name="status">
-                            <option value="1" <?php if ($options['product']['status'] == 1) echo ' selected="selected"'; ?>>Displayed</option>
-                            <option value="0" <?php if ($options['product']['status'] == 0) echo ' selected="selected"'; ?>>Hidden</option>
-                        </select>
-
-                        <br/><br/>
-
-                        <input type="submit" name="submit" class="btn btn-default" value="Save">
-
-                        <br/><br/>
-
-                    </form>
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" class="form-control" name="name" placeholder="Title" value="<?php echo $options['product']['name']; ?>">
                 </div>
-            </div>
+
+                <div class="form-group">
+                    <label>Code</label>
+                    <input type="text" class="form-control" name="code" placeholder="Code (numerical value)" value="<?php echo $options['product']['code']; ?>">
+                </div>
+
+                <div class="form-group">
+                    <label>Price</label>
+                    <input type="text" class="form-control" name="price" placeholder="Price (numerical value)" value="<?php echo $options['product']['price']; ?>">
+                </div>
+
+                <div class="form-group">
+                    <label>Category</label>
+                    <select class="form-control" name="category_id">
+                        <?php if (is_array($options['categoriesList'])): ?>
+                            <?php foreach ($options['categoriesList'] as $category): ?>
+                                <option value="<?php echo $category['id']; ?>"
+                                    <?php if ($options['product']['category_id'] == $category['id']) echo ' selected="selected"'; ?>>
+                                    <?php echo $category['name']; ?>
+                                </option>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Brand</label>
+                    <input type="text" class="form-control" name="brand" placeholder="Brand" value="<?php echo $options['product']['brand']; ?>">
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea class="form-control" name="description" placeholder="Description"><?php echo $options['product']['description']; ?></textarea>
+                </div>
+
+                <fieldset class="form-group">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" value="1" <?=($options['product']['availability'] == 1)?'checked':'' ?> type="checkbox"  name="availability">
+                            Availability
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" value="1" <?=($options['product']['is_new'] == 1)?'checked':'' ?> type="checkbox"  name="is_new">
+                            New
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="1" <?=($options['product']['is_recommended'] == 1)?'checked':'' ?> name="is_recommended">
+                            Recommended
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="1" <?=($options['product']['status'] == 1)?'checked':'' ?> name="status"">
+                            Status
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="text-center">
+                    <input type="submit" name="submit" class="btn btn-primary" value="Save">
+                </div>
+            </form>
 
         </div>
     </div>
-</section>
 <?php SimpleView::render('layouts/footer_admin.php') ?>

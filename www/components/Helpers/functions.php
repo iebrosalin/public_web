@@ -24,3 +24,8 @@ function partUriMatch($uri)
     $uri=str_replace('/','\/',$uri);
     return preg_match('/'.$uri.'/',$_SERVER['REQUEST_URI']);
 }
+
+function redirect($uri)
+{
+    header("Location: ".$uri);
+}
