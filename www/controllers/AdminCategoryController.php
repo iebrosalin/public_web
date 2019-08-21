@@ -44,7 +44,9 @@ class AdminCategoryController
             }
         }
 
-        return SimpleView::render('admin_category/create.php');
+        return SimpleView::render('admin_category/create.php',[
+            'errors'=>$errors
+        ]);
     }
 
     public function update($id)

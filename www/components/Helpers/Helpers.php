@@ -93,9 +93,13 @@ ITEM;
 
             }
             $str=<<<CONTENT
+<div class="row justify-content-center">
+<div class="col-xl-6 col-lg-8 col-md-12">
 <div class="alert alert-dismissible alert-secondary">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
     $list
+</div>
+</div>
 </div>
 CONTENT;
         }

@@ -1,9 +1,9 @@
 <?php use Components\View\SimpleView;
 
 SimpleView::render('layouts/header_admin.php') ?>
+<?= \Components\Helpers\Helpers::renderError($options['errors'])?>
 
     <div class="row justify-content-center">
-        <?= \Components\Helpers\Helpers::renderError($options['errors'])?>
 
         <div class="col-xl-6 col-lg-8 col-md-12">
             <form  action="" method="post" enctype="multipart/form-data">
