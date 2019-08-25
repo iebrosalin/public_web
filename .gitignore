@@ -1,0 +1,5 @@
+/.idea
+/www/vendor/
+/data/
+/logs/apache2/other_vhosts_access.log
+/logs/apache2/error.log
