@@ -1,2 +1,3 @@
 /.idea
-/vendor
+/www/src/vendor
+/www/src/composer.json

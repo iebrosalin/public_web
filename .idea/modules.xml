@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/HandbookPostgresql.iml" filepath="$PROJECT_DIR$/.idea/HandbookPostgresql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/testEmailCheck.iml" filepath="$PROJECT_DIR$/.idea/testEmailCheck.iml" />
     </modules>
   </component>
 </project>
