@@ -115,6 +115,19 @@
             $('div[view]').html(data);
             console.log('Данные от сервера для последнего шага формы');
             console.log(data);
+            socket.disconnect();
+        });
+        socket.on('connect_failed', function() {
+            $('div[view]').html('<h4>Oops..... connect_failed</h4>');
+        });
+        socket.on('reconnect_failed', function() {
+            $('div[view]').html('<h4>Oops..... reconnect_failed</h4>');
+        });
+        socket.on('error', function() {
+            $('div[view]').html('<h4>Oops..... error</h4>');
+        });
+        socket.on('connect_failed', function() {
+            $('div[view]').html('<h4>Oops..... connect_failed</h4>');
         });
     });
 </script>
