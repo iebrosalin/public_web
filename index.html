@@ -41,7 +41,7 @@
 <div class="container">
     <div class="row min-vh-100 justify-content-center align-items-center">
 
-        <div class="col-xl-8 col-md-10 col-sm-12 " view >
+        <div class="col-xl-5 col-md-5 col-sm-10 " view >
             <ul class=" mb-5 nav nav-pills" nav >
                 <li class="nav-item">
                     <a class="nav-link active">Step 1</a>
@@ -61,7 +61,7 @@
                         </div>
                         <div class="form-group">
                             <label >Срок действия карты</label>
-                            <input type="text" class="form-control" name="dateCard" placeholder="Срок действия картыl">
+                            <input type="text" class="form-control" name="dateCard" placeholder="Срок действия карты">
                         </div>
                         <div class="form-group">
                             <label >CCV</label>
@@ -78,10 +78,10 @@
 
 
 </body>
-<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
 <script>
     $(function () {
-        var socket = io();
+        var socket = io('http://localhost:3000/');
         $('form[step1]').submit(function(e){
             e.preventDefault(); // prevents page reloading
             socket.emit('form step 1', {
