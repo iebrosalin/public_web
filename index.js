@@ -1,6 +1,8 @@
 var app = require('express')();
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
+var sleep = require('thread-sleep');
+
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
@@ -18,6 +20,7 @@ io.on('connection', function (socket) {
     socket.on('form step 1', function (msg) {
         console.log('data form step 1: ');
         console.log(msg);
+        var res = sleep(2000);
         socket.emit('form step 1', '<ul class=" mb-5 nav nav-pills" nav >\n' +
             '                <li class="nav-item">\n' +
             '                    <a class="nav-link">Step 1</a>\n' +
