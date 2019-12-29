@@ -15,15 +15,27 @@ Node js - это не моя прихоть, впервый раз на ноде
 
 <details>
   <summary>Gif demo</summary>
+  
   ![gif demo][GifDemo]
 </details>
 <details>
   <summary>Screenshots</summary>
+  
   ![first step screenshot][FirstStep]
+  
   ![second step screenshot][SecondStep]
+  
   ![third step screenshot][ThirdStep]
+  
   ![fourth step screenshot][FourthStep]
 </details>
+
+License
+----
+MIT
+
+**Free Software, Hell Yeah!**
+
 
 [GifDemo]:<https://github.com/iebrosalin/web/blob/backend/pure_php/form_websocket/descriptions/demo.gif>
 [FirstStep]:<https://github.com/iebrosalin/web/blob/backend/pure_php/form_websocket/descriptions/first_step.png>
