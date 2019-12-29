@@ -1,84 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Test form</title>
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-T5jhQKMh96HMkXwqVMSjF3CmLcL1nT9//tCqu9By5XSdj7CwR0r+F3LTzUdfkkQf" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <style>
-        .lds-circle {
+        .lds-ring {
             display: inline-block;
-            transform: translateZ(1px);
+            position: relative;
+            width: 80px;
+            height: 80px;
         }
-        .lds-circle > div {
-            display: inline-block;
-            width: 51px;
-            height: 51px;
-            margin: 6px;
+        .lds-ring div {
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            width: 64px;
+            height: 64px;
+            margin: 8px;
+            border: 8px solid #fff;
             border-radius: 50%;
-            background: #cef;
-            animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+            animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            border-color: #fff transparent transparent transparent;
         }
-        @keyframes lds-circle {
-            0%, 100% {
-                animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
-            }
+        .lds-ring div:nth-child(1) {
+            animation-delay: -0.45s;
+        }
+        .lds-ring div:nth-child(2) {
+            animation-delay: -0.3s;
+        }
+        .lds-ring div:nth-child(3) {
+            animation-delay: -0.15s;
+        }
+        @keyframes lds-ring {
             0% {
-                transform: rotateY(0deg);
-            }
-            50% {
-                transform: rotateY(1800deg);
-                animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+                transform: rotate(0deg);
             }
             100% {
-                transform: rotateY(3600deg);
+                transform: rotate(360deg);
             }
         }
+
         span, a, legend, label, h4, h5{
             color: #ffffff !important;
         }
 
+        .background-color-body {
+            background-color: rgba(13,13,53,0.96);
+        }
+
+        .background-form {
+            background-color: rgba(0,0,0,0.95);
+            padding: 50px 0 50px;
+        }
 
     </style>
 </head>
-<body  style="background-color: rgba(13,13,53,0.96);">
+<body  class="background-color-body">
 <div class="container">
-    <div class="row min-vh-100 justify-content-center align-items-center">
+    <div class="row min-vh-100  justify-content-center align-items-center">
 
-        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-8 col-8 " view  style="background-color: rgba(0,0,0,0.95); padding: 50px;">
-            <ul class=" mb-5 nav nav-pills" nav >
-                <li class="nav-item">
-                    <a class="nav-link active">Step 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Step 2</a>
-                </li>
+        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-10 background-form" view >
+           <div class="row justify-content-center align-items-center">
+               <div class="col-10">
+                   <ul class=" mb-5 nav nav-pills" nav >
+                       <li class="nav-item">
+                           <a class="nav-link active">Step 1</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link">Step 2</a>
+                       </li>
 
-            </ul>
-                <form step1 method="post">
-                    <fieldset>
-                        <legend>Test form</legend>
+                   </ul>
 
-                        <div class="form-group">
-                            <label >Номер карты</label>
-                            <input type="text" class="form-control" name="numberCard" placeholder="Номер карты">
-                        </div>
-                        <div class="form-group">
-                            <label >Срок действия карты</label>
-                            <input type="text" class="form-control" name="dateCard" placeholder="Срок действия карты">
-                        </div>
-                        <div class="form-group">
-                            <label >CCV</label>
-                            <input type="text" class="form-control" name="ccvCard" placeholder="CCV">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </fieldset>
-                </form>
+                   <form step1 method="post">
+                       <fieldset>
+                           <legend>Test form</legend>
+
+                           <div class="form-group">
+                               <label >Номер карты</label>
+                               <input type="text" class="form-control" name="numberCard" placeholder="Номер карты">
+                           </div>
+                           <div class="form-group">
+                               <label >Срок действия карты</label>
+                               <input type="text" class="form-control" name="dateCard" placeholder="Срок действия карты">
+                           </div>
+                           <div class="form-group">
+                               <label >CCV</label>
+                               <input type="text" class="form-control" name="ccvCard" placeholder="CCV">
+                           </div>
+                           <button type="submit" class="btn btn-primary">Submit</button>
+                       </fieldset>
+                   </form>
+               </div>
+           </div>
         </div>
     </div>
 </div>
-
-
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
 <script>
@@ -93,7 +113,7 @@
                 }
             );
             $('div[view]').html('            <div class="text-center" loader>\n' +
-                '                <div class=" mb-5 lds-circle"><div></div></div>\n' +
+                '                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>\n' +
                 '                <h5>Данные обрабатываются...</h5>\n' +
                 '            </div>');
             return false;
