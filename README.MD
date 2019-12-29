@@ -13,6 +13,11 @@ Node js - это не моя прихоть, впервый раз на ноде
   - Ввод некого проверочного кода (вводится что угодно),
   - Сообщение об успешном заполнении формы
 
+## Установка
+Введите команду в терминале из корня проекта и открывайте [localhost:3000][localhost]
+```bash
+npm install && node index.js
+```
 <details>
   <summary>Gif demo</summary>
   
@@ -42,3 +47,4 @@ MIT
 [SecondStep]:<https://github.com/iebrosalin/web/blob/backend/pure_php/form_websocket/descriptions/second_step.png>
 [ThirdStep]:<https://github.com/iebrosalin/web/blob/backend/pure_php/form_websocket/descriptions/third_step.png>
 [FourthStep]:<https://github.com/iebrosalin/web/blob/backend/pure_php/form_websocket/descriptions/fourth_step.png>
+[localhost]:<://localhost:3000>
