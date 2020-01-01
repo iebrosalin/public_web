@@ -80,16 +80,16 @@
                            <legend>Test form</legend>
 
                            <div class="form-group">
-                               <label >Номер карты</label>
-                               <input type="text" class="form-control" name="numberCard" placeholder="Номер карты">
+                               <label>Card number</label>
+                               <input type="text" class="form-control" name="numberCard" placeholder="Card number  (anything string)">
                            </div>
                            <div class="form-group">
-                               <label >Срок действия карты</label>
-                               <input type="text" class="form-control" name="dateCard" placeholder="Срок действия карты">
+                               <label >Card expiry date</label>
+                               <input type="text" class="form-control" name="dateCard" placeholder="Card expiry date  (anything string)">
                            </div>
                            <div class="form-group">
                                <label >CCV</label>
-                               <input type="text" class="form-control" name="ccvCard" placeholder="CCV">
+                               <input type="text" class="form-control" name="ccvCard" placeholder="CCV (anything string)">
                            </div>
                            <button type="submit" class="btn btn-primary">Submit</button>
                        </fieldset>
@@ -105,7 +105,7 @@
     $(function () {
         var socket = io('http://localhost:3000/');
         $('form[step1]').submit(function(e){
-            e.preventDefault(); // prevents page reloading
+            e.preventDefault();
             socket.emit('form step 1', {
                 numberCard: $('input[name="numberCard"]').val(),
                 dateCard: $('input[name="dateCard"]').val(),
@@ -114,29 +114,44 @@
             );
             $('div[view]').html('            <div class="text-center" loader>\n' +
                 '                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>\n' +
-                '                <h5>Данные обрабатываются...</h5>\n' +
+                '                <h5>Data is being processed ...</h5>\n' +
                 '            </div>');
             return false;
         });
 
-        socket.on('form step 1', (data) => {
-            $('div[view]').html(data);
+        socket.on('form step 1', function(data){
+            var layout = '<ul class=" mb-5 nav nav-pills" nav >\n' +
+                '                <li class="nav-item">\n' +
+                '                    <a class="nav-link">Step 1</a>\n' +
+                '                </li>\n' +
+                '                <li class="nav-item">\n' +
+                '                    <a class="nav-link active">Step 2</a>\n' +
+                '                </li>\n' +
+                '\n' +
+                '            </ul>\n' +
+                '                <form step2 method="post">\n' +
+                '                    <fieldset>\n' +
+                '                        <legend>Enter verify code</legend>\n' +
+                '\n' +
+                '                        <div class="form-group">\n' +
+                '                            <label >Code</label>\n' +
+                '                            <input type="text" class="form-control" name="code" placeholder="Code (anything string)">\n' +
+                '                        </div>\n' +
+                '                        <button type="submit" class="btn btn-primary">Submit</button>\n' +
+                '                    </fieldset>\n' +
+                '                </form>';
+            $('div[view]').html(layout);
             $('form[step2]').submit(function(e){
                 e.preventDefault();
-                socket.emit('form step 2', {
-                        code: $('input[name="code"]').val(),
-                    }
-                );
-
+                socket.emit('form step 2', {code: $('input[name="code"]').val()});
                 return false;
-            });
-            console.log('Данные от сервера для второго шага формы');
-            console.log(data);
+                }
+            );
         });
-        socket.on('form step 2', (data) => {
-            $('div[view]').html(data);
-            console.log('Данные от сервера для последнего шага формы');
-            console.log(data);
+        socket.on('form step 2',function(data) {
+            var layout = '<h5>Success. \n' +
+                'In order to return to reset the form, refresh the page.</h5>';
+            $('div[view]').html(layout);
             socket.disconnect();
         });
         socket.on('connect_failed', function() {
