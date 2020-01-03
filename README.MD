@@ -19,14 +19,14 @@ Node.js - это не моя прихоть, впервый раз на ноде
 npm install && node index.js
 ```
 В последний раз тестировал на node.js v13.5.0.
-## Demo
+## Демо
 <details>
-  <summary>Gif demo</summary>
+  <summary>Gif демо</summary>
   
   ![gif demo][GifDemo]
 </details>
 <details>
-  <summary>Screenshots</summary>
+  <summary>Скриншоты</summary>
   
   ![first step screenshot][FirstStep]
   
