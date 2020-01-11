@@ -1,0 +1,6 @@
+@import "constants";
+
+footer.footer {
+  @extend %fixedPreset;
+  bottom: 0;
+}

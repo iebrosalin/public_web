@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Simple game</title>
+</head>
+
+<body>
+	<header class="header">
+		<h1><%= htmlWebpackPlugin.options.title %></h1>
+	</header>
+	<main class="main-container">
+		<section  class="pictures">
+			<div class="aspect-ratio-container">
+				<div class="overlay-container">
+					<div class="lds-circle">
+						<div></div>
+					</div>
+					<p class="text-overlay">Generate pair of pictures...</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		Built at:
+		<%= htmlWebpackPlugin.options.buildTime %>
+	</footer>
+</body>
+</html>

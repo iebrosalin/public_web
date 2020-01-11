@@ -1,0 +1,6 @@
+@import "constants";
+
+.header {
+  @extend %fixedPreset;
+  top:0;
+}

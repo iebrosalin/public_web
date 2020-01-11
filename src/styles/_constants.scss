@@ -1,0 +1,30 @@
+//colors
+$backgroundColor: rgba(0, 0, 0, 0.9);
+$loaderColor: #fff;
+$textOverlayColor: #fff;
+$backgroundOverlayColor: rgba(0,0,0,.9);
+
+//header and footer
+%fixedPreset {
+  width: 100%;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  color: white;
+  background-color: black;
+  z-index: 999999;
+}
+
+//body
+%bodyPreset{
+  background-color: $backgroundColor;
+  margin: 0;
+}
+
+
+//main
+%mainPreset{
+  margin: 0 10% 0 10%;
+  padding: 100px 0 0 0;
+}
+

@@ -1,0 +1,11 @@
+@import "constants";
+
+body{
+  @extend  %bodyPreset;
+}
+
+
+.main-container {
+  @extend  %mainPreset;
+}
+
