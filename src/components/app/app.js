@@ -7,6 +7,7 @@ import ItemStatusFilter from '../item-status-filter';
 import ItemAddForm from '../item-add-form';
 
 import './app.css';
+import './bootstrap.min.css';
 
 export default class App extends Component{
   constructor(){
