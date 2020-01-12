@@ -14,10 +14,10 @@
   <summary>Frontend</summary>
   
   Для меня frontend является дополнительным, но обязательным умением. В моём опыте коммерческой работе были я исполнял роль backend-разработчика, так что почти всегда я имел готовую вёрстку или существующий проект из-за чего задачи были наподобии что-то добавить или доработать.
+  
  <details>
   <summary>Пара слов о истории развития сферы умений</summary>
  </details> 
- 
   
   |Название                      | Js                       |CSS                     |Статус   |
   |------------------------      |--------------------------|------------------------|---------|
@@ -25,7 +25,7 @@
   |[ToDo][ToDo]                  |React                     | bootstrap              |заморожен|
   |[Star Wars wiki][StarWarsWiki]|React + HOC               | bootstrap              |заморожен|
   |[Re store][ReStore]           |React + HOC + Redux       | bootstrap              |заморожен|
-  |[Sandbox build][ReStore]      |pure js + babel + webpack | pure SCSS              |заморожен|
+  |[Sandbox build][SandboxBuild] |pure js + babel + webpack | pure SCSS              |заморожен|
 </details>   
 
 
