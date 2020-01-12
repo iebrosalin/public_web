@@ -16,7 +16,7 @@ Node.js - это не моя прихоть, впервый раз на ноде
 ## Установка
 Введите команду в терминале из корня проекта и открывайте [localhost:3000][localhost]
 ```bash
-npm install && node index.js
+npm install && npm run start
 ```
 В последний раз тестировал на node.js v13.5.0.
 ## Демо
