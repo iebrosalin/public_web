@@ -28,11 +28,13 @@
   |[Sandbox build][ReStore]      |pure js + babel + webpack | pure SCSS              |заморожен|
 </details>   
 
+
+## [Список всех моих проектов][ListAllMyProject]
+
 License
 ----
 MIT
 
-## [Список всех моих проектов][ListAllMyProject]
 
 [FormWS]:<https://github.com/iebrosalin/public_web/tree/frontend/form_websocket>
 [ToDo]:<https://github.com/iebrosalin/public_web/tree/frontend/react/bura/todo>
