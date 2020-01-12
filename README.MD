@@ -20,11 +20,19 @@ npm install && npm run start
 ```
 В последний раз тестировал на node.js v13.5.0.
 ## Демо
+
 <details>
   <summary>Gif демо</summary>
   
   ![gif demo][GifDemo]
 </details>
+
+<details>
+  <summary>Gif демо адаптивности</summary>
+  
+  ![gif adaptive demo][GifAdaptiveDemo]
+</details>
+
 <details>
   <summary>Скриншоты</summary>
   
@@ -37,19 +45,36 @@ npm install && npm run start
   ![fourth step screenshot][FourthStep]
 </details>
 
+<details>
+  <summary>Скриншоты демо адаптивности</summary>
+  
+  ![xl][XL]
+  
+  ![lg][LG]
+  
+  ![md][MD]
+  
+  ![xs][XS]
+</details>
 ## [Список всех моих проектов][ListAllMyProject]
 
 License
 ----
 MIT
 
-
 [ListAllMyProject]:<https://github.com/iebrosalin/all_public_projects>
 
+[GifDemo]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/form_websocket/descriptions/demo.gif>
+[GifAdaptiveDemo]:<https://github.com/iebrosalin/public_web/blob/frontend/form_websocket/descriptions/adaptive_demo.gif>
 
-[GifDemo]:<https://github.com/iebrosalin/web/blob/backend/pure_php/form_websocket/descriptions/demo.gif>
-[FirstStep]:<https://github.com/iebrosalin/web/blob/backend/pure_php/form_websocket/descriptions/first_step.png>
-[SecondStep]:<https://github.com/iebrosalin/web/blob/backend/pure_php/form_websocket/descriptions/second_step.png>
-[ThirdStep]:<https://github.com/iebrosalin/web/blob/backend/pure_php/form_websocket/descriptions/third_step.png>
-[FourthStep]:<https://github.com/iebrosalin/web/blob/backend/pure_php/form_websocket/descriptions/fourth_step.png>
+[FirstStep]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/form_websocket/descriptions/first_step.png>
+[SecondStep]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/form_websocket/descriptions/second_step.png>
+[ThirdStep]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/form_websocket/descriptions/third_step.png>
+[FourthStep]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/form_websocket/descriptions/fourth_step.png>
+
+[XL]:<https://github.com/iebrosalin/public_web/blob/frontend/form_websocket/descriptions/xl.png>
+[LG]:<https://github.com/iebrosalin/public_web/blob/frontend/form_websocket/descriptions/lg.png>
+[MD]:<https://github.com/iebrosalin/public_web/blob/frontend/form_websocket/descriptions/md.png>
+[XS]:<https://github.com/iebrosalin/public_web/blob/frontend/form_websocket/descriptions/xs.png>
+
 [localhost]:<http://localhost:3000>
