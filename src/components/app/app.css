@@ -1,8 +1,15 @@
-.todo-app {
-  margin: 2rem auto 0 auto;
-  max-width: 400px;
+.button-row {
+  margin: 0 0 1rem 0;
 }
 
-.top-panel {
-  margin: 1rem 0;
+.button-row button {
+  margin-right: 1rem;
+}
+
+.stardb-app .row {
+  margin-bottom: 1rem;
+}
+
+.login-row {
+
 }

@@ -1,4 +1,21 @@
-Todo application
------
+CONTEXT
+--------
 
-В папке build открыть index.html. Всё, "Todo application" открыто)
+<App>
+  <Provider value={chatService}>
+    <HomePage>
+      <Dashboard>
+        <NewNotifications>
+        </NewNotifications>
+      </Dashboard>
+    </HomePage>
+  
+    <SupportPage>
+      <MyOpenTickets />
+      <TeamSpace>
+        <Chat>
+        </Chat>
+      </TeamSpace>
+    </SupportPage>
+  </Provider>
+</App>

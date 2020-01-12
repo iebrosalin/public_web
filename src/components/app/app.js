@@ -1,124 +1,96 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-import AppHeader from '../app-header';
-import SearchPanel from '../search-panel';
-import TodoList from '../todo-list';
-import ItemStatusFilter from '../item-status-filter';
-import ItemAddForm from '../item-add-form';
+import Header from '../header';
+import RandomPlanet from '../random-planet';
+import ErrorBoundry from '../error-boundry';
+import SwapiService from '../../services/swapi-service';
+import DummySwapiService from '../../services/dummy-swapi-service';
+
+import {
+  PeoplePage,
+  PlanetsPage,
+  StarshipsPage,
+  // LoginPage,
+  // SecretPage
+} from '../pages';
+
+import { SwapiServiceProvider } from '../swapi-service-context';
 
 import './app.css';
+import './bootstrap.min.css';
 
-export default class App extends Component{
-  constructor(){
-      super();
-      this.deleteItem=(id)=>{
-          this.setState(({todoData})=>{
-              const idx= todoData.findIndex((el)=>el.id===id);
-              const newArray=[...todoData.slice(0,idx), ...todoData.slice (idx+1)];
-              return {todoData:newArray};
-          });
-      };
+import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
+import StarshipDetails from '../sw-components/starship-details';
 
-      this.addItem=(text)=>{
-          this.setState(({todoData})=>{
-              const newArray=[...todoData, this.createTodoItem(text)];
-              return {todoData:newArray};
-          });
-      }
+export default class App extends Component {
 
-      this.onToggleDone= (id)=>{
-          this.setState(({todoData})=>{
-              return {todoData:this.toggleProperty(todoData,id,'done')};
-          });
-      }
-
-      this.onToggleImportant= (id)=>{
-          this.setState(({todoData})=> {
-              return {todoData:this.toggleProperty(todoData,id,'important')};
-          });
-      }
-
-      this.onSearchChange=(term)=>{
-          this.setState(({todoData})=> {
-              return {term};
-          });
-      }
-      this.onFilterChange=(filter)=>{
-          this.setState(({todoData})=> {
-              return {filter};
-          });
-      }
-}
-
-  state={
-      todoData:[
-          this.createTodoItem('Drink Coffee'),
-          this.createTodoItem('Make Awesome App'),
-          this.createTodoItem('Drink Coffee'),
-      ],
-      term:'',
-      filter: 'active', //active, all done
+  state = {
+    swapiService: new SwapiService(),
+    isLoggedIn: false
   };
-    toggleProperty(arr, id, propName){
 
-        const idx= arr.findIndex((el)=>el.id===id);
-        const oldItem=arr[idx];
-        const newItem={...oldItem, [propName]: !oldItem[propName]};
+  // onLogin = () => {
+  //   this.setState({
+  //     isLoggedIn: true
+  //   });
+  // };
 
-        return [...arr.slice(0,idx),newItem ,...arr.slice (idx+1)];
+  onServiceChange = () => {
+    this.setState(({ swapiService }) => {
+      const Service = swapiService instanceof SwapiService ?
+                        DummySwapiService : SwapiService;
+      return {
+        swapiService: new Service()
+      };
+    });
+  };
 
-    };
-    createTodoItem(label){
-        return {label:label, done: false, important:false, id: Math.round(Math.random()*10000)};
-    }
-    search(items, term){
-        if(term==='') return items;
-         return items.filter((item)=>{
-            return item.label.toLowerCase().indexOf(term.toLowerCase())>-1;
-        })
-    }
-    filter(items, filter){
-        switch(filter){
-            case 'all':
-                return items;
-            case 'active':
-                return items.filter((item)=> !item.done);
-            case 'done':
-                return items.filter((item)=>item.done);
-            default:
-                return items;
-        }
-    }
-  render(){
-      const {todoData, term, filter}=this.state;
-      const visibleItems = this.filter(this.search(todoData, term),filter);
-      const doneCount=visibleItems.filter((el)=> el.done).length;
-      const todoCount=visibleItems.length - doneCount;
+  render() {
 
+    // const { isLoggedIn } = this.state;
 
-      return (
-          <div className="todo-app">
-              <AppHeader toDo={todoCount} done={doneCount} />
-              <div className="top-panel d-flex">
-                  <SearchPanel
-                  onSearchChange={this.onSearchChange}/>
-                  <ItemStatusFilter
-                      filter={filter}
-                      onFilterChange={this.onFilterChange}/>
-              </div>
+    return (
+      <ErrorBoundry>
+        <SwapiServiceProvider value={this.state.swapiService} >
+          <Router>
+            <div className="stardb-app">
+              <Header onServiceChange={this.onServiceChange} />
+              <RandomPlanet />
 
-              <TodoList
-                  todos={visibleItems}
-                  onDeleted={this.deleteItem}
-                  onToggleImportant={this.onToggleImportant}
-                  onToggleDone={this.onToggleDone}
-              />
-          <ItemAddForm
-              onItemAdded={this.addItem}
-          />
-          </div>
-      );
+              <Switch>
+                <Route path="/"
+                       render={() => <h2>Welcome to StarDB</h2>}
+                       exact />
+                <Route path="/people/:id?" component={PeoplePage} />
+                <Route path="/planets" component={PlanetsPage} />
+                <Route path="/starships" exact component={StarshipsPage} />
+                <Route path="/starships/:id"
+                       render={({ match }) => {
+                         const { id } = match.params;
+                         return <StarshipDetails itemId={id} />
+                       }}/>
+
+                {/*<Route*/}
+                {/*  path="/login"*/}
+                {/*  render={() => (*/}
+                {/*    <LoginPage*/}
+                {/*      isLoggedIn={isLoggedIn}*/}
+                {/*      onLogin={this.onLogin}/>*/}
+                {/*  )}/>*/}
+
+                {/*<Route*/}
+                {/*  path="/secret"*/}
+                {/*  render={() => (*/}
+                {/*    <SecretPage isLoggedIn={isLoggedIn} />*/}
+                {/*  )}/>*/}
+
+                <Route render={() => <h2>Page not found</h2>} />
+              </Switch>
+
+            </div>
+          </Router>
+        </SwapiServiceProvider>
+      </ErrorBoundry>
+    );
   }
-
-};
-
+}
