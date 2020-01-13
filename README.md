@@ -1,5 +1,26 @@
 # Star Wars wiki
 
+
+<details>
+  <summary>Запуск production-версии</summary>
+   
+   ```bash
+   npm install && npm run build && npm install -g serve && serve -s build
+   ```
+   
+   Откройте в браузере [localhost:5000][LocalhostProduction] и наслаждайтесь.
+</details>
+
+<details>
+  <summary>Запуск dev-версии</summary>
+    
+    ```bash
+       npm install && npm run start
+    ```
+    
+   Откройте в браузере [localhost:3000][LocalhostDev] и наслаждайтесь.
+</details>
+
  <details>
   <summary>Gif demo desctop version</summary>
   
@@ -45,6 +66,9 @@ License
 MIT
 
 [ListAllMyProject]:<https://github.com/iebrosalin/all_public_projects>
+
+[LocalhostDev]:<http://localhost:3000>
+[LocalhostProduction]:<http://localhost:5000>
 
 [DesctopDemo]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/star-wars-db/descriptions/gif/adaptive/desctop/desctop_demo.gif>
 [MobileDemo]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/star-wars-db/descriptions/gif/adaptive/phone/phone_demo.gif>
