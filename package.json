@@ -1,7 +1,7 @@
 {
-  "name": "simple_game",
+  "name": "sandbox_build",
   "version": "1.0.0",
-  "description": "Sandbox",
+  "description": "Sandbox build",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -11,7 +11,8 @@
   "author": "IEBrosalin",
   "license": "ISC",
   "dependencies": {
-    "core-js": "^3.6.2"
+    "core-js": "^3.6.2",
+    "serve": "^11.3.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.7",
