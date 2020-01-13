@@ -51,6 +51,9 @@ MIT
 
 [Demo]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/todo/descriptions/gif/demo.gif>
 
+[LocalhostDev]:<http://localhost:3000>
+[LocalhostProduction]:<http://localhost:5000>
+
 [Screen1]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/todo/descriptions/screens/1.png>
 [Screen2]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/todo/descriptions/screens/2.png>
 [Screen3]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/todo/descriptions/screens/3.png>
