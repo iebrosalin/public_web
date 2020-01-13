@@ -5,8 +5,9 @@ export default class ItemAddForm extends Component{
     state={
         label:'',
     }
-    constructor(){
-        super();
+
+    constructor(props){
+        super(props);
         this.onLabelChange=(e)=>{
             this.setState({
                 label:e.target.value,
@@ -14,6 +15,9 @@ export default class ItemAddForm extends Component{
         }
         this.onSubmit=(e)=>{
             e.preventDefault();
+            if(this.state.label === ''){
+                return;
+            }
             this.props.onItemAdded(this.state.label);
             this.setState({
                 label:'',

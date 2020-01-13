@@ -10,8 +10,8 @@ import './app.css';
 import './bootstrap.min.css';
 
 export default class App extends Component{
-  constructor(){
-      super();
+    constructor(props){
+      super(props);
       this.deleteItem=(id)=>{
           this.setState(({todoData})=>{
               const idx= todoData.findIndex((el)=>el.id===id);
