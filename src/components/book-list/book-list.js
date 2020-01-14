@@ -15,19 +15,19 @@ import './book-list.css';
 
 const BookList = ({ books, onAddedToCart }) => {
   return (
-    <ul className="book-list">
+    <div className="row book-list">
       {
-        books.map((book) => {
-          return (
-            <li key={book.id}>
+      books.map((book) => {
+        return (
+            <div className="col-md-6 col-sm-12" key={book.id}>
               <BookListItem
-                book={book}
-                onAddedToCart={() => onAddedToCart(book.id)}/>
-            </li>
-          );
-        })
-      }
-    </ul>
+                  book={book}
+                  onAddedToCart={() => onAddedToCart(book.id)}/>
+            </div>
+        );
+      })
+    }
+    </div>
   );
 };
 
