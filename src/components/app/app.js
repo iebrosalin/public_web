@@ -4,6 +4,7 @@ import ShopHeader from '../shop-header';
 import { HomePage, CartPage } from '../pages';
 
 import './app.css';
+import './bootstrap.min.css';
 
 const App = () => {
   return (
@@ -14,11 +15,6 @@ const App = () => {
           path="/"
           component={HomePage}
           exact />
-
-        <Route
-          path="/cart"
-          component={CartPage}
-          />
       </Switch>
     </main>
   );

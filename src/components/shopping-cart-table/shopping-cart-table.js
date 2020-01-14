@@ -9,6 +9,7 @@ import {
 import './shopping-cart-table.css';
 
 const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) => {
+    console.log(items);
   const renderRow = (item, idx) => {
     const { id, title, count, total } = item;
     return (
@@ -41,7 +42,7 @@ const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) =
   return (
     <div className="shopping-cart-table">
       <h2>Your Order</h2>
-      <table className="table">
+      <table className="table text-center">
         <thead>
           <tr>
             <th>#</th>
@@ -58,7 +59,9 @@ const ShoppingCartTable = ({ items, total, onIncrease, onDecrease, onDelete }) =
       </table>
 
       <div className="total">
-        Total: ${total}
+        Total: ${items.reduce(function(accumulator, item, index, array) {
+          return accumulator + item.total;
+      }, 0)}
       </div>
     </div>
   );
