@@ -20,12 +20,13 @@
  </details> 
   
   |Название                      | Js                       |CSS                     |Статус   |
-  |------------------------      |--------------------------|------------------------|---------|
-  |[Form websocket][FormWS]      |pure js                   | bootstrap              |заморожен|
-  |[ToDo][ToDo]                  |React                     | bootstrap              |заморожен|
-  |[Star Wars wiki][StarWarsWiki]|React + HOC               | bootstrap              |заморожен|
-  |[Re store][ReStore]           |React + HOC + Redux       | bootstrap              |заморожен|
-  |[Sandbox build][SandboxBuild] |pure js + babel + webpack | pure SCSS              |заморожен|
+  |------------------------------|--------------------------|------------------------|---------|
+  |[Form websocket][FormWS]      |pure js                   | Bootstrap              |заморожен|
+  |[ToDo][ToDo]                  |React                     | Bootstrap              |заморожен|
+  |[Star Wars wiki][StarWarsWiki]|React + HOC               | Bootstrap              |заморожен|
+  |[Re store][ReStore]           |React + HOC + Redux       | Bootstrap              |заморожен|
+  |[Sandbox build][SandboxBuild] |pure js + babel + webpack | SCSS                   |заморожен|
+  |[React hooks][ReactHooks]     |React hooks               | Bootstrap              |заморожен|
 </details>   
 
 
@@ -41,5 +42,6 @@ MIT
 [StarWarsWiki]:<https://github.com/iebrosalin/public_web/tree/frontend/react/bura/star-wars-db>
 [ReStore]:<https://github.com/iebrosalin/public_web/tree/frontend/react/bura/re-store>
 [SandboxBuild]:<https://github.com/iebrosalin/public_web/tree/frontend/sandbox-build>
+[ReactHooks]:<https://github.com/iebrosalin/public_web/tree/frontend/react/bura/hooks>
 
 [ListAllMyProject]:<https://github.com/iebrosalin/all_public_projects>
