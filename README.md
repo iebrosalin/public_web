@@ -1,32 +1,61 @@
 # Web
 
-В процессе наполнения.
+<details>
+  <summary>Запуск production-версии</summary>
+   
+   ```bash
+   npm install && npm run build && npm install -g serve && serve -s build
+   ```
+   
+   Откройте в браузере [localhost:5000][LocalhostProduction] и наслаждайтесь.
+</details>
 
 <details>
-  <summary>Backend</summary>
+  <summary>Запуск dev-версии</summary>
+    
+    ```bash
+       npm install && npm run start
+    ```
+    
+   Откройте в браузере [localhost:3000][LocalhostDev] и наслаждайтесь.
+</details>
+
+### Демонстрационный материал
+
+<details>
+  <summary>Full gif demo</summary>
   
-  |Название                |Статус|
-  |------------------------|------|
-  |                        |      |
+  ![full demo][FullDemo]
 </details>  
 
 <details>
-  <summary>Frontend</summary>
+  <summary>useState gif demo</summary>
   
-  Для меня frontend является дополнительным, но обязательным умением. В моём опыте коммерческой работе были я исполнял роль backend-разработчика, так что почти всегда я имел готовую вёрстку или существующий проект из-за чего задачи были наподобии что-то добавить или доработать.
+  ![useState demo][UseStateDemo]
+</details>  
+
+<details>
+  <summary>useEffect notification gif demo</summary>
   
- <details>
-  <summary>Пара слов о истории развития сферы умений</summary>
- </details> 
+  ![useEffect notification demo][UseEffectNotification]
+</details>  
+
+<details>
+  <summary>useEffect person name gif demo</summary>
   
-  |Название                      | Js                       |CSS                     |Статус   |
-  |------------------------      |--------------------------|------------------------|---------|
-  |[Form websocket][FormWS]      |pure js                   | bootstrap              |заморожен|
-  |[ToDo][ToDo]                  |React                     | bootstrap              |заморожен|
-  |[Star Wars wiki][StarWarsWiki]|React + HOC               | bootstrap              |заморожен|
-  |[Re store][ReStore]           |React + HOC + Redux       | bootstrap              |заморожен|
-  |[Sandbox build][SandboxBuild] |pure js + babel + webpack | pure SCSS              |заморожен|
-</details>   
+  ![useEffect person name demo][UseEffectPersonName]
+</details>  
+
+<details>
+  <summary>Скриншоты</summary>
+  
+  ![screen 1][Screens1]
+  ![screen 2][Screens2]
+  ![screen 3][Screens3]
+  ![screen 4][Screens4]
+  ![screen 5][Screens5]
+  ![screen 6][Screens6]
+</details>  
 
 
 ## [Список всех моих проектов][ListAllMyProject]
@@ -35,11 +64,16 @@ License
 ----
 MIT
 
-
-[FormWS]:<https://github.com/iebrosalin/public_web/tree/frontend/form_websocket>
-[ToDo]:<https://github.com/iebrosalin/public_web/tree/frontend/react/bura/todo>
-[StarWarsWiki]:<https://github.com/iebrosalin/public_web/tree/frontend/react/bura/star-wars-db>
-[ReStore]:<https://github.com/iebrosalin/public_web/tree/frontend/react/bura/re-store>
-[SandboxBuild]:<https://github.com/iebrosalin/public_web/tree/frontend/sandbox-build>
-
 [ListAllMyProject]:<https://github.com/iebrosalin/all_public_projects>
+
+[FullDemo]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/hooks/descriptions/gif/full_demo.gif>
+[UseStateDemo]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/hooks/descriptions/gif/useState_demo.gif>
+[UseEffectNotification]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/hooks/descriptions/gif/useEffect_notification_demo.gif>
+[UseEffectPersonName]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/hooks/descriptions/gif/useEffect_person_name_demo.gif>
+
+[Screens1]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/hooks/descriptions/screens/1.png>
+[Screens2]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/hooks/descriptions/screens/2.png>
+[Screens3]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/hooks/descriptions/screens/3.png>
+[Screens4]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/hooks/descriptions/screens/4.png>
+[Screens5]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/hooks/descriptions/screens/5.png>
+[Screens6]:<https://github.com/iebrosalin/public_web/blob/frontend/react/bura/hooks/descriptions/screens/6.png>
