@@ -1,4 +1,4 @@
-# Web
+# React hooks
 
 <details>
   <summary>Запуск production-версии</summary>
