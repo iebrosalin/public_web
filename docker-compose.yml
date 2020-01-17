@@ -4,7 +4,7 @@ services:
   webserver:
     build: 
       context: bin/webserver
-    container_name: '7.2.x-webserver'
+    container_name: '7.4.x-webserver'
     restart: 'always'
     ports:
       - ${HOST_MACHINE_UNSECURE_HOST_PORT}:80
@@ -17,7 +17,7 @@ services:
       - ${VHOSTS_DIR-./config/vhosts}:/etc/apache2/sites-enabled
       - ${LOG_DIR-./logs/apache2}:/var/log/apache2
     environment:
-      DEBUG_APP_MODE: ${DEBUG_APP_MODE}
+      DEBUG_APP_MODE: ${DEBUG_APP}
       DB_HOST: ${DB_HOST}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -25,8 +25,9 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
 
   mysql:
-    build: bin/mysql
-    container_name: '5.7-mysql'
+    build:
+      context: "./bin/${DATABASE}"
+    container_name: 'mysql'
     restart: 'always'
     ports:
       - ${HOST_MACHINE_MYSQL_PORT}:3306
@@ -38,6 +39,7 @@ services:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: 'sc-phpmyadmin'
