@@ -1,7 +1,11 @@
-<?php use Components\View\SimpleView;
+<?php
+
+use \Components\Helpers\Helpers;
+use \Components\View\SimpleView;
 
 SimpleView::render('layouts/header_admin.php') ?>
-<?= \Components\Helpers\Helpers::renderError($options['errors'])?>
+
+<?= Helpers::renderError($options['errors'])?>
 
     <div class="row justify-content-center">
 
@@ -15,12 +19,12 @@ SimpleView::render('layouts/header_admin.php') ?>
 
                 <div class="form-group">
                     <label>Code</label>
-                    <input type="text" class="form-control" name="code" placeholder="Code (numerical value)" value="<?php echo $options['product']['code']; ?>">
+                    <input type="number" class="form-control" name="code" placeholder="Code (numerical value)" value="<?php echo $options['product']['code']; ?>" required>
                 </div>
 
                 <div class="form-group">
                     <label>Price</label>
-                    <input type="text" class="form-control" name="price" placeholder="Price (numerical value)" value="<?php echo $options['product']['price']; ?>">
+                    <input type="number" class="form-control" name="price" placeholder="Price (numerical value)" value="<?php echo $options['product']['price']; ?>" required>
                 </div>
 
                 <div class="form-group">

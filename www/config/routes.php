@@ -24,7 +24,7 @@ return array(
     'admin/echo-request/post' => '\Controllers\AdminEchoRequestController#post',
     'admin/echo-request' => '\Controllers\AdminEchoRequestController#index',
 
-    '404'=>'\Controllers\Errors#error404',
+    '404'=>'\Controllers\Error#error404',
 
     'admin' => '\Controllers\AdminController#index',
     '' => '\Controllers\AdminController#index',

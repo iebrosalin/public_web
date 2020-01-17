@@ -4,5 +4,5 @@ namespace Components\Interfaces;
 
 interface Router
 {
-    public function routed();
+    public function route();
 }

@@ -6,7 +6,7 @@ namespace Components\Helpers;
 
 class Helpers
 {
-    public static function renderBreadcrumb()
+    public static function renderBreadcrumb(): string
     {
         $uri=$_SERVER['REQUEST_URI'];
         $segments=explode('/',$uri);
@@ -27,60 +27,58 @@ class Helpers
             if((count($segments)-1)===$i)
             {
                 $list.=<<<ITEM
-    <li class="breadcrumb-item active">$name</li>
+                    <li class="breadcrumb-item active">$name</li>
 ITEM;
             }
             else
             {
                 $list.=<<<ITEM
-    <li class="breadcrumb-item"><a href="$href">$name</a></li>
+                    <li class="breadcrumb-item"><a href="$href">$name</a></li>
 ITEM;
             }
-
-
         }
 
         $str=<<<CONTENT
-    <div class="row justify-content-start">
-            <div class="col-auto">
-                <div>
-                <ol class="breadcrumb mt-3">
-                    $list
-                </ol>
+             <div class="row justify-content-start">
+                <div class="col-auto">
+                    <div>
+                    <ol class="breadcrumb mt-3">
+                        $list
+                    </ol>
+                    </div>
                 </div>
             </div>
-        </div>
 CONTENT;
 
         return $str;
     }
 
-    public static function  renderTitle($title)
+    public static function  renderTitle($title): string
     {
         return <<<CONTENT
             <div class="row">
-        <div class="col text-center">
-            <h4>$title</h4>
-        </div>
-    </div>
+                <div class="col text-center">
+                   <h4>$title</h4>
+                </div>
+            </div>
 CONTENT;
 
     }
 
-    public static function renderBtnCreate($title)
+    public static function renderBtnCreate($title): string
     {
         $href=$_SERVER['REQUEST_URI'];
         $href= (mb_substr($href,-1)==='/')?$href.'create':'/create';
         return <<<CONTENT
-    <div class="row">
-        <div class="col">
-        <a href="$href" class="btn btn-default back mb-2"><i class="fa fa-plus"></i>$title</a>
-        </div>
-    </div>
+            <div class="row">
+                <div class="col">
+                    <a href="$href" class="btn btn-default back mb-2"><i class="fa fa-plus"></i>$title</a>
+                </div>
+            </div>
 CONTENT;
     }
 
-    public static function renderError($errors)
+    public static function renderError($errors): string
     {
         $str='';
         if (isset($errors) && is_array($errors))
@@ -88,19 +86,19 @@ CONTENT;
             $list='';
             foreach ($errors as $v){
                 $list.=<<<ITEM
-    <p>$v</p>
+                <p>$v</p>
 ITEM;
 
             }
             $str=<<<CONTENT
-<div class="row justify-content-center">
-<div class="col-xl-6 col-lg-8 col-md-12">
-<div class="alert alert-dismissible alert-secondary">
-  <button type="button" class="close" data-dismiss="alert">&times;</button>
-    $list
-</div>
-</div>
-</div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-8 col-md-12">
+                        <div class="alert alert-dismissible alert-secondary">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            $list
+                        </div>
+                    </div>
+                </div>
 CONTENT;
         }
 

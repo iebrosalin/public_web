@@ -1,9 +1,12 @@
-<?php use Components\View\SimpleView;
+<?php
+
+use \Components\Helpers\Helpers;
+use \Components\View\SimpleView;
 
 SimpleView::render('layouts/header_admin.php') ?>
 
-<?= \Components\Helpers\Helpers::renderTitle('Add category') ?>
-<?= \Components\Helpers\Helpers::renderError($options['errors']) ?>
+<?php echo Helpers::renderTitle('Add category') ?>
+<?php echo Helpers::renderError($options['errors']) ?>
 
 <div class="row justify-content-center">
 
@@ -12,12 +15,12 @@ SimpleView::render('layouts/header_admin.php') ?>
             <form action="" method="post">
                 <div class="form-group">
                     <label>Title</label>
-                    <input type="text" class="form-control" name="name" placeholder="Title">
+                    <input type="text" class="form-control" name="name" placeholder="Title" required>
                 </div>
                 <div class="form-group">
                     <label>Order number</label>
-                    <input type="text" class="form-control" name="sort_order"
-                           placeholder="Order number (numerical value)">
+                    <input type="number" class="form-control" name="sort_order"
+                           placeholder="Order number (numerical value)" required>
                 </div>
                 <fieldset class="form-group">
                     <div class="form-check">

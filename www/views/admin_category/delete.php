@@ -1,8 +1,11 @@
-<?php use Components\View\SimpleView;
+<?php
+
+use \Components\Helpers\Helpers;
+use Components\View\SimpleView;
 
 SimpleView::render('layouts/header_admin.php') ?>
 
-<?= \Components\Helpers\Helpers::renderTitle('Delete category id '.$options['id'])?>
+<?php echo Helpers::renderTitle('Delete category id '.$options['id'])?>
 <div class="row">
     <div class="col text-center">
         <p>Are you sure?</p>

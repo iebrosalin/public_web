@@ -1,4 +1,6 @@
-<?php use Components\View\SimpleView;
+<?php
+
+use Components\View\SimpleView;
 
 SimpleView::render('layouts/header_admin.php') ?>
     <div class="row justify-content-center">

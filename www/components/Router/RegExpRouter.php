@@ -2,8 +2,9 @@
 
 namespace Components\Router;
 
-use Components\App;
 use Components\Interfaces\Router;
+use Controllers\Error as Error;
+use Exception;
 
 class RegExpRouter implements Router
 {
@@ -12,19 +13,10 @@ class RegExpRouter implements Router
 
     public function __construct()
     {
-        $routesPath = root() . '/config/routes.php';
-        $this->routes = include($routesPath);
+        $this->routes = include root().'/config/routes.php';
     }
 
-    private function getURI()
-    {
-        if (!empty($_SERVER['REQUEST_URI'])) {
-            return trim($_SERVER['REQUEST_URI'], '/');
-        }
-    }
-
-
-    public function routed()
+    public function route()
     {
         $uri = $this->getURI();
 
@@ -32,11 +24,22 @@ class RegExpRouter implements Router
             if (preg_match("~$uriPattern~", $uri)) {
                 $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
                 $options=$this->extract($internalRoute);
-                if (false==@call_user_func_array(array(new $options['controller'], $options['action']), $options['param'])) {
-                    call_user_func_array(array(new \Controllers\Errors(), 'error404'),[]);
+                try {
+                    if (false == @call_user_func_array(array(new $options['controller'], $options['action']), $options['param'])) {
+                        call_user_func_array(array(new Error(), 'error404'), []);
+                    }
+                }  catch (Exception $error){
+                    call_user_func_array(array(new Error(), 'error500'), [$error->getMessage()]);
                 }
                 break;
             }
+        }
+    }
+
+    private function getURI(): string
+    {
+        if (!empty($_SERVER['REQUEST_URI'])) {
+            return trim($_SERVER['REQUEST_URI'], '/');
         }
     }
 

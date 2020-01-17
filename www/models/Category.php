@@ -25,6 +25,15 @@ class Category
         return $categoryList;
     }
 
+    public static function getCountCategories()
+    {
+        $db = Db::getConnection();
+
+        $result = $db->query('SELECT COUNT(id) as count FROM category');
+
+        return $result->fetch();
+    }
+
     public static function getCategoriesListAdmin()
     {
         $db = Db::getConnection();

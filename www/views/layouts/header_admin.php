@@ -7,21 +7,12 @@ use Components\Helpers\Helpers;
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Cutted-admin panel</title>
+    <title>Slim admin panel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/minty/bootstrap.min.css" rel="stylesheet" integrity="sha384-9NlqO4dP5KfioUGS568UFwM3lbWf3Uj3Qb7FBHuIuhLoDp3ZgAqPE1/MYLEBPZYM" crossorigin="anonymous">
+    <link href="/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="/styles/styles.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<style>
-    .btn, .btn:hover {
-        color: #888888;
-    }
 
-    .btn.btn-primary,
-    a.list-group-item.active:hover,
-    a.list-group-item.active {
-        color: #ffffff ;
-    }
-</style>
 </head>
 <body>
 <header>

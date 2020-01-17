@@ -2,6 +2,7 @@
 
 namespace Controllers;
 
+use Components\Db\Db;
 use Components\View\SimpleView;
 
 class AdminController
@@ -9,7 +10,19 @@ class AdminController
 
     public function index()
     {
-        return SimpleView::render('admin/index.php');
+
+        $tables = Db::checkExistDb();
+
+        if(empty($tables)){
+            Db::importDefaultDb();
+            $tables = Db::checkExistDb();
+        }
+
+        $options = [
+            "tables" => $tables
+        ];
+
+        return SimpleView::render('admin/index.php', $options);
     }
 
 }
