@@ -1,11 +1,15 @@
 <?php
+declare(strict_types=1);
 
 
 namespace Controllers;
 
-
 use Components\View\SimpleView;
 
+/**
+ * Class Error
+ * @package Controllers
+ */
 class Error
 {
     public function error404()
@@ -13,6 +17,9 @@ class Error
         SimpleView::render('errors/404.php');
     }
 
+    /**
+     * @param string $message
+     */
     public function error500(string $message)
     {
         $options = [

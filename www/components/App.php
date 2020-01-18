@@ -1,20 +1,24 @@
 <?php
+declare(strict_types=1);
 
 
 namespace Components;
 
-
 use Components\Router\RegExpRouter;
 
+/**
+ * Class App
+ * @package Components
+ */
 class App
 {
-    private static $app;
-
+    /**
+     * run all project
+     */
     public static function run()
     {
         putenv("ROOT_DIRECTORY=".dirname(__DIR__));
-        self::$app=new Main\Main(new RegExpRouter());
-        self::$app->run();
+        $main =new Main\Main(new RegExpRouter());
+        $main->run();
     }
-
 }

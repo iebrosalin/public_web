@@ -1,34 +1,45 @@
 <?php
+declare(strict_types=1);
 
 namespace  Components\Db;
 
+use Exception;
 use PDO;
 
-
-class Db
+/**
+ * Class Db
+ * @package Components\Db
+ */
+class Db implements \Components\Interfaces\Db
 {
 
+    /**
+     * @return PDO
+     */
     public static function getConnection(): PDO
     {
-        $params = include(root().'/config/db_params.php');
+        $params = include root().'/config/db_params.php';
 
         $dsn = "mysql:host={$params['host']};dbname={$params['dbname']};charset=utf8";
-        $options = array(
+        $options = [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_STATEMENT_CLASS => array('\Components\Db\MyPDOStatement', array()),
-        );
-        $db = new PDO($dsn, $params['user'], $params['password'],$options);
+            PDO::ATTR_STATEMENT_CLASS => ['\Components\Db\MyPDOStatement', []],
+        ];
+        $db = new PDO($dsn, $params['user'], $params['password'], $options);
 
         $db->exec("set names utf8");
 
         return $db;
     }
 
+    /**
+     * @return array
+     */
     public static function checkExistDb(): array
     {
         $db = self::getConnection();
 
-        $params = include(root() . '/config/db_params.php');
+        $params = include root() . '/config/db_params.php';
 
         $sql = 'SHOW TABLES FROM `' . $params["dbname"] . '`';
 
@@ -36,7 +47,7 @@ class Db
         $result->execute();
 
 
-        $tables = array();
+        $tables = [];
         for ($i = 0; $row = $result->fetch(); ++$i) {
             $tables[$i] = $row [0];
         }
@@ -44,32 +55,34 @@ class Db
         return $tables;
     }
 
+    /**
+     * @throws Exception
+     */
     public static function importDefaultDb()
     {
-            $db = self::getConnection();
+        $db = self::getConnection();
 
-            $templine = '';
-            $lines = file(root() . '/mysql.sql');
+        $temp_line = '';
+        $lines = file(root() . '/mysql.sql');
 
-            $db->beginTransaction();
+        $db->beginTransaction();
         try {
             foreach ($lines as $line) {
                 // Skip it if it's a comment
                 if (substr($line, 0, 2) == '--' || $line == '') {
                     continue;
                 }
-                $templine .= $line;
+                $temp_line .= $line;
 
                 if (substr(trim($line), -1, 1) == ';') {
-                    $db->exec($templine);
-                    $templine = '';
+                    $db->exec($temp_line);
+                    $temp_line = '';
                 }
             }
             $db->commit();
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             $db->rollBack();
             throw $e;
         }
     }
 }
-

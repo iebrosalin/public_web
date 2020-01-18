@@ -2,9 +2,7 @@
     color: #888888;
 }
 
-.btn.btn-primary,
-a.list-group-item.active:hover,
-a.list-group-item.active {
+.btn.btn-primary {
     color: #ffffff ;
 }
 .navbar{

@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 use \Components\Helpers\Helpers;
 use \Components\View\SimpleView;
@@ -15,12 +16,16 @@ SimpleView::render('layouts/header_admin.php') ?>
             <form action="" method="post">
                 <div class="form-group">
                     <label>Title</label>
-                    <input type="text" class="form-control" name="name" placeholder="Title" required>
+                    <label>
+                        <input type="text" class="form-control" name="name" placeholder="Title" required>
+                    </label>
                 </div>
                 <div class="form-group">
                     <label>Order number</label>
-                    <input type="number" class="form-control" name="sort_order"
-                           placeholder="Order number (numerical value)" required>
+                    <label>
+                        <input type="number" class="form-control" name="sort_order"
+                               placeholder="Order number (numerical value)" required>
+                    </label>
                 </div>
                 <fieldset class="form-group">
                     <div class="form-check">

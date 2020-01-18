@@ -1,25 +1,29 @@
 <?php
+declare(strict_types=1);
 
 
 namespace Components\View;
 
-
-use Components\App;
 use Components\Interfaces\View;
-use Exception;
 
+/**
+ * Class SimpleView
+ * @package Components\View
+ */
 class SimpleView implements View
 {
-    public static function render($path, $options=[])
+    /**
+     * @param string $path
+     * @param array $options
+     * @return bool|mixed
+     */
+    public static function render(string $path, array $options=[])
     {
         $pathToFile=view().'/'.$path;
-            if(file_exists($pathToFile)){
-                require_once $pathToFile;
-                return true;
-            }
-            else{
-                return false;
-            }
-
+        if (file_exists($pathToFile)) {
+            include_once $pathToFile;
+            return true;
+        }
+        return false;
     }
 }

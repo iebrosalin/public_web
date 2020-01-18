@@ -1,4 +1,6 @@
 <?php
+/** @noinspection DuplicatedCode */
+declare(strict_types=1);
 
 namespace Controllers;
 
@@ -7,9 +9,15 @@ use Components\View\SimpleView;
 use Models\Category;
 use Models\Product;
 
+/**
+ * Class AdminProductController
+ * @package Controllers
+ */
 class AdminProductController
 {
-
+    /**
+     * @return bool|mixed
+     */
     public function index()
     {
         $productsList = Product::getProductsList();
@@ -19,13 +27,15 @@ class AdminProductController
         ]);
     }
 
+    /**
+     * @return bool|mixed
+     */
     public function create()
     {
-
         $categoriesList = Category::getCategoriesListAdmin();
 
         if (isset($_POST['submit'])) {
-            foreach($_POST as $key=>$val){
+            foreach ($_POST as $key=>$val) {
                 $_POST[$key]=Helpers::sanitize($val);
             }
             $options['name'] = $_POST['name'];
@@ -39,42 +49,46 @@ class AdminProductController
             $options['is_recommended'] = empty($_POST['is_recommended'])?0:1;
             $options['status'] = empty($_POST['status'])?0:1;
 
-            $errors = false;
+            $errors = [];
 
             if (!isset($options['name']) || empty($options['name'])) {
                 $errors[] = 'Заполните поля';
             }
 
-            if ($errors == false) {
-
+            if (empty($errors)) {
                 $id = Product::createProduct($options);
 
                 if ($id) {
                     if (is_uploaded_file($_FILES["image"]["tmp_name"])) {
                         move_uploaded_file($_FILES["image"]["tmp_name"], $_SERVER['DOCUMENT_ROOT'] . "/upload/images/products/{$id}.jpg");
                     }
-                };
+                }
 
                 header("Location: /admin/product");
             }
         }
 
 
-        return SimpleView::render('admin_product/create.php',
+        return SimpleView::render(
+            'admin_product/create.php',
             [
                 'categoriesList'=>$categoriesList,
                 'errors'=>$errors,
-            ]);
+            ]
+        );
     }
 
+    /**
+     * @param $id
+     * @return bool|mixed
+     */
     public function update($id)
     {
         $categoriesList = Category::getCategoriesListAdmin();
 
         $product = Product::getProductById($id);
         if (isset($_POST['submit'])) {
-
-            foreach($_POST as $key=>$val){
+            foreach ($_POST as $key=>$val) {
                 $_POST[$key]=Helpers::sanitize($val);
             }
             $options['name'] = $_POST['name'];
@@ -90,28 +104,30 @@ class AdminProductController
 
             if (Product::updateProductById($id, $options)) {
                 $product = Product::getProductById($id);
-
             }
-
         }
 
-        return  SimpleView::render('admin_product/update.php',
+        return  SimpleView::render(
+            'admin_product/update.php',
             [
                 'categoriesList'=>$categoriesList,
                 'product'=>$product,
                 'id'=>$id
-            ]);
+            ]
+        );
     }
 
+    /**
+     * @param $id
+     * @return bool|mixed
+     */
     public function delete($id)
     {
-
         if (isset($_POST['submit'])) {
             Product::deleteProductById($id);
             header("Location: /admin/product");
         }
 
-        return SimpleView::render('admin_product/delete.php',['id'=>$id]);
+        return SimpleView::render('admin_product/delete.php', ['id'=>$id]);
     }
-
 }

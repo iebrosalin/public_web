@@ -1,4 +1,7 @@
-<?php use Components\View\SimpleView;
+<?php
+declare(strict_types=1);
+
+use Components\View\SimpleView;
 
 SimpleView::render('layouts/header_admin.php') ?>
 <div class="mt-5">

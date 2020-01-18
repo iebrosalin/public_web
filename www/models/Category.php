@@ -1,46 +1,27 @@
 <?php
+declare(strict_types=1);
 
 namespace Models;
 
 use Components\Db\Db;
 use PDO;
 
+/**
+ * Class Category
+ * @package Models
+ */
 class Category
 {
-
-
-    public static function getCategoriesList()
-    {
-        $db = Db::getConnection();
-
-        $result = $db->query('SELECT id, name FROM category WHERE status = "1" ORDER BY sort_order, name ASC');
-
-        $i = 0;
-        $categoryList = array();
-        while ($row = $result->fetch()) {
-            $categoryList[$i]['id'] = $row['id'];
-            $categoryList[$i]['name'] = $row['name'];
-            $i++;
-        }
-        return $categoryList;
-    }
-
-    public static function getCountCategories()
-    {
-        $db = Db::getConnection();
-
-        $result = $db->query('SELECT COUNT(id) as count FROM category');
-
-        return $result->fetch();
-    }
-
-    public static function getCategoriesListAdmin()
+    /**
+     * @return array
+     */
+    public static function getCategoriesListAdmin(): array
     {
         $db = Db::getConnection();
 
         $result = $db->query('SELECT id, name, sort_order, status FROM category ORDER BY sort_order ASC');
 
-        $categoryList = array();
+        $categoryList = [];
         $i = 0;
         while ($row = $result->fetch()) {
             $categoryList[$i]['id'] = $row['id'];
@@ -52,7 +33,11 @@ class Category
         return $categoryList;
     }
 
-    public static function deleteCategoryById($id)
+    /**
+     * @param $id
+     * @return bool
+     */
+    public static function deleteCategoryById($id): bool
     {
         $db = Db::getConnection();
 
@@ -63,7 +48,14 @@ class Category
         return $result->execute();
     }
 
-    public static function updateCategoryById($id, $name, $sortOrder, $status)
+    /**
+     * @param int $id
+     * @param string $name
+     * @param int $sortOrder
+     * @param int $status
+     * @return bool
+     */
+    public static function updateCategoryById(int $id, string $name, int $sortOrder, int $status): bool
     {
         $db = Db::getConnection();
 
@@ -82,7 +74,11 @@ class Category
         return $result->execute();
     }
 
-    public static function getCategoryById($id)
+    /**
+     * @param int $id
+     * @return mixed
+     */
+    public static function getCategoryById(int $id): array
     {
         $db = Db::getConnection();
 
@@ -98,19 +94,25 @@ class Category
         return $result->fetch();
     }
 
-    public static function getStatusText($status)
+    /**
+     * @param $status
+     * @return string
+     */
+    public static function getStatusText($status): string
     {
-        switch ($status) {
-            case '1':
-                return 'Отображается';
-                break;
-            case '0':
-                return 'Скрыта';
-                break;
+        if ($status == '1') {
+            return 'Visible';
         }
+        return 'Hidden';
     }
 
-    public static function createCategory($name, $sortOrder, $status)
+    /**
+     * @param string $name
+     * @param int $sortOrder
+     * @param int $status
+     * @return bool
+     */
+    public static function createCategory(string $name, int  $sortOrder, int $status): bool
     {
         $db = Db::getConnection();
 
@@ -123,5 +125,4 @@ class Category
         $result->bindParam(':status', $status, PDO::PARAM_INT);
         return $result->execute();
     }
-
 }

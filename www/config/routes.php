@@ -1,6 +1,7 @@
 <?php
+declare(strict_types=1);
 
-return array(
+return [
 
     'admin/product/create' => '\Controllers\AdminProductController#create',
     'admin/product/update/([0-9]+)' => '\Controllers\AdminProductController#update@$1',
@@ -28,4 +29,4 @@ return array(
 
     'admin' => '\Controllers\AdminController#index',
     '' => '\Controllers\AdminController#index',
-);
+];

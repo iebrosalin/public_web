@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace  Controllers;
 
@@ -6,24 +7,28 @@ use Components\Helpers\Helpers;
 use Components\View\SimpleView;
 use Models\Category;
 
+/**
+ * Class AdminCategoryController
+ * @package Controllers
+ */
 class AdminCategoryController
 {
-
     public function index()
     {
         $categoriesList = Category::getCategoriesListAdmin();
 
-        return SimpleView::render('admin_category/index.php',
+        return SimpleView::render(
+            'admin_category/index.php',
             [
                 'categoriesList'=>$categoriesList
-            ]);
+            ]
+        );
     }
 
     public function create()
     {
-
         if (isset($_POST['submit'])) {
-            foreach($_POST as $key=>$val){
+            foreach ($_POST as $key=>$val) {
                 $_POST[$key]=Helpers::sanitize($val);
             }
             $name = $_POST['name'];
@@ -44,18 +49,17 @@ class AdminCategoryController
             }
         }
 
-        return SimpleView::render('admin_category/create.php',[
+        return SimpleView::render('admin_category/create.php', [
             'errors'=>$errors
         ]);
     }
 
     public function update($id)
     {
-
         $category = Category::getCategoryById($id);
 
         if (isset($_POST['submit'])) {
-            foreach($_POST as $key=>$val){
+            foreach ($_POST as $key=>$val) {
                 $_POST[$key]=Helpers::sanitize($val);
             }
             $name = $_POST['name'];
@@ -67,24 +71,24 @@ class AdminCategoryController
             header("Location: /admin/category");
         }
 
-        return  SimpleView::render('admin_category/update.php',
+        return  SimpleView::render(
+            'admin_category/update.php',
             [
                 'id'=>$id,
                 'category'=>$category,
-            ]);
+            ]
+        );
     }
 
 
-    public function delete($id)
+    public function delete(int $id)
     {
-
         if (isset($_POST['submit'])) {
             Category::deleteCategoryById($id);
             header("Location: /admin/category");
         }
 
 
-        return SimpleView::render('admin_category/delete.php',['id'=>$id]);
+        return SimpleView::render('admin_category/delete.php', ['id'=>$id]);
     }
-
 }

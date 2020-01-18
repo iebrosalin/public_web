@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 use \Components\Helpers\Helpers;
 use Components\View\SimpleView;

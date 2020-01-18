@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 use \Components\Helpers\Helpers;
 use \Components\View\SimpleView;
@@ -29,16 +30,20 @@ SimpleView::render('layouts/header_admin.php') ?>
 
                 <div class="form-group">
                     <label>Category</label>
-                    <select class="form-control" name="category_id">
-                        <?php if (is_array($options['categoriesList'])): ?>
-                            <?php foreach ($options['categoriesList'] as $category): ?>
-                                <option value="<?php echo $category['id']; ?>"
-                                    <?php if ($options['product']['category_id'] == $category['id']) echo ' selected="selected"'; ?>>
-                                    <?php echo $category['name']; ?>
-                                </option>
-                            <?php endforeach; ?>
-                        <?php endif; ?>
-                    </select>
+                    <label>
+                        <select class="form-control" name="category_id">
+                            <?php if (is_array($options['categoriesList'])): ?>
+                                <?php foreach ($options['categoriesList'] as $category): ?>
+                                    <option value="<?php echo $category['id']; ?>"
+                                        <?php if ($options['product']['category_id'] == $category['id']) {
+    echo ' selected="selected"';
+} ?>>
+                                        <?php echo $category['name']; ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </select>
+                    </label>
                 </div>
 
                 <div class="form-group">
