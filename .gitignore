@@ -3,3 +3,5 @@
 /data/redis
 /www/vendor
 /logs/*
+/www/public/patterns/reproducing/factory_method/concept/vendor/
+/www/public/patterns/reproducing/absctract_factory/concept/vendor/

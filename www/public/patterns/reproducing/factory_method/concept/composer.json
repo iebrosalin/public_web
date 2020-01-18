@@ -1,0 +1,16 @@
+{
+    "name": "akva/factory_method",
+    "authors": [
+        {
+            "name": "iebrosalin",
+            "email": "iebrosalin@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Creator\\": "creator",
+            "Products\\": "products"
+        }
+    }
+}
