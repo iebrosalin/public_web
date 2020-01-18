@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace RefactoringGuru\FactoryMethod\Conceptual;
 
@@ -105,8 +106,8 @@ function clientCode(Creator $creator)
  * Приложение выбирает тип создателя в зависимости от конфигурации или среды.
  */
 echo "App: Launched with the ConcreteCreator1.\n";
-clientCode(new ConcreteCreator1);
+clientCode(new ConcreteCreator1());
 echo "\n\n";
 
 echo "App: Launched with the ConcreteCreator2.\n";
-clientCode(new ConcreteCreator2);
+clientCode(new ConcreteCreator2());
