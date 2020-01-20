@@ -38,10 +38,10 @@
 |[Цепочка обязанностей (Chain of responsibility)][ChainResponsobility]|разрабатывается| +                     |
 |[Комманда (Command)][Command]                                        |разрабатывается| +                     |
 |[Итератор (Iterator)][Iterator]                                      |разрабатывается| +                     |
-|[Посредник (Mediator][Mediator]                                      |разрабатывается| -                     |
-|[Снимок (Memento)][Mediator]                                         |разрабатывается| +                     |
+|[Посредник (Mediator][Mediator]                                      |разрабатывается| +                     |
+|[Снимок (Memento)][Mediator]                                         |разрабатывается| -                     |
 |[Наблюдатель (Observer)][Observer]                                   |разрабатывается| +                     |
-|[Состояние (State)][State]                                           |разрабатывается| +                     |
+|[Состояние (State)][State]                                           |разрабатывается| -                     |
 |[Статегия (Strategy)][Strategy]                                      |разрабатывается| +                     |
 |[Шаблонный метод(Template method)][TemplateMethod]                   |разрабатывается| +                     |
 |[Посетитель(Visitor][Visitor]                                        |разрабатывается| +                     |
