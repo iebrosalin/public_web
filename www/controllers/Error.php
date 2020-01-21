@@ -12,7 +12,7 @@ use Components\View\SimpleView;
  */
 class Error
 {
-    public function error404()
+    public static function error404()
     {
         SimpleView::render('errors/404.php');
     }
@@ -20,7 +20,7 @@ class Error
     /**
      * @param string $message
      */
-    public function error500(string $message)
+    public static function error500(string $message)
     {
         $options = [
             "message" => $message
