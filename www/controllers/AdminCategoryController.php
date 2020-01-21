@@ -81,7 +81,7 @@ class AdminCategoryController
     }
 
 
-    public function delete(int $id)
+    public function delete($id)
     {
         if (isset($_POST['submit'])) {
             Category::deleteCategoryById($id);

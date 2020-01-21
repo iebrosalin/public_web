@@ -22,7 +22,7 @@ namespace Models {
          * @param  int $id
          * @return array
          */
-        public static function getProductById(int $id): array
+        public static function getProductById($id): array
         {
             $db = Db::getConnection();
 
@@ -66,7 +66,7 @@ namespace Models {
          * @param  int $id
          * @return bool
          */
-        public static function deleteProductById(int $id):bool
+        public static function deleteProductById( $id):bool
         {
             $db = Db::getConnection();
 
@@ -83,7 +83,7 @@ namespace Models {
          * @param  array $options
          * @return bool
          */
-        public static function updateProductById(int $id, array $options): bool
+        public static function updateProductById( $id, array $options): bool
         {
             $db = Db::getConnection();
 

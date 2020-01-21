@@ -55,7 +55,7 @@ class Category
      * @param int $status
      * @return bool
      */
-    public static function updateCategoryById(int $id, string $name, int $sortOrder, int $status): bool
+    public static function updateCategoryById($id, string $name,  $sortOrder,  $status): bool
     {
         $db = Db::getConnection();
 
@@ -78,7 +78,7 @@ class Category
      * @param int $id
      * @return mixed
      */
-    public static function getCategoryById(int $id): array
+    public static function getCategoryById( $id): array
     {
         $db = Db::getConnection();
 
@@ -112,7 +112,7 @@ class Category
      * @param int $status
      * @return bool
      */
-    public static function createCategory(string $name, int  $sortOrder, int $status): bool
+    public static function createCategory(string $name, $sortOrder, $status): bool
     {
         $db = Db::getConnection();
 
