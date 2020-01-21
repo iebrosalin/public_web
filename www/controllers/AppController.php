@@ -8,9 +8,8 @@ use yii\web\Controller;
 
 class AppController extends Controller
 {
-    public function ebug($attr)
+    public function debug($attr)
     {
         echo '<pre>'.print_r($attr,true).'</pre>';
     }
 }
-

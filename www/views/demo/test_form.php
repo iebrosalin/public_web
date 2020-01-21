@@ -2,7 +2,7 @@
 use yii\widgets\ActiveForm;
 use \yii\helpers\Html;
 ?>
-<h1>Test action</h1>
+<h1>Example form</h1>
 <?php
 if(Yii::$app->session->hasFlash('success')): ?>
 
@@ -24,9 +24,8 @@ if(Yii::$app->session->hasFlash('error')): ?>
 <?php endif;?>
 
 <?php $form=ActiveForm::begin(['options'=>['id'=>'testForm']])?>
-<?= $form->field($model,'name')->label('Имя')?>
+<?= $form->field($model,'name')->label('Name')?>
 <?= $form->field($model,'email')->input('email');?>
-<?= $form->field($model,'text')->label('Текст сообщения')->textarea(['rows'=>7]);?>
-<?= Html::submitButton('Отправить',['class'=>'btn btn-success']);?>
+<?= $form->field($model,'text')->label('Text')->textarea(['rows'=>7]);?>
+<?= Html::submitButton('Submit',['class'=>'btn btn-success']);?>
 <?php ActiveForm::end()?>
-<?php //ebug($model);

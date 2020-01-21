@@ -1,2 +1,2 @@
 
-<?= $content?>
+<p><?= ($content == '')?$name:$content?></p>

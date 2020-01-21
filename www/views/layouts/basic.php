@@ -2,6 +2,7 @@
 
 use app\assets\AppAsset;
 use yii\helpers\Html;
+use yii\helpers\Url;
 
 AppAsset::register($this);
 ?>
@@ -22,25 +23,11 @@ AppAsset::register($this);
 <div class="wrap">
     <div class="container">
         <ul class="nav nav-pills">
-            <li class="active"><?= Html::a('Главная', '/web/') ?></li>
-            <li><?= Html::a('Статьи', ['post/index']) ?></li>
-            <li><?= Html::a('Статья', ['post/show']) ?></li>
-            <!--    <li class="disabled"><a href="#">Disabled</a></li>-->
-            <!--    <li class="dropdown">-->
-            <!--        <a class="dropdown-toggle" data-toggle="dropdown" href="#">-->
-            <!--            Dropdown <span class="caret"></span>-->
-            <!--        </a>-->
-            <!--        <ul class="dropdown-menu">-->
-            <!--            <li><a href="#">Action</a></li>-->
-            <!--            <li><a href="#">Another action</a></li>-->
-            <!--            <li><a href="#">Something else here</a></li>-->
-            <!--            <li class="divider"></li>-->
-            <!--            <li><a href="#">Separated link</a></li>-->
-            <!--        </ul>-->
-            <!--    </li>-->
+            <li class="active"><?php echo  Html::a('Home',Url::to('/'))?></li>
+            <li><?= Html::a('Form add post',Url::to('/demo/index')) ?></li>
+            <li><?= Html::a('Demo other examples', Url::to('/demo/show')) ?></li>
         </ul>
         <?= $content ?>
-<!--        --><?php //ebug($this->blocks)?>
         <?php if(isset($this->blocks['block1'])):?>
             <?= $this->blocks ['block1']?>
         <?php endif; ?>
