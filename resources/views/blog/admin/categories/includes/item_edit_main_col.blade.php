@@ -20,7 +20,7 @@
                     </div>
                     <div class="form-group">
                         <label for="slug">Идентификатор</label>
-                        <input type="text" class="form-control" name="slug" value="{{ old('slug',$item->slug) }}" id="slug" required>
+                        <input type="text" class="form-control" name="slug" value="{{ old('slug',$item->slug) }}" id="slug">
                     </div>
                     <div class="form-group">
                         <label for="parent_id">Заголовок</label>

@@ -2,8 +2,12 @@
 
 @section('content')
     @php /** @var \App\Models\BlogCategory $item */ @endphp
-    <form action="{{ route('blog.admin.categories.update', $item->id) }}" method="POST">
+    @if($item->exists)
+        <form action="{{ route('blog.admin.categories.update', $item->id) }}" method="POST">
         @method('PATCH')
+    @else
+        <form action="{{ route('blog.admin.categories.store') }}" method="POST">
+    @endif
         @csrf
         <div class="container">
             @php /** @var \Illuminate\Support\ViewErrorBag $errors */ @endphp
@@ -15,7 +19,7 @@
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">x</span>
                             </button>
-                            {!! $errors->first()!!})
+                            {!! $errors->first()!!}
                         </div>
                     </div>
                 </div>

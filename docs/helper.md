@@ -129,3 +129,13 @@ php artisan make:request BlogCategoryUpdateRequest
 
         */
 ```
+
+
+## Сохранение объекта
+
+```
+//        $item = BlogCategory($data);
+//        $item->save();
+
+        $item = (new BlogCategory())->create($data);
+```

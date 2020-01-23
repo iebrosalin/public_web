@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Blog\Admin;
 
+use App\Http\Requests\BlogCategoryCreateRequest;
 use App\Http\Requests\BlogCategoryUpdateRequest;
 use App\Models\BlogCategory;
 use Illuminate\Http\Request;
@@ -29,7 +30,12 @@ class CategoryController extends BaseController
      */
     public function create()
     {
-        dd(__METHOD__);
+        $item = new BlogCategory();
+        $categoryList = BlogCategory::all();
+
+        return view( 'blog.admin.categories.edit',
+            compact('item', 'categoryList')
+        );
     }
 
     /**
@@ -38,9 +44,22 @@ class CategoryController extends BaseController
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(BlogCategoryCreateRequest $request)
     {
-        dd(__METHOD__);
+        $data = $request->input();
+        if(empty($data ['slug'])){
+            $data ['slug'] = str_slug($data['title']);
+        }
+
+        $item = (new BlogCategory())->create($data);
+
+        if($item){
+            return redirect()->route('blog.admin.categories.edit', [$item->id])
+                ->with(['success' => 'Успешно сохраненно']);
+        } else {
+            return back()->withErrors(['msg' => 'Ошибка сохранения'])
+                ->withInput();
+        }
     }
 
     /**
@@ -77,7 +96,10 @@ class CategoryController extends BaseController
         }
 
         $data = $request->all();
-        $result = $item->fill($data)->save();
+        if(empty($data ['slug'])){
+            $data ['slug'] = str_slug($data['title']);
+        }
+        $result = $item->update($data);
 
         if($result){
             return back()
