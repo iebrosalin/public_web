@@ -6,6 +6,7 @@ use App\Http\Requests\BlogCategoryCreateRequest;
 use App\Http\Requests\BlogCategoryUpdateRequest;
 use App\Models\BlogCategory;
 use App\Repositories\BlogCategoryRepository;
+use Illuminate\Support\Str;
 
 class CategoryController extends BaseController
 {
@@ -56,7 +57,7 @@ class CategoryController extends BaseController
     {
         $data = $request->input();
         if(empty($data ['slug'])){
-            $data ['slug'] = str_slug($data['title']);
+            $data ['slug'] = Str::slug($data['title']);
         }
 
         $item = (new BlogCategory())->create($data);
@@ -74,7 +75,6 @@ class CategoryController extends BaseController
      * Show the form for editing the specified resource.
      *
      * @param int $id
-     * @param BlogCategoryRepository $blogCategoryRepository
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -109,9 +109,7 @@ class CategoryController extends BaseController
         }
 
         $data = $request->all();
-        if(empty($data ['slug'])){
-            $data ['slug'] = str_slug($data['title']);
-        }
+
         $result = $item->update($data);
 
         if($result){
