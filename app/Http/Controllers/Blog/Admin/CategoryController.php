@@ -5,11 +5,19 @@ namespace App\Http\Controllers\Blog\Admin;
 use App\Http\Requests\BlogCategoryCreateRequest;
 use App\Http\Requests\BlogCategoryUpdateRequest;
 use App\Models\BlogCategory;
-use Illuminate\Http\Request;
+use App\Repositories\BlogCategoryRepository;
 
 class CategoryController extends BaseController
 {
 
+    private $blogCategoryRepository;
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        $this->blogCategoryRepository = app(BlogCategoryRepository::class);
+    }
 
     /**
      * Display a listing of the resource.
@@ -18,7 +26,7 @@ class CategoryController extends BaseController
      */
     public function index()
     {
-        $paginator = BlogCategory::paginate(15);
+        $paginator = $this->blogCategoryRepository->getAllWithPaginate(5);
 
         return view('blog.admin.categories.index', compact('paginator'));
     }
@@ -31,7 +39,7 @@ class CategoryController extends BaseController
     public function create()
     {
         $item = new BlogCategory();
-        $categoryList = BlogCategory::all();
+        $categoryList = $this->blogCategoryRepository->getForComboBox();
 
         return view( 'blog.admin.categories.edit',
             compact('item', 'categoryList')
@@ -65,14 +73,19 @@ class CategoryController extends BaseController
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
+     * @param BlogCategoryRepository $blogCategoryRepository
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($id, BlogCategoryRepository $blogCategoryRepository)
     {
-        $item = BlogCategory::findOrFail($id);
+        $item =  $blogCategoryRepository->getEdit($id);
 
-        $categoryList = BlogCategory::all();
+        if (empty($item)) {
+            abort(404);
+        }
+
+        $categoryList = $blogCategoryRepository->getForComboBox();
 
         return view( 'blog.admin.categories.edit',
             compact('item', 'categoryList')
