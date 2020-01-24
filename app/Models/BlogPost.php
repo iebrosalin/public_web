@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property \App\Models\BlockCategory  $category
  * @property \App\Models\User           $user
  * @property string                     $slug
+ * @property string                     $title
  * @property string                     $content_html
  * @property string                     $content_raw
  * @property string                     $excerpt
