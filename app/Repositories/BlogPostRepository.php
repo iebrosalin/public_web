@@ -15,32 +15,6 @@ class BlogPostRepository extends CoreRepository
         return Model::class;
     }
 
-    public function getEdit($id)
-    {
-        return $this->startConditions()->find($id);
-    }
-
-
-    /**
-     * @return Collection
-     */
-    public function getForComboBox()
-    {
-
-        $columns = implode(', ', [
-            'id',
-            'CONCAT (id, ". ", title) AS id_title'
-        ]);
-
-        $result = $this
-            ->startConditions()
-            ->selectRaw($columns)
-            ->toBase()
-            ->get();
-
-        return $result;
-    }
-
     /**
      * @param int|null $perPage
      * @return LengthAwarePaginator
@@ -61,7 +35,6 @@ class BlogPostRepository extends CoreRepository
             ->startConditions()
             ->select($columns)
             ->orderBy('id', 'DESC')
-//            ->with(['category', 'user'])
             ->with(
                 [
                     'category' => function($query) {

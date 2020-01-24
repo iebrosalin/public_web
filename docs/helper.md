@@ -1,4 +1,4 @@
-# Шпаргалка комманд консоли
+# Шпаргалка на основе курса
 
 
 ## Установка через composer
@@ -11,8 +11,11 @@ composer create-project --prefer-dist laravel/laravel=версия папка
 - Laravel Plugin
 
 ## Пакеты без которых жизнь не мила:
-- https://github.com/barryvdh/laravel-debugbar
-- https://github.com/barryvdh/laravel-ide-helper
+```
+composer require barryvdh/laravel-debugbar --dev
+composer require --dev barryvdh/laravel-ide-helper
+```
+
 
 ## Создание моделей 
 
