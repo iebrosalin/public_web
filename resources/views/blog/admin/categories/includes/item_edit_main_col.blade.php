@@ -5,7 +5,7 @@
         <div class="card">
             <div class="card-body">
                 <div class="card-title"></div>
-                <ul class="nav-nav-tabs" role="tablist">
+                <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
                         <a href="#maindata" class="nav-link active" data-toggle="tab" role="tab">Основные данные</a>
                     </li>
@@ -23,7 +23,7 @@
                         <input type="text" class="form-control" name="slug" value="{{ old('slug',$item->slug) }}" id="slug">
                     </div>
                     <div class="form-group">
-                        <label for="parent_id">Заголовок</label>
+                        <label for="parent_id">Категория</label>
                         <select type="text" class="form-control" name="parent_id" value="{{ old('parent_id',$item->parent_id) }}"
                                id="parent_id" placeholder="Выберите категорию" required>
                             @foreach($categoryList as $categoryOption)

@@ -77,15 +77,15 @@ class CategoryController extends BaseController
      * @param BlogCategoryRepository $blogCategoryRepository
      * @return \Illuminate\Http\Response
      */
-    public function edit($id, BlogCategoryRepository $blogCategoryRepository)
+    public function edit($id)
     {
-        $item =  $blogCategoryRepository->getEdit($id);
+        $item =  $this->blogCategoryRepository->getEdit($id);
 
         if (empty($item)) {
             abort(404);
         }
 
-        $categoryList = $blogCategoryRepository->getForComboBox();
+        $categoryList = $this->blogCategoryRepository->getForComboBox();
 
         return view( 'blog.admin.categories.edit',
             compact('item', 'categoryList')
