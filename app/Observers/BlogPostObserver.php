@@ -110,7 +110,6 @@ class BlogPostObserver
     protected function  setHtml(BlogPost $blogPost)
     {
         if(empty($blogPost->isDirty('content_raw'))){
-            dd(121);
             // TODO: Генерация markdown
             $blogPost->content_html = $blogPost->content_raw;
         }
