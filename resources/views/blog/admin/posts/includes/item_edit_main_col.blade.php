@@ -43,10 +43,10 @@
                     </div>
                     <div class="tab-pane" id="adddata" role="tabpanel">
                         <div class="form-group">
-                            <label for="parent_id">Категория</label>
-                            <select type="text" class="form-control" name="parent_id"
-                                    value="{{ old('parent_id',$item->parent_id) }}"
-                                    id="parent_id" placeholder="Выберите категорию" required>
+                            <label for="category_id">Категория</label>
+                            <select type="text" class="form-control" name="category_id"
+                                    value="{{ old('category_id',$item->category_id) }}"
+                                    id="category_id" placeholder="Выберите категорию" required>
                                 @foreach($categoryList as $categoryOption)
                                     <option value="{{$categoryOption->id}}"
                                             @if($categoryOption->id == $item->category_id) selected @endif>
@@ -70,14 +70,18 @@
                                    name="excerpt"
                                    value="{{ old('excerpt',$item->excerpt) }}"
                                    id="excerpt"
-                                   @if($item->is_published)
-                                   checked="checked"
-                                    @endif
                             >
                         </div>
                         <div class="form-check">
                             <input type="hidden" name="is_published" value="0">
-                            <input type="checkbox" name="is_published" value="{{$item->is_published}}" class="form-check-input">
+                            <input type="checkbox"
+                                   name="is_published"
+                                   value="1"
+                                   class="form-check-input"
+                                   @if($item->is_published)
+                                   checked="checked"
+                                   @endif
+                            >
                             <label for="us_published" class="form-check-label">опубликовано</label>
                         </div>
                     </div>
