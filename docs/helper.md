@@ -163,3 +163,79 @@ php artisan make:request BlogCategoryUpdateRequest
             ->get();
 
 ```
+
+
+## Отношения
+
+Объявление отношения в классе
+
+```
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class BlogPost extends Model
+{
+    use SoftDeletes;
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function category()
+    {
+        return $this->belongsTo(BlogCategory::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    protected $dates = [
+        'published_at'
+    ];
+}
+
+```
+
+Жадная загрузка
+
+```
+    public function getAllWithPaginate($perPage = null)
+    {
+        $columns = [
+            'id',
+            'title',
+            'slug',
+            'is_published',
+            'published_at',
+            'user_id',
+            'category_id'
+        ];
+
+        $result = $this
+            ->startConditions()
+            ->select($columns)
+            ->orderBy('id', 'DESC')
+//            ->with(['category', 'user'])
+            ->with(
+                [
+                    'category' => function($query) {
+                        $query->select(['id', 'title']);
+                    },
+                    'user:id,name'
+                ]
+            )
+            ->paginate($perPage);
+
+        return $result;
+    }
+```
+
+Ленивая загрузка
+
+```
+ <td>{{ $post->user->name }}</td>
+ <td>{{ $post->category->title }}</td>
+```
