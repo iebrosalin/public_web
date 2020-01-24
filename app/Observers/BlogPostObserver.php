@@ -70,9 +70,11 @@ class BlogPostObserver
      */
     public function creating(BlogPost $blogPost)
     {
-//        $this->setPublishedAt($blogPost);
-//
-//        $this->setSlug($blogPost);
+
+        $this->setPublishedAt($blogPost);
+        $this->setSlug($blogPost);
+        $this->setHtml($blogPost);
+        $this->setUser($blogPost);
     }
 
     /**
@@ -84,8 +86,8 @@ class BlogPostObserver
     public function updating(BlogPost $blogPost)
     {
         $this->setPublishedAt($blogPost);
-
         $this->setSlug($blogPost);
+        $this->setHtml($blogPost);
     }
 
 
@@ -103,5 +105,19 @@ class BlogPostObserver
         if(empty($blogPost->slug)){
             $blogPost->slug = Str::slug($blogPost->title);
         }
+    }
+
+    protected function  setHtml(BlogPost $blogPost)
+    {
+        if(empty($blogPost->isDirty('content_raw'))){
+            dd(121);
+            // TODO: Генерация markdown
+            $blogPost->content_html = $blogPost->content_raw;
+        }
+    }
+
+    protected function  setUser(BlogPost $blogPost)
+    {
+        $blogPost->user_id = auth()->id()?? BlogPost::UNKNOWN_USER;
     }
 }

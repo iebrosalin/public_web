@@ -25,6 +25,8 @@ class BlogPost extends Model
 {
     use SoftDeletes;
 
+    const UNKNOWN_USER = 1;
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
@@ -50,6 +52,5 @@ class BlogPost extends Model
         'content_raw',
         'is_published',
         'published_at',
-        'user_id',
     ];
 }
