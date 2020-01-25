@@ -264,100 +264,35 @@ php artisan make:observer BlogCategoryObserver --model=Models\BlogCategory
 //        dd($test)
 ```
 
-    /**
-     * Перед созданием поста
-     *
-     * @param BlogPost $blogPost
-     */
-    public function creating(BlogPost $blogPost)
-    {
-//        $this->setPublishedAt($blogPost);
+## Методы выводы информации о поле объекта
+
+```
+        $v ['title_before'] = $item->title;
+
+        $item->title = '';
+
+        $v['title_after'] = $item->title;
+        $v['getAttribute'] = $item->getAttributes('title');
+        $v['attributesToArray'] = $item->getAttributesToArray('title');
+        $v['attributes'] = $item->attributes['title'];
+        $v['getAttributeValue'] = $item->getAttributeValue('title');
+        $v['getMutatedAttributes'] = $item->getMutatedAttributes();
+        $v['hasGetMutator for title'] = $item->hasGetMutator('title');
+        $v['toArray'] = $item->toArray();
+
+        dd($v, $item);
+```
+
+## Немного мутатор и аксессоров
+
+```
+//    public function getTitleAttribute($valueFromObject)
+//    {
+//        return mb_strtoupper($valueFromObject);
+//    }
 //
-//        $this->setSlug($blogPost);
-    }
-
-    /**
-     * Перед обновлением поста
-     *
-     * @param BlogPost $blogPost
-     */
-
-    public function updating(BlogPost $blogPost)
-    {
-        dd($blogPost);
-
-        $this->setPublishedAt($blogPost);
-
-        $this->setSlug($blogPost);
-    }
-
-    /**
-     * Handle the blog category "created" event.
-     *
-     * @param  \App\Models\BlogCategory  $blogCategory
-     * @return void
-     */
-    public function created(BlogCategory $blogCategory)
-    {
-        //
-    }
-
-    /**
-     * Handle the blog category "updated" event.
-     *
-     * @param  \App\Models\BlogCategory  $blogCategory
-     * @return void
-     */
-    public function updated(BlogCategory $blogCategory)
-    {
-        //
-    }
-
-    /**
-     * Handle the blog category "deleted" event.
-     *
-     * @param  \App\Models\BlogCategory  $blogCategory
-     * @return void
-     */
-    public function deleted(BlogCategory $blogCategory)
-    {
-        //
-    }
-
-    /**
-     * Handle the blog category "restored" event.
-     *
-     * @param  \App\Models\BlogCategory  $blogCategory
-     * @return void
-     */
-    public function restored(BlogCategory $blogCategory)
-    {
-        //
-    }
-
-    /**
-     * Handle the blog category "force deleted" event.
-     *
-     * @param  \App\Models\BlogCategory  $blogCategory
-     * @return void
-     */
-    public function forceDeleted(BlogCategory $blogCategory)
-    {
-        //
-    }
-
-    protected function  setPublishedAt(BlogPost $blogPost)
-    {
-        $flagSetPublishAt = empty($blogPost->published_at) && $blogPost->is_published;
-
-        if($flagSetPublishAt){
-            $blogPost->published_at = Carbon::now();
-        }
-    }
-
-    protected function  setSlug(BlogPost $blogPost)
-    {
-        if(empty($blogPost->slug)){
-            $blogPost->slug = Str::slug($blogPost->title);
-        }
-    }
+//    public function setTitleAttribute($incomingValue)
+//    {
+//        $this->attributes['title'] = mb_strtolower($incomingValue);
+//    }
+```
