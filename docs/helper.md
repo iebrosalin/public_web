@@ -296,3 +296,11 @@ php artisan make:observer BlogCategoryObserver --model=Models\BlogCategory
 //        $this->attributes['title'] = mb_strtolower($incomingValue);
 //    }
 ```
+
+## Удаление 
+
+```
+        $result = BlogPost::destroy($id);
+
+//        $result = BlogPost::find($id)->forceDelete();
+```
