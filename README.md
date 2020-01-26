@@ -23,9 +23,11 @@
 <details>
   <summary>Backend</summary>
   
-  |месяц.год создания |Название                      | Docker |Db         |Статус   |
-  |-------------------|------------------------------|--------|-----------|---------|
-  |12.2017            |[ToDo][ToDo]                  |+       | Mysql     |заморожен|
+  
+
+  |месяц.год создания |Название                      | Docker |Db         |Завершённость     |
+  |-------------------|------------------------------|--------|-----------|------------------|
+  |12.2017            |[ToDo][ToDo]                  |+       | Mysql     |:white_check_mark:|
   
   
 </details>  
@@ -39,14 +41,14 @@
  
  В таблице представлены все мои пет-проекты, которые можно строго отнести к frontend-разработке.
   
-  |месяц.год создания |Название                      | Js                       |CSS                     |Статус   |
-  |-------------------|------------------------------|--------------------------|------------------------|---------|
-  |02.2019            |[ToDo][ToDo]                  |React                     | Bootstrap              |заморожен|
-  |02.2019            |[Star Wars wiki][StarWarsWiki]|React + HOC               | Bootstrap              |заморожен|
-  |07.2019            |[Re store][ReStore]           |React + HOC + Redux       | Bootstrap              |заморожен|
-  |08.2019            |[Form websocket][FormWS]      |pure js                   | Bootstrap              |заморожен|
-  |01.2020            |[Sandbox build][SandboxBuild] |pure js + babel + webpack | SCSS                   |заморожен|
-  |01.2020            |[React hooks][ReactHooks]     |React hooks               | Bootstrap              |заморожен|
+  |месяц.год создания |Название                      | Js                       |CSS         |Завершённость     |
+  |-------------------|------------------------------|--------------------------|------------|------------------|
+  |02.2019            |[ToDo][ToDo]                  |React                     | Bootstrap  |:white_check_mark:|
+  |02.2019            |[Star Wars wiki][StarWarsWiki]|React + HOC               | Bootstrap  |:white_check_mark:|
+  |07.2019            |[Re store][ReStore]           |React + HOC + Redux       | Bootstrap  |:white_check_mark:|
+  |08.2019            |[Form websocket][FormWS]      |pure js                   | Bootstrap  |:white_check_mark:|
+  |01.2020            |[Sandbox build][SandboxBuild] |pure js + babel + webpack | SCSS       |:white_check_mark:|
+  |01.2020            |[React hooks][ReactHooks]     |React hooks               | Bootstrap  |:white_check_mark:|
 </details>   
 
 
