@@ -23,12 +23,16 @@
 <details>
   <summary>Backend</summary>
   
-  
+  Чистое PHP
 
   |месяц.год создания |Название                      | Docker |Db         |Завершённость     |
   |-------------------|------------------------------|--------|-----------|------------------|
-  |12.2017            |[ToDo][ToDo]                  |+       | Mysql     |:white_check_mark:|
-  
+  |12.2017            |[First site][ToDo]            |-       | Mysql     |:white_check_mark:|
+  |05.2018            |[Vedomost][ToDo]              |-       | Mysql     |:white_check_mark:|
+  |01.2019            |[Diplom][ToDo]                |-       | Mysql     |:white_check_mark:|
+  |04.2019            |[Bad SPA][ToDo]               |-       | Mysql     |:white_check_mark:|
+  |07.2019            |[Sandbox][ToDo]               |-       | Mysql     |:white_check_mark:|
+  |07.2019            |[Sandbox PostgreSQL][ToDo]    |+       | PostgreSQL|:white_check_mark:|
   
 </details>  
 
@@ -49,6 +53,7 @@
   |08.2019            |[Form websocket][FormWS]      |pure js                   | Bootstrap  |:white_check_mark:|
   |01.2020            |[Sandbox build][SandboxBuild] |pure js + babel + webpack | SCSS       |:white_check_mark:|
   |01.2020            |[React hooks][ReactHooks]     |React hooks               | Bootstrap  |:white_check_mark:|
+
 </details>   
 
 
