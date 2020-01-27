@@ -1,17 +1,67 @@
-# Update_pure_php_shop
-Пет-проект является песочницей для практики написания сайта на чистом php. За основу был взят мой первый сайт https://github.com/iebrosalin/Pure_php_shop. На данный момент переработана только часть функционала админки. Есть много вещей которых можно улучшить, но не всё сразу...
+# Sandbox
+Пет-проект является песочницей для практики написания сайта на чистом php. За основу был взят мой первый сайт
+ https://github.com/iebrosalin/Pure_php_shop. На данный момент переработана только часть функционала админки. Есть много вещей которых можно улучшить, но не всё сразу...
 
-Проект собран на основе докера.Для запуска ввести комманду <code>sudo make start && make composer</code> (иначе для .htaccess нужные права не поставятся). Для остановки <code>make stop</code>.
-По адресу http://localhost будет доступен сайт. Админка для импорта БД http://localhost:8080. Для доступа к БД используеются данные из файла .env (пользователь docker с паролем docker). Дамп БД находится в www/mysql.sql импортировать в БД docker. 
+* Docker
+* PHP 7.4
+* Apache 2.4
+* MySQL 8
+* phpMyAdmin
+
+<details>
+    <summary>Команды для управления контейнерм</summary>
+    
+   Первый запуск
+    
+ <code>make start && make composer</code>
+ 
+ Остановка
+    
+ <code>make stop</code>   
+
+Старт
+
+  <code>make start</code>
+	
+Рестарт
+	
+   <code>make restart</code>
+
+Прекращение работы контейнера
+
+<code>make stop</code>
+
+Аналог composer update
+
+<code>make composer-update</code>
+
+Аналог composer install
+
+<code>make composer-install</code>
+
+Инициализация зависимостей composer c update
+
+<code>make composer</code>
+	
+   Production composer build
+	
+   <code>make composer-prod</code>
+   
+   
+
+
+</details>
+
+Проект собран на основе докера.Для запуска ввести комманду
+ 
+  (иначе для .htaccess нужные права не поставятся). Для остановки .
+По адресу http://localhost будет доступен сайт. Админка для импорта БД http://localhost:80. Для доступа к БД используеются данные из файла .env (пользователь docker с паролем docker). Дамп БД находится в www/mysql.sql импортировать в БД docker. 
 Из функционала реализован CRUD для товаров, категорий, а также страница отправляющая эхо get и post запросы.
 # LAMP stack built with Docker Compose (Инфа о образе взятом за основу)
 
 This is a basic LAMP stack environment built using Docker Compose. It consists following:
 
-* PHP 7.2
-* Apache 2.4
-* MySQL 5.7
-* phpMyAdmin
+
 
 ## Installation
 
