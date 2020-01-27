@@ -29,11 +29,52 @@
   |-------------------|------------------------------|--------|-----------|------------------|
   |12.2017            |[First site][ToDo]            |-       | Mysql     |:white_check_mark:|
   |05.2018            |[Vedomost][ToDo]              |-       | Mysql     |:white_check_mark:|
-  |01.2019            |[Diplom][ToDo]                |-       | Mysql     |:white_check_mark:|
-  |04.2019            |[Bad SPA][ToDo]               |-       | Mysql     |:white_check_mark:|
-  |07.2019            |[Sandbox][ToDo]               |-       | Mysql     |:white_check_mark:|
+  |01.2019            |[Diplom][ToDo]                |-       | Mysql     ||
+  |04.2019            |[Bad SPA][ToDo]               |-       | Mysql     ||
+  |07.2019            |[Sandbox][ToDo]               |-       | Mysql     ||
   |07.2019            |[Sandbox PostgreSQL][ToDo]    |+       | PostgreSQL|:white_check_mark:|
+  |01.2020            |[Shvec patterns][ToDo]        |+       | -         ||
   
+  Symfony
+  
+  |месяц.год создания |Название                      | Docker |Db         |Завершённость     |
+  |-------------------|------------------------------|--------|-----------|------------------|
+  |05.2018            |[News CRUD][ToDo]             |-       | Mysql     |:white_check_mark:|
+
+  Bitrix
+  
+  |месяц.год период создания |Название                      |Завершённость     |
+  |--------------------------|------------------------------|------------------|
+  |05.2018 - 07.2019         |[Bitrix samples][ToDo]        |:white_check_mark:|
+  
+  Wordpress
+  
+  |месяц.год создания |Название                      | Docker |Db         |Завершённость     |
+  |-------------------|------------------------------|--------|-----------|------------------|
+  |01.2019            |[Wordpress samples][ToDo]     |-       | Mysql     ||
+
+  ZF1
+  
+  |месяц.год создания |Название                      | Docker |Db         |Завершённость     |
+  |-------------------|------------------------------|--------|-----------|------------------|
+  |02.2019            |[Theory (Попов)][ToDo]        |-       | Mysql     |:white_check_mark:|
+
+  Laravel
+  
+  |месяц.год создания |Название                      | Docker |Db         |Завершённость     |
+  |-------------------|------------------------------|--------|-----------|------------------|
+  |07.2019            |[Eliseev master class][ToDo]  |+       | Mysql     ||
+  |01.2020            |[Afanasyev season 1][ToDo]    |-       | Mysql     |:white_check_mark:|
+  |01.2020            |[Afanasyev season 2][ToDo]    |-       | Mysql     ||
+  |01.2020            |[Afanasyev patterns][ToDo]    |-       | Mysql     ||
+
+  Yii2
+  
+  |месяц.год создания |Название                       | Docker |Db         |Завершённость     |
+  |-------------------|------------------------------ |--------|-----------|------------------|
+  |08.2019            |[Theory (WebForMySelf)][ToDo]  |+       | Mysql     |:white_check_mark:|
+  |01.2020            |[Practice (WebForMySelf)][ToDo]|-       | Mysql     |:white_check_mark:|
+
 </details>  
 
 <details>
