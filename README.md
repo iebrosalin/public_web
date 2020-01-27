@@ -61,12 +61,12 @@
 
   Laravel
   
-  |месяц.год создания |Название                      | Docker |Db         |Завершённость     |
-  |-------------------|------------------------------|--------|-----------|------------------|
-  |07.2019            |[Eliseev master class][ToDo]  |+       | Mysql     ||
-  |01.2020            |[Afanasyev season 1][ToDo]    |-       | Mysql     |:white_check_mark:|
-  |01.2020            |[Afanasyev season 2][ToDo]    |-       | Mysql     ||
-  |01.2020            |[Afanasyev patterns][ToDo]    |-       | Mysql     ||
+  |месяц.год создания |Название                                           | Docker |Db         |Завершённость     |
+  |-------------------|---------------------------------------------------|--------|-----------|------------------|
+  |07.2019            |[Eliseev master class][EliseevLaravelMasterClass]  |+       | Mysql     ||
+  |01.2020            |[Afanasyev season 1][AfanasyevSeason1]             |-       | Mysql     |:white_check_mark:|
+  |01.2020            |[Afanasyev season 2][AfanasyevSeason2]             |-       | Mysql     ||
+  |01.2020            |[Afanasyev patterns][AfanasyevPatterns]            |-       | Mysql     ||
 
   Yii2
   
@@ -105,6 +105,13 @@ License
 MIT
 
 [Pmobi]:<https://pmobi.ru/>
+
+
+
+[EliseevLaravelMasterClass]:<https://github.com/iebrosalin/public_web/tree/backend/laravel/afanasyev/season1>
+[AfanasyevSeason1]:<https://github.com/iebrosalin/public_web/tree/backend/laravel/afanasyev/season1>
+[AfanasyevSeason2]:<https://github.com/iebrosalin/public_web/tree/backend/laravel/afanasyev/season2>
+[AfanasyevPatterns]:<https://github.com/iebrosalin/public_web/tree/backend/laravel/afanasyev/patterns>
 
 [FormWS]:<https://github.com/iebrosalin/public_web/tree/frontend/form_websocket>
 [ToDo]:<https://github.com/iebrosalin/public_web/tree/frontend/react/bura/todo>
