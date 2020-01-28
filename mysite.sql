@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Янв 27 2020 г., 17:51
+-- Время создания: Янв 28 2020 г., 16:35
 -- Версия сервера: 8.0.15
 -- Версия PHP: 7.1.22
 
@@ -66,7 +66,9 @@ CREATE TABLE `comments` (
 --
 
 INSERT INTO `comments` (`id`, `products_id`, `user_id`, `comment`) VALUES
-(6, 44, 21, 'First comment edited');
+(6, 44, 21, 'First comment edited. Again.'),
+(7, 47, 22, 'Крутой комп'),
+(8, 44, 22, 'Крутой монитор!');
 
 -- --------------------------------------------------------
 
@@ -94,7 +96,6 @@ CREATE TABLE `product` (
 
 INSERT INTO `product` (`id`, `name`, `category_id`, `code`, `price`, `availability`, `brand`, `description`, `is_new`, `is_recommended`, `status`) VALUES
 (34, 'Ноутбук Asus X200MA (X200MA-KX315D)', 13, 1839707, 395, 1, 'Asus', 'Экран 11.6\" (1366x768) HD LED, глянцевый / Intel Pentium N3530 (2.16 - 2.58 ГГц) / RAM 4 ГБ / HDD 750 ГБ / Intel HD Graphics / без ОД / Bluetooth 4.0 / Wi-Fi / LAN / веб-камера / без ОС / 1.24 кг / синий', 0, 0, 1),
-(35, 'Ноутбук HP Stream 11-d050nr', 13, 2343847, 305, 0, 'Hewlett Packard', 'Экран 11.6” (1366x768) HD LED, матовый / Intel Celeron N2840 (2.16 ГГц) / RAM 2 ГБ / eMMC 32 ГБ / Intel HD Graphics / без ОД / Wi-Fi / Bluetooth / веб-камера / Windows 8.1 + MS Office 365 / 1.28 кг / синий', 1, 1, 1),
 (37, 'Ноутбук Acer Aspire E3-112-C65X', 13, 2019487, 325, 1, 'Acer', 'Экран 11.6\'\' (1366x768) HD LED, матовый / Intel Celeron N2840 (2.16 ГГц) / RAM 2 ГБ / HDD 500 ГБ / Intel HD Graphics / без ОД / LAN / Wi-Fi / Bluetooth / веб-камера / Linpus / 1.29 кг / серебристый', 0, 1, 1),
 (38, 'Ноутбук Acer TravelMate TMB115', 13, 1953212, 275, 1, 'Acer', 'Экран 11.6\'\' (1366x768) HD LED, матовый / Intel Celeron N2840 (2.16 ГГц) / RAM 2 ГБ / HDD 500 ГБ / Intel HD Graphics / без ОД / LAN / Wi-Fi / Bluetooth 4.0 / веб-камера / Linpus / 1.32 кг / черный', 0, 0, 1),
 (39, 'Ноутбук Lenovo Flex 10', 13, 1602042, 370, 0, 'Lenovo', 'Экран 10.1\" (1366x768) HD LED, сенсорный, глянцевый / Intel Celeron N2830 (2.16 ГГц) / RAM 2 ГБ / HDD 500 ГБ / Intel HD Graphics / без ОД / Wi-Fi / Bluetooth / веб-камера / Windows 8.1 / 1.2 кг / черный', 0, 0, 1),
@@ -104,7 +105,8 @@ INSERT INTO `product` (`id`, `name`, `category_id`, `code`, `price`, `availabili
 (44, 'Монитор 23', 15, 355025, 175, 1, 'Dell', 'С расширением Full HD Вы сможете рассмотреть мельчайшие детали. Dell E2314H предоставит Вам резкое и четкое изображение, с которым любая работа будет в удовольствие. Full HD 1920 x 1080 при 60 Гц разрешение (макс.)', 0, 0, 1),
 (45, 'Компьютер Everest Game ', 16, 1563832, 1320, 1, 'Everest', 'Everest Game 9085 — это компьютеры премимум класса, собранные на базе эксклюзивных компонентов, тщательно подобранных и протестированных лучшими специалистами нашей компании. Это топовый сегмент систем, который отвечает наилучшим характеристикам показателей качества и производительности.', 0, 0, 0),
 (46, 'Apple MacBook Pro 13 with Retina display Early 2015', 13, 456102, 1500, 1, 'Apple', 'Mac', 1, 1, 1),
-(47, 'Test', 14, 545, 454, 1, 'Test', 'Test', 1, 1, 1);
+(47, 'Test', 14, 545, 454, 1, 'Test', 'Test', 1, 1, 1),
+(48, 'Test2', 13, 123, 123, 1, 'brand', 'test', 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -124,7 +126,9 @@ CREATE TABLE `product_images` (
 
 INSERT INTO `product_images` (`id`, `products_id`, `image`) VALUES
 (40, 34, 'asusx200 4.jpg'),
-(41, 34, 'asusx200 5.jpg');
+(41, 34, 'asusx200 5.jpg'),
+(42, 47, 'photo.png'),
+(43, 48, 'Без названия.jpg');
 
 -- --------------------------------------------------------
 
@@ -148,8 +152,8 @@ CREATE TABLE `product_order` (
 --
 
 INSERT INTO `product_order` (`id`, `user_name`, `user_phone`, `user_comment`, `user_id`, `products`, `status`) VALUES
-(49, 'Admin', '1234567891', 'Сделайте скидку админу', 4, '{\"34\":2,\"35\":2,\"36\":2}', 1),
-(50, 'test', '3211231231', '', 21, '{\"47\":2}', 1);
+(52, 'Admin', '1231321313221', 'test тест', 22, '{\"41\":4,\"43\":1,\"47\":2}', 1),
+(53, 'Admin', '1231321313221', 'Заказ с авторизацией через куки', 22, '{\"47\":3,\"46\":2,\"44\":8,\"40\":2}', 1);
 
 -- --------------------------------------------------------
 
@@ -172,8 +176,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `password`, `image`, `role`, `black_list`) VALUES
-(21, 'test', 'test@mail.ru', '$2y$10$s.RYp6r1pz1I3CRjAkabSees2lfsGPOi4fkP1NEwskyBJklQw/Rcy', '/upload/images/users/standart_noavatar.png', 'user', 0),
-(22, 'Admin', 'admin@mail.ru', '$2y$10$JOzU0R1y56lC9uZ1lnZ7E.LCJCbOZcTRIcWKgMW8geIAJVeIlG7Zi', '/upload/images/users/standart_noavatar.png', 'admin', 0);
+(21, 'test', 'test@mail.ru', '$2y$10$KombntUKJqvK4Eo3ZqV99eqO0lCtovc7f9FQJOAPqMJ30hJfdplx2', '/upload/images/users/standart_noavatar.png', 'user', 0),
+(22, 'Admin', 'admin@mail.ru', '$2y$10$JOzU0R1y56lC9uZ1lnZ7E.LCJCbOZcTRIcWKgMW8geIAJVeIlG7Zi', '/upload/images/users/22.jpg', 'admin', 0),
+(24, 'AdminDouble', 'admin2@mail.ru', '$2y$10$Kay78tHQRssk.Xhlwb9wkuKk1TF6jHNhLrJV17L0tcbAGGUCGy.QO', '/upload/images/users/standart_noavatar.png', 'user', 0);
 
 --
 -- Индексы сохранённых таблиц
@@ -223,37 +228,37 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT для таблицы `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT для таблицы `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT для таблицы `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT для таблицы `product_images`
 --
 ALTER TABLE `product_images`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT для таблицы `product_order`
 --
 ALTER TABLE `product_order`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT для таблицы `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
