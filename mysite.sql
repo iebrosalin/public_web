@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Май 16 2018 г., 23:00
--- Версия сервера: 5.6.38
--- Версия PHP: 5.6.32
+-- Время создания: Янв 27 2020 г., 17:51
+-- Версия сервера: 8.0.15
+-- Версия PHP: 7.1.22
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- База данных: `mysite`
 --
+CREATE DATABASE IF NOT EXISTS `mysite` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `mysite`;
 
 -- --------------------------------------------------------
 
@@ -56,15 +58,15 @@ CREATE TABLE `comments` (
   `products_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `comment` varchar(255) CHARACTER SET utf8 NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `comment` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Дамп данных таблицы `comments`
 --
 
-INSERT INTO `comments` (`id`, `products_id`, `user_id`, `date`, `comment`) VALUES
-(6, 44, 21, '2018-05-16 19:04:17', 'First comment edited');
+INSERT INTO `comments` (`id`, `products_id`, `user_id`, `comment`) VALUES
+(6, 44, 21, 'First comment edited');
 
 -- --------------------------------------------------------
 
@@ -113,8 +115,8 @@ INSERT INTO `product` (`id`, `name`, `category_id`, `code`, `price`, `availabili
 CREATE TABLE `product_images` (
   `id` int(10) NOT NULL,
   `products_id` int(10) NOT NULL,
-  `image` varchar(255) CHARACTER SET utf8 DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `image` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Дамп данных таблицы `product_images`
@@ -145,9 +147,9 @@ CREATE TABLE `product_order` (
 -- Дамп данных таблицы `product_order`
 --
 
-INSERT INTO `product_order` (`id`, `user_name`, `user_phone`, `user_comment`, `user_id`, `date`, `products`, `status`) VALUES
-(49, 'Admin', '1234567891', 'Сделайте скидку админу', 4, '2017-12-21 08:06:21', '{\"34\":2,\"35\":2,\"36\":2}', 1),
-(50, 'test', '3211231231', '', 21, '2018-05-16 18:34:14', '{\"47\":2}', 1);
+INSERT INTO `product_order` (`id`, `user_name`, `user_phone`, `user_comment`, `user_id`, `products`, `status`) VALUES
+(49, 'Admin', '1234567891', 'Сделайте скидку админу', 4, '{\"34\":2,\"35\":2,\"36\":2}', 1),
+(50, 'test', '3211231231', '', 21, '{\"47\":2}', 1);
 
 -- --------------------------------------------------------
 
@@ -170,7 +172,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `password`, `image`, `role`, `black_list`) VALUES
-(21, 'test', 'test@mail.ru', '$2y$10$TbRqGek7rMzP/qF1m5kBGepjbWQ1AQ7y78FzbHt0xf0KOAyiGHzKG', '/upload/images/users/standart_noavatar.png', 'user', 0);
+(21, 'test', 'test@mail.ru', '$2y$10$s.RYp6r1pz1I3CRjAkabSees2lfsGPOi4fkP1NEwskyBJklQw/Rcy', '/upload/images/users/standart_noavatar.png', 'user', 0),
+(22, 'Admin', 'admin@mail.ru', '$2y$10$JOzU0R1y56lC9uZ1lnZ7E.LCJCbOZcTRIcWKgMW8geIAJVeIlG7Zi', '/upload/images/users/standart_noavatar.png', 'admin', 0);
 
 --
 -- Индексы сохранённых таблиц
@@ -250,7 +253,7 @@ ALTER TABLE `product_order`
 -- AUTO_INCREMENT для таблицы `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
