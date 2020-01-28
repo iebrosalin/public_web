@@ -18,16 +18,17 @@ class NewsController extends Controller
 {
     /**
      * @Route("/{page}", name="news_index", requirements={"page"="\d+"})
+     * @param int $page
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function indexAction($page=1)
     {
 
         $news = ArticleQuery::create()->paginate($page,5);
         $lastPage = ArticleQuery::create()->paginate($page,5)->getLastPage();
-        $count=$news->count();
         return $this->render('news/index.html.twig', [
-            'count'=> $lastPage,
-            'page' => $page,
+            'lastPage'=> $lastPage,
+            'page' => (int)$page,
             'news' => $news]);
     }
 
