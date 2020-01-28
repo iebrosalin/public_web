@@ -30,7 +30,7 @@
                         <input type="text" name="email" placeholder="" value="<?php echo $user['email']; ?>">
 
                         <p>Password</p>
-                        <input type="text" name="password" placeholder="" value="<?php echo $user['password']; ?>">
+                        <input type="text" name="password" placeholder="" value="">
 
                         <p>Role</p>
                         <select name="role">

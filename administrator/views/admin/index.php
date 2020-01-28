@@ -13,7 +13,7 @@
                     <li><a href="/admin/user">Users</a></li>
                     <li><a href="/admin/comment/id">Comments</a></li>
                     <li><a href="/admin/image">Images </a></li>
-                    <li><a href="http://localhost/">Quit</a></li>
+                    <li><a href="/">Quit</a></li>
 
                 </ul>
 </div>
