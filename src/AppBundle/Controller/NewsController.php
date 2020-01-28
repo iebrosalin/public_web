@@ -23,9 +23,10 @@ class NewsController extends Controller
     {
 
         $news = ArticleQuery::create()->paginate($page,5);
+        $lastPage = ArticleQuery::create()->paginate($page,5)->getLastPage();
         $count=$news->count();
         return $this->render('news/index.html.twig', [
-            'count'=> $count,
+            'count'=> $lastPage,
             'page' => $page,
             'news' => $news]);
     }

@@ -13,7 +13,7 @@
             </tr>
             {% for article in news %}
             <tr>
-                <td> <a href="{{ path("news_show", {id:article.id} )}}" }}">{{ article.title }}</a></td>
+                <td> <a href="{{ path("news_show", {id:article.id} )}}">{{ article.title }}</a></td>
                 <td>{{ article.abstract }}</td>
                 <td>{{ article.date |date("m/d/Y")}}</td>
                 <td>{{ article.text }}</td>
@@ -31,7 +31,8 @@
             {% else %}
                 <div class="container-fluid">
                     <a  href="{{ path("news_index",{page:(page-1)}) }}">prev</a> <a> {{ page }} </a>
-                    {% if count == '5' %}
+                    {% if page != lastPage%}
+
                     <a href="{{ path("news_index",{page:(page+1)}) }}">next</a>
                     {% endif %}
                 </div>
