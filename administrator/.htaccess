@@ -1,4 +1,5 @@
 AuthType Basic
 AuthName "Want to enter?"
-AuthUserFile D:\OSPanel\domains\localhost\.passwords
+#AuthUserFile full path to file
+AuthUserFile B:\OSPanel\domains\mysite.local\.passwords
 Require valid-user
