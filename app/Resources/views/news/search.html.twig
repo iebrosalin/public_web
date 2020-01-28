@@ -1,29 +1,63 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-<h5>Search</h5>
-    <div class=" row">
-        <table class="table table-striped">
-            <tr>
-                <th>Title</th>
-                <th>Abstract</th>
-                <th>Date</th>
-                <th>FullText</th>
-                <th>Activity</th>
-                <th>Action</th>
-            </tr>
-            {% for article in news %}
-            <tr>
-                <td> <a href="{{ path("news_show", {id:article.id} )}}" }}">{{ article.title }}</a></td>
-                <td>{{ article.abstract }}</td>
-                <td>{{ article.date |date("m/d/Y")}}</td>
-                <td>{{ article.text }}</td>
-                <td>{{ article.activity |number_format }}</td>
-                <td><a href="{{ path("news_edit", {id:article.id}) }}">edit </a><a> </a><a href="{{ path("news_delete", {id:article.id}) }}">delete</a></td>
-            </tr>
-            {% endfor%}
-        </table>
-    </div>
-    <div class="row" >
+    {% if isEmpty %}
+        <div class="comingcontainer">
+            <div class="checkbacksoon">
+                <p>
+                    <span class="go3d">N</span>
+                    <span class="go3d">o</span>
+                    <span class="go3d">t</span>
+                    <span class="go3d">h</span>
+                    <span class="go3d">i </span>
+                    <span class="go3d">n</span>
+                    <span class="go3d">g</span>
+                    <br/>
+                    <span class="go3d">f</span>
+                    <span class="go3d">o</span>
+                    <span class="go3d">u</span>
+                    <span class="go3d">n</span>
+                    <span class="go3d">d</span>
+                    <span class="go3d">:</span>
+                    <span class="go3d">(</span>
+
+
+                </p>
+                <nav class="go3d">
+                    <ul>
+                        <li><a href="{{ path('news_index') }}">Home</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    {% else %}
+        <h5>Search</h5>
+        <div class=" row table-responsive">
+            <table class="table table-striped">
+                <tr>
+                    <th>Title</th>
+                    <th>Abstract</th>
+                    <th>Date</th>
+                    <th>FullText</th>
+                    <th>Activity</th>
+                    <th>Action</th>
+                </tr>
+                {% for article in news %}
+                    <tr>
+                        <td><a href="{{ path("news_show", {id:article.id} ) }}">{{ article.title }}</a></td>
+                        <td>{{ article.abstract }}</td>
+                        <td>{{ article.date |date("m/d/Y") }}</td>
+                        <td>{{ article.text }}</td>
+                        <td>{{ article.activity |number_format }}</td>
+                        <td><a href="{{ path("news_edit", {id:article.id}) }}">edit </a><a> </a><a
+                                    href="{{ path("news_delete", {id:article.id}) }}">delete</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+        {% if lastPage > 1 %}
+            <div class="row">
             {% if page == '1' %}
                 <div class="container-fluid">
                     <a>{{ page }}</a>
@@ -34,11 +68,13 @@
                 </div>
             {% else %}
                 <div class="container-fluid">
-                    <a  href="{{ path("news_search",{page:(page-1)}) }}">prev</a> <a> {{ page }} </a>
-                    {% if count == '5' %}
-                    <a href="{{ path("news_search",{page:(page+1)}) }}">next</a>
+                    <a href="{{ path("news_search",{page:(page-1)}) }}">prev</a> <a> {{ page }} </a>
+                    {% if page != lastPage %}
+                        <a href="{{ path("news_search",{page:(page+1)}) }}">next</a>
                     {% endif %}
                 </div>
             {% endif %}
-    </div>
+            </div>
+        {% endif %}
+    {% endif %}
 {% endblock %}

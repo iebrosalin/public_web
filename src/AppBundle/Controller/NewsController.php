@@ -26,39 +26,52 @@ class NewsController extends Controller
 
         $news = ArticleQuery::create()->paginate($page,5);
         $lastPage = ArticleQuery::create()->paginate($page,5)->getLastPage();
+        $isEmpty = $news->count() == 0;
         return $this->render('news/index.html.twig', [
             'lastPage'=> $lastPage,
-            'page' => (int)$page,
-            'news' => $news]);
+            'page' => $page,
+            'news' => $news,
+            'isEmpty' => $isEmpty
+            ]);
     }
 
     /**
      * @Route("/search/{page}", name="news_search", requirements={"page"="\d+"})
+     * @param Request $request
+     * @param int $page
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function searchAction(Request $request, $page=1)
     {
         switch ($request->request->get('search_atribute')){
             case 'Title':
                 $news = ArticleQuery::create()->filterByTitle($request->request->get('search'))->paginate($page,5);
+                $lastPage = ArticleQuery::create()->filterByTitle($request->request->get('search'))->paginate($page,5)->getLastPage();
                 break;
             case 'Abstract':
                 $news = ArticleQuery::create()->filterByAbstract($request->request->get('search'))->paginate($page,5);
+                $lastPage = ArticleQuery::create()->filterByAbstract($request->request->get('search'))->paginate($page,5)->getLastPage();
                 break;
             case 'Date':
                 $news = ArticleQuery::create()->filterByDate($request->request->get('search'))->paginate($page,5);
+                $lastPage = ArticleQuery::create()->filterByDate($request->request->get('search'))->paginate($page,5)->getLastPage();
                 break;
             case 'Text':
                 $news = ArticleQuery::create()->filterByText($request->request->get('search'))->paginate($page,5);
+                $lastPage = ArticleQuery::create()->filterByText($request->request->get('search'))->paginate($page,5)->getLastPage();
                 break;
             case 'Activity':
                 $news = ArticleQuery::create()->filterByActivity($request->request->get('search'))->paginate($page,5);
+                $lastPage = ArticleQuery::create()->filterByActivity($request->request->get('search'))->paginate($page,5)->getLastPage();
                 break;
         }
-        $count=$news->count();
+        $isEmpty = $news->count() == 0;
         return $this->render('news/search.html.twig', [
-            'count'=> $count,
+            'lastPage'=> $lastPage,
             'page' => $page,
-            'news' => $news]);
+            'news' => $news,
+            'isEmpty' => $isEmpty
+        ]);
     }
 
     /**
@@ -115,7 +128,7 @@ class NewsController extends Controller
             return $this->redirectToRoute('news_index');
         }
 
-        return $this->render('news/publish.html.twig', [
+        return $this->render('news/edit.html.twig', [
             'form' => $form->createView(),
         ]);
     }

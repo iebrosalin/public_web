@@ -193,36 +193,29 @@ body { font-family: 'Open Sans', sans-serif; font-size: 14px; color: #3c3c3c;
 /* Нижняя панель навигации
 ================================================== */
 
-nav {
+nav.go3d {
 	width: 100%;
-    position: absolute;
     bottom: 0;
     margin-top: 20px;
 	min-height: 50px;
-	background-color: #FFFFFF;
-	-moz-box-shadow:0px 2px 3px rgba(204,204,204,0.65);
-	-webkit-box-shadow:0px 2px 3px rgba(204,204,204,0.65);
-	box-shadow:0px 2px 3px rgba(204,204,204,0.65);
-	-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=2,Color=#a6cccccc,Positive=true)";
-	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=2,Color=#a6cccccc,Positive=true);
 }
 
-nav ul {
+nav.go3d ul {
 	margin: 0;
 	text-align: center;
 }
 
-nav ul li {
+nav.go3d ul li {
 	display: inline;
 }
 
-nav ul li:last-child {
+nav.go3d ul li:last-child {
 	margin-right: 0;
 }
 
-nav ul li a {
+nav.go3d ul li a {
 	font-family: 'Open Sans', san-serif;
-	font-size: 13px;
+	font-size: 24px;
 	color: #666666;
 	text-transform: uppercase;
 	padding: 0 10px;
@@ -230,7 +223,7 @@ nav ul li a {
 	border-width:6px 6px 6px 6px;
 	margin: 0 15px;
     line-height: 50px;
-	
+
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
@@ -238,11 +231,11 @@ nav ul li a {
 	transition: all 0.2s linear;
 }
 
-nav ul li a:hover, nav ul li a.selected {
+nav.go3d ul li a:hover, nav.go3d ul li a.selected {
 	color: #FF7F00;
 	text-decoration: none;
 	border-width: 6px 6px 6px 6px;
-	
+
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
@@ -250,32 +243,32 @@ nav ul li a:hover, nav ul li a.selected {
 	transition: all 0.2s linear;
 }
 
-nav ul li a:active {
+nav.go3d ul li a:active {
 	color: #e00000;
 }
 
-nav ul li {
+nav.go3d ul li {
     position: relative;
 }
 
-nav ul li:hover > ul {
+nav.go3d ul li:hover > ul {
     visibility: visible;
 }
 
-nav ul li ul {
+nav.go3d ul li ul {
     visibility: hidden;
     position: absolute;
     left: auto;
     right: -100px;
     top: 23px;
     width: 200px;
-    
+
     background-color: #FFF;
     text-align: left;
     margin-top: 0;
     padding: 0 10px 5px;
-    
-    
+
+
     -moz-box-shadow:0px 2px 3px rgba(204,204,204,0.65);
 	-webkit-box-shadow:0px 2px 3px rgba(204,204,204,0.65);
 	box-shadow:0px 2px 3px rgba(204,204,204,0.65);
@@ -283,19 +276,19 @@ nav ul li ul {
 	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=2,Color=#a6cccccc,Positive=true);
 }
 
-nav ul li ul li {
+nav.go3d ul li ul li {
     width: auto;
     display: block !important;
 }
 
-nav ul li ul li a {
+nav.go3d ul li ul li a {
 	text-decoration: none;
 	border: none;
     height: 30px;
     line-height: 30px;
     width: 180px;
     display: block !important;
-	
+
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
@@ -303,10 +296,10 @@ nav ul li ul li a {
 	transition: all 0.2s linear;
 }
 
-nav ul li ul li a:hover {
+nav.go3d ul li ul li a:hover {
 	border: none;
     background-color: #f9f9f9;
-	
+
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
@@ -443,4 +436,11 @@ input[type="search"] {
 /* Мобильные экраны (устройства и браузеры) */
 @media only screen and (max-width: 479px) {
     .checkbacksoon p span { font-size: 150px; line-height: 160px; }.error {font-size: 14px;}.search {width: 220px;}
+}
+
+a.h4.logo:hover,
+a.h4.logo:focus {
+	color: rgb(60, 60, 60);
+	text-decoration: none;
+	outline-color: transparent;
 }
