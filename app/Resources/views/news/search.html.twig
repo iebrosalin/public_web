@@ -32,7 +32,7 @@
         </div>
 
     {% else %}
-        <h5>Search</h5>
+        <h5>Filtered news by {{ searchAttribute }}: "{{ search }}"</h5>
         <div class=" row table-responsive">
             <table class="table table-striped">
                 <tr>
@@ -56,25 +56,5 @@
                 {% endfor %}
             </table>
         </div>
-        {% if lastPage > 1 %}
-            <div class="row">
-            {% if page == '1' %}
-                <div class="container-fluid">
-                    <a>{{ page }}</a>
-                    {% if count == '5' %}
-                        <a href="{{ path("news_search",{page:(page+1)}) }}">next</a>
-                    {% endif %}
-                </div>
-                </div>
-            {% else %}
-                <div class="container-fluid">
-                    <a href="{{ path("news_search",{page:(page-1)}) }}">prev</a> <a> {{ page }} </a>
-                    {% if page != lastPage %}
-                        <a href="{{ path("news_search",{page:(page+1)}) }}">next</a>
-                    {% endif %}
-                </div>
-            {% endif %}
-            </div>
-        {% endif %}
     {% endif %}
 {% endblock %}

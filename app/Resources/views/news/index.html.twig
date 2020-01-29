@@ -57,23 +57,22 @@
             </table>
         </div>
         {% if lastPage > 1 %}
-
-            <div class="row">
-                {% if page == '1' %}
-                    <div class="container-fluid">
-                        <a>{{ page }}</a> <a href="{{ path("news_index",{page:(page+1)}) }}"> next </a>
-                    </div>
-                {% else %}
-                    <div class="container-fluid">
-                        <a href="{{ path("news_index",{page:(page-1)}) }}">prev</a> <a> {{ page }} </a>
-                        {% if page != lastPage %}
-
-                            <a href="{{ path("news_index",{page:(page+1)}) }}">next</a>
+            <div class="row justify-content-center">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        {% if page == '1' %}
+                            <li class="page-item"><a class="page-link">{{ page }}</a></li>
+                            <li class="page-item"><a class="page-link" href="{{ path("news_index",{page:(page+1)}) }}">Next</a></li>
+                        {% else %}
+                            <li class="page-item"><a class="page-link" href="{{ path("news_index",{page:(page-1)}) }}">Previous</a></li>
+                            <li class="page-item"><a class="page-link">{{ page }}</a></li>
+                            {% if page != lastPage %}
+                                <li class="page-item"><a class="page-link" href="{{ path("news_index",{page:(page+1)}) }}">Next</a></li>
+                            {% endif %}
                         {% endif %}
-                    </div>
-                {% endif %}
+                    </ul>
+                </nav>
             </div>
         {% endif %}
-
     {% endif %}
 {% endblock %}
