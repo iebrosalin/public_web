@@ -1,4 +1,4 @@
-# Symphony_news_crud_panel дата написания 08.
+# News CRUD panel
 
 Как-то дали тестовое задание в 05.2018. Заключалось оно в написании CRUD панели c использованием следующих средств:
 
@@ -99,9 +99,25 @@ php  bin/console propel:fixtures:load
  <details>
  <summary>Скриншоты</summary>
  
-![][] 
+![screen 1][Screen1] 
+![screen 2][Screen2] 
+![screen 3][Screen3] 
+![screen 4][Screen4] 
+![screen 5][Screen5] 
+![screen 6][Screen6] 
+![screen 7][Screen7] 
+![screen 8][Screen8] 
+![screen 9][Screen9] 
+![screen 10][Screen10] 
 </details> 
 
+## [Список всех моих проектов][ListAllMyProject]
+
+License
+----
+MIT
+
+[ListAllMyProject]:<https://github.com/iebrosalin/all_public_projects>
 
 
 [IndexDemo]:<https://github.com/iebrosalin/public_web/blob/backend/symphony/news_crud_panel/descriptions/gif/index_demo.gif>
@@ -110,4 +126,13 @@ php  bin/console propel:fixtures:load
 [ErrorDemo]:<https://github.com/iebrosalin/public_web/blob/backend/symphony/news_crud_panel/descriptions/gif/demo_error.gif>
 [AdapativeDemo]:<https://github.com/iebrosalin/public_web/blob/backend/symphony/news_crud_panel/descriptions/gif/adaprive_demo.gif>
 
-[]:<>
+[Screen1]:<https://github.com/iebrosalin/public_web/blob/backend/symphony/news_crud_panel/descriptions/screens/1.png>
+[Screen2]:<https://github.com/iebrosalin/public_web/blob/backend/symphony/news_crud_panel/descriptions/screens/2.png>
+[Screen3]:<https://github.com/iebrosalin/public_web/blob/backend/symphony/news_crud_panel/descriptions/screens/3.png>
+[Screen4]:<https://github.com/iebrosalin/public_web/blob/backend/symphony/news_crud_panel/descriptions/screens/4.png>
+[Screen5]:<https://github.com/iebrosalin/public_web/blob/backend/symphony/news_crud_panel/descriptions/screens/5.png>
+[Screen6]:<https://github.com/iebrosalin/public_web/blob/backend/symphony/news_crud_panel/descriptions/screens/6.png>
+[Screen7]:<https://github.com/iebrosalin/public_web/blob/backend/symphony/news_crud_panel/descriptions/screens/7.png>
+[Screen8]:<https://github.com/iebrosalin/public_web/blob/backend/symphony/news_crud_panel/descriptions/screens/8.png>
+[Screen9]:<https://github.com/iebrosalin/public_web/blob/backend/symphony/news_crud_panel/descriptions/screens/9.png>
+[Screen10]:<https://github.com/iebrosalin/public_web/blob/backend/symphony/news_crud_panel/descriptions/screens/10.png>
