@@ -28,27 +28,36 @@
 ## Демо
 
 <details>
-    <summary>Поиск комментариев админке демо</summary>
+    <summary>Демо работы</summary>
  
- ![search comment][SearchComment]
+ ![work demo][WorkDemo]
 </details>
 
 <details>
-    <summary>Поиск комментариев админке демо</summary>
+    <summary>Демо страниц ошибок и прочего</summary>
  
- ![search comment][SearchComment]
+ ![error demo][ErrorDemo]
 </details>
 
 <details>
-    <summary>Поиск комментариев админке демо</summary>
+    <summary>Демо адаптивности макета</summary>
  
- ![search comment][SearchComment]
+ ![adaptive demo][AdaptiveDemo]
 </details>
 
 <details>
     <summary>Скриншоты</summary>
  
- ![search comment][SearchComment]
+ ![screen 1][Screen1]
+ ![screen 2][Screen2]
+ ![screen 3][Screen3]
+ ![screen 4][Screen4]
+ ![screen 5][Screen5]
+ ![screen 6][Screen6]
+ ![screen 7][Screen7]
+ ![screen 8][Screen8]
+ ![screen 9][Screen9]
+ ![screen 10][Screen10]
 </details>
 
 ## [Список всех моих проектов][ListAllMyProject]
@@ -59,6 +68,10 @@
 
 
 [ListAllMyProject]:<https://github.com/iebrosalin/all_public_projects>
+
+[WorkDemo]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/vedomost/descriptions/gif/work_demo.gif>
+[ErrorDemo]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/vedomost/descriptions/gif/error_demo.gif>
+[AdaptiveDemo]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/vedomost/descriptions/gif/adaptive_demo.gif>
 
 
 
