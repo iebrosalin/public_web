@@ -1,10 +1,74 @@
 # Vedomost
-## Пара замечаний по заданию: 
-1) В задании подраумевается, что есть набор данных, которыми просто надо манипулировать. Это значит что ты заполнил табицу один и тестишь функционал сайта на нём. 2) В таблице exam первичный ключ состоит из двух полей, так как в задании либо было пропущено поле id, либо подразумевается разделить пространство возможных первичных ключей на две части, и за счёт этого формировать первичный ключ. Это значит что у тебя ключ состоит из двух уникальных значений.
 
-## Установка и структура
-В папке config есть файл db.php там в самом начале данные для установления соединения с БД, а дальше функции, которые использовалиьсь. А также там есть univer.sql, чтобы установить базу. Тебе нужно создать базу данных univer в phpmyadmin, зайти туда и нажать импортировать, а потом выбрать тот файл.
+Однажды меня попросил один парень с ИВТ за короткий срок написать сайт напоминающий по функционалу электронную ведомость, куда преподователи ставят оценки. Требование было соблюдении 1-ой и 2-ой нормальных форм в БД, а также операции для выставления оценок студентам за экзмены в зависимости от допуска и групппы. Была просьба код писать по проще, поэтому работы над ошибками здесь немного. 
 
-В остальном тебе остаётся закинуть сайт на свой виртуальный хост и наслаждать минимализмом).
+Так уж вышло, что [проект на Symfony][NewsCrudPanel] был написан раньше, поэтому черпал вдохновение оттуда и из [первого сайта][FirstSite].
 
-P.S admission - допуск
+## Установка
+<details>
+    <summary>Инструкция</summary>
+ 
+1. Проверить настройки сервера. Для Apache OpenServer могут быть такими
+
+```
+<VirtualHost *:%httpport%>
+
+    DocumentRoot    "%hostdir%"
+    ServerName      "%host%"
+    ServerAlias     "%host%" %aliases%
+    ScriptAlias     /cgi-bin/ "%hostdir%/cgi-bin/"
+
+</VirtualHost>
+```
+
+2. Проверить данные для подключения к БД в файле db/Db.php с 7 строки идёт массив с параметрами
+3. Импортировать sql dump из db/univer.sql
+</details>
+
+## Демо
+
+<details>
+    <summary>Поиск комментариев админке демо</summary>
+ 
+ ![search comment][SearchComment]
+</details>
+
+<details>
+    <summary>Поиск комментариев админке демо</summary>
+ 
+ ![search comment][SearchComment]
+</details>
+
+<details>
+    <summary>Поиск комментариев админке демо</summary>
+ 
+ ![search comment][SearchComment]
+</details>
+
+<details>
+    <summary>Скриншоты</summary>
+ 
+ ![search comment][SearchComment]
+</details>
+
+## [Список всех моих проектов][ListAllMyProject]
+
+
+[NewsCrudPanel]:<https://github.com/iebrosalin/public_web/tree/backend/symphony/news_crud_panel>
+[FirstSite]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/first_site>
+
+
+[ListAllMyProject]:<https://github.com/iebrosalin/all_public_projects>
+
+
+
+[Screen1]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/vedomost/descriptions/screens/1.png>
+[Screen2]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/vedomost/descriptions/screens/2.png>
+[Screen3]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/vedomost/descriptions/screens/3.png>
+[Screen4]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/vedomost/descriptions/screens/4.png>
+[Screen5]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/vedomost/descriptions/screens/5.png>
+[Screen6]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/vedomost/descriptions/screens/6.png>
+[Screen7]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/vedomost/descriptions/screens/7.png>
+[Screen8]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/vedomost/descriptions/screens/8.png>
+[Screen9]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/vedomost/descriptions/screens/9.png>
+[Screen10]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/vedomost/descriptions/screens/10.png>
