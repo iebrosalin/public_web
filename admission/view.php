@@ -1,69 +1,63 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-    <title>Допуск на экзамен</title>
-</head>
-<body class="container-fluid">
-<h1>Допуск на экзамен</h1>
-<a href="/">Домой</a>
+<h4>Допуск на экзамен</h4>
 <form method="POST">
 
-    <?php if(!isset($_POST['sub_show'])): ?>
-    <select name="discipline" >
-        <?php foreach ($disciplines as $discipline): ?>
-        <option value="<?php echo $discipline ['title'] ?>"> <?php echo $discipline ['title'] ?> </option>
-        <?php endforeach; ?>
-    </select>
-    <button type="submit" class="btn" name="sub_show" value="show" >Show</button>
-    <?php endif; ?>
+    <?php if( empty($_POST['admission_show']) || $_POST['admission_show'] ==''): ?>
 
-    <?php if(isset($_POST['sub_show']) and isset($_POST['discipline'])): ;?>
-        <?php foreach ($groups as $group): ?>
-        <h2> <?php echo "Группа ".$group['num_grp']; ?></h2>
-        <table class="table table-bordered">
-            <thead>
-            <tr>
-                
-                <th>Студент</th>
-                <th>Допуск (Да/Нет)</th>
-            </tr>
-            </thead>
-            <tbody>
-            <?php $students=Db::getGroupStud($group['num_grp']); foreach ($students as $stud): ?>
-            <tr>
-                
-                <td>
-                    <p><?php  echo $stud['name']." ".$stud['soname']; ?></p>
-                </td>
-                <td>
-                        <select name="admission[]">
-                           <?php if(Db::getAdmissionByIdStud($stud['id'],$_POST['discipline'])['admission']=="1"): ?>
-                           <option value="<?php echo $stud['id']."/"."1"; ?>">Да</option>
-                           <option value="<?php echo $stud['id']."/"."0"; ?>">Нет</option>
-                           <?php else: ?>
-                            <option value="<?php echo $stud['id']."/"."0"; ?>">Нет</option>
-                            <option value="<?php echo $stud['id']."/"."1"; ?>">Да</option>
-                            <?php endif; ?>
-                        </select>
-                </td>
-            </tr>
+    <div class="form-group">
+        <select  class="form-control" name="discipline" >
+            <?php foreach ($disciplines as $discipline): ?>
+                <option value="<?php echo $discipline ['title'] ?>"> <?php echo $discipline ['title'] ?> </option>
             <?php endforeach; ?>
-            </tbody>
-        </table>
-    <?php endforeach; ?>
-    <button type="submit" class="btn" name="sub_edit" value="<?php echo $_POST['discipline'];?>" >Сохранить</button>
+        </select>
+    </div>
+
+    <div class="form-group">
+
+        <button type="submit" class="btn" name="admission_show" value="show" >Показать</button>
+    </div>
+    <?php else: ?>
+    <div class="form-group">
+        <button type="submit" class="btn" name="admission_show" value >Назад</button>
+    </div>
     <?php endif; ?>
 
-</form>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-</body>
-</html>
+    <?php if($_POST['admission_show'] == 'show' and isset($_POST['discipline'])): ;?>
+        <?php foreach ($groups as $group): ?>
+        <h6> <?php echo "Группа ".$group['num_grp']; ?></h6>
+        <div class="table-responsive">
+
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+
+                    <th>Студент</th>
+                    <th>Допуск (Да/Нет)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php $students=Db::getGroupStud($group['num_grp']); foreach ($students as $stud): ?>
+                <tr>
+
+                    <td>
+                        <p><?php  echo $stud['name']." ".$stud['soname']; ?></p>
+                    </td>
+                    <td>
+                            <select class="form-control" name="admission[]">
+                               <?php if(Db::getAdmissionByIdStud($stud['id'],$_POST['discipline'])['admission']=="1"): ?>
+                               <option value="<?php echo $stud['id']."/"."1"; ?>">Да</option>
+                               <option value="<?php echo $stud['id']."/"."0"; ?>">Нет</option>
+                               <?php else: ?>
+                                <option value="<?php echo $stud['id']."/"."0"; ?>">Нет</option>
+                                <option value="<?php echo $stud['id']."/"."1"; ?>">Да</option>
+                                <?php endif; ?>
+                            </select>
+                    </td>
+                </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+    <?php endforeach; ?>
+    <button type="submit" class="btn" name="admission_edit" value="<?php echo $_POST['discipline'];?>" >Сохранить</button>
+    <?php endif; ?>
