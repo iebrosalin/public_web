@@ -1,1 +1,0 @@
-<div class="btn btn-smoke text-center" ><button submit="on">Показать еще</button></div>
