@@ -1,0 +1,5 @@
+.videostream, #screenshot-img{
+    min-height: 1px;
+    width: auto;
+    display: none;
+}

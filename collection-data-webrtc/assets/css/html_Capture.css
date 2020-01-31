@@ -1,0 +1,17 @@
+.form-group .btn-tertiary{color:#ffffff;padding:0;line-height:40px;max-width:175px;max-width:350px;margin:auto;display:block;border:2px solid rgba(255, 255, 255, 0.125)}
+.form-group .btn-tertiary:hover,.form-group .btn-tertiary:focus{color:#ffffff;border-color:#ffffff}
+.form-group .input-file{width:.1px;height:.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1}
+.form-group .input-file + .js-labelFile{overflow:hidden;text-overflow:ellipsis;white-space:unset;padding:0 10px;cursor:pointer}
+/*.form-group .input-file + .js-labelFile .icon:before{content:"\f093"}*/
+/*.form-group .input-file + .js-labelFile.has-file .icon:before{content:"\f00c";color:#5AAC7B}*/
+.form-group { padding: 25px 0 25px;}
+#screenshot-img{
+    min-height: 1px;
+    width: 100%;
+}
+#preview{
+    max-height:350px;
+    min-height: 1px;
+    width: 100%;
+
+}
