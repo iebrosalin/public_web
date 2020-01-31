@@ -29,7 +29,7 @@
   |-------------------|------------------------------|--------|-----------|------------------|
   |12.2017            |[First site][PurePHPFirstSite]|-       | Mysql     |:white_check_mark:|
   |05.2018            |[Vedomost][PurePHPVedomost]   |-       | Mysql     |:white_check_mark:|
-  |04.2019            |[Bad SPA][ToDo]               |-       | Mysql     ||
+  |04.2019            |[Bad SPA][ToDo]               |-       | Mysql     |:skull_and_crossbones:|
   |07.2019            |[Sandbox][PurePHPSandbox]     |-       | Mysql     |:white_check_mark:|
   |07.2019            |[Sandbox PostgreSQL][ToDo]    |+       | PostgreSQL|:white_check_mark:|
   |01.2020            |[Shvec patterns][ShvecTheory] |+       | -         ||
@@ -56,7 +56,7 @@
   
   |месяц.год создания |Название                                           | Docker |Db         |Завершённость     |
   |-------------------|---------------------------------------------------|--------|-----------|------------------|
-  |07.2019            |[Eliseev master class][EliseevLaravelMasterClass]  |+       |PostrgreSQL||
+  |07.2019            |[Eliseev master class][EliseevLaravelMasterClass]  |+       |PostrgreSQL|:skull_and_crossbones:|
   |01.2020            |[Afanasyev season 1][AfanasyevSeason1]             |-       | Mysql     |:white_check_mark:|
   |01.2020            |[Afanasyev season 2][AfanasyevSeason2]             |-       | Mysql     ||
   |01.2020            |[Afanasyev patterns][AfanasyevPatterns]            |-       | Mysql     ||
