@@ -99,7 +99,6 @@ MIT
 
 [Pmobi]:<https://pmobi.ru/>
 
-[]:<>
 [PurePHPFirstSite]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/first_site>
 [PurePHPVedomost]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/vedomost>
 [PurePHPSandbox]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/sandbox>
