@@ -27,25 +27,25 @@
 
   |месяц.год создания |Название                      | Docker |Db         |Завершённость     |
   |-------------------|------------------------------|--------|-----------|------------------|
-  |12.2017            |[First site][ToDo]            |-       | Mysql     |:white_check_mark:|
-  |05.2018            |[Vedomost][ToDo]              |-       | Mysql     |:white_check_mark:|
+  |12.2017            |[First site][PurePHPFirstSite]|-       | Mysql     |:white_check_mark:|
+  |05.2018            |[Vedomost][PurePHPVedomost]   |-       | Mysql     |:white_check_mark:|
   |01.2019            |[Diplom][ToDo]                |-       | Mysql     ||
   |04.2019            |[Bad SPA][ToDo]               |-       | Mysql     ||
-  |07.2019            |[Sandbox][ToDo]               |-       | Mysql     ||
+  |07.2019            |[Sandbox][PurePHPSandbox]     |-       | Mysql     ||
   |07.2019            |[Sandbox PostgreSQL][ToDo]    |+       | PostgreSQL|:white_check_mark:|
-  |01.2020            |[Shvec patterns][ToDo]        |+       | -         ||
+  |01.2020            |[Shvec patterns][ShvecTheory] |+       | -         ||
   
   Symfony
   
   |месяц.год создания |Название                      | Docker |Db         |Завершённость     |
   |-------------------|------------------------------|--------|-----------|------------------|
-  |05.2018            |[News CRUD][ToDo]             |-       | Mysql     |:white_check_mark:|
+  |05.2018            |[News CRUD][SymphonyNewsCrud] |-       | Mysql     |:white_check_mark:|
 
   Bitrix
   
   |месяц.год период создания |Название                      |Завершённость     |
   |--------------------------|------------------------------|------------------|
-  |05.2018 - 07.2019         |[Bitrix samples][ToDo]        |:white_check_mark:|
+  |05.2018 - 07.2019         |[Bitrix samples][Bitrix]      |:white_check_mark:|
   
   Wordpress
   
@@ -57,13 +57,13 @@
   
   |месяц.год создания |Название                      | Docker |Db         |Завершённость     |
   |-------------------|------------------------------|--------|-----------|------------------|
-  |02.2019            |[Theory (Попов)][ToDo]        |-       | Mysql     |:white_check_mark:|
+  |02.2019            |[Theory][ZfTherory]           |-       | Mysql     |:white_check_mark:|
 
   Laravel
   
   |месяц.год создания |Название                                           | Docker |Db         |Завершённость     |
   |-------------------|---------------------------------------------------|--------|-----------|------------------|
-  |07.2019            |[Eliseev master class][EliseevLaravelMasterClass]  |+       | Mysql     ||
+  |07.2019            |[Eliseev master class][EliseevLaravelMasterClass]  |+       |PostrgreSQL||
   |01.2020            |[Afanasyev season 1][AfanasyevSeason1]             |-       | Mysql     |:white_check_mark:|
   |01.2020            |[Afanasyev season 2][AfanasyevSeason2]             |-       | Mysql     ||
   |01.2020            |[Afanasyev patterns][AfanasyevPatterns]            |-       | Mysql     ||
@@ -72,8 +72,8 @@
   
   |месяц.год создания |Название                       | Docker |Db         |Завершённость     |
   |-------------------|------------------------------ |--------|-----------|------------------|
-  |08.2019            |[Theory (WebForMySelf)][ToDo]  |+       | Mysql     |:white_check_mark:|
-  |01.2020            |[Practice (WebForMySelf)][ToDo]|-       | Mysql     |:white_check_mark:|
+  |08.2019            |[Theory][Yii2Theory]           |+       | Mysql     |:white_check_mark:|
+  |01.2020            |[Practice][Yii2Practice]       |-       | Mysql     |:white_check_mark:|
 
 </details>  
 
@@ -106,12 +106,23 @@ MIT
 
 [Pmobi]:<https://pmobi.ru/>
 
-
+[PurePHPFirstSite]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/first_site>
+[PurePHPVedomost]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/vedomost>
+[PurePHPSandbox]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/sandbox>
+[ShvecTheory]:<https://github.com/iebrosalin/public_web/tree/backend/theory/shvec>
 
 [EliseevLaravelMasterClass]:<https://github.com/iebrosalin/public_web/tree/backend/laravel/afanasyev/season1>
 [AfanasyevSeason1]:<https://github.com/iebrosalin/public_web/tree/backend/laravel/afanasyev/season1>
 [AfanasyevSeason2]:<https://github.com/iebrosalin/public_web/tree/backend/laravel/afanasyev/season2>
 [AfanasyevPatterns]:<https://github.com/iebrosalin/public_web/tree/backend/laravel/afanasyev/patterns>
+
+[Yii2Theory]:<https://github.com/iebrosalin/public_web/tree/backend/yii2/theory>
+[Yii2Practice]:<https://github.com/iebrosalin/public_web/tree/backend/yii2/practice>
+
+[ZfTherory]:<https://github.com/iebrosalin/public_web/tree/backend/zf/theory>
+
+[Bitrix]:<https://github.com/iebrosalin/public_web/tree/backend/bitrix>
+[SymphonyNewsCrud]:<https://github.com/iebrosalin/public_web/tree/backend/symphony/news_crud_panel>
 
 [FormWS]:<https://github.com/iebrosalin/public_web/tree/frontend/form_websocket>
 [ToDo]:<https://github.com/iebrosalin/public_web/tree/frontend/react/bura/todo>
