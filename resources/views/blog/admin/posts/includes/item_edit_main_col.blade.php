@@ -36,9 +36,7 @@
                             <textarea name="content_raw"
                                       id="content_raw"
                                       rows="20"
-                                      class="form-control">
-                                    {{old('content_raw',$item->content_raw)}}
-                                </textarea>
+                                      class="form-control">{{old('content_raw',$item->content_raw)}}</textarea>
                         </div>
                     </div>
                     <div class="tab-pane" id="adddata" role="tabpanel">
