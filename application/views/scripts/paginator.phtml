@@ -1,0 +1,26 @@
+<p>Страница <b><?= $this->current?></b> из <?=$this->pageCount?></p>
+
+
+<? if($page!=$this->first): ?>
+    <a href="<?= $this->url(['page'=>$this->first])?>">Первая</a>
+<? else:?>
+    <?= 'Первая'?>
+<? endif;?>
+<? if(isset($this->previous)): ?>
+    <a href="<?= $this->url(['page'=>$this->previous])?>">Предыдущая</a>
+<? endif;?>
+<? foreach ($this->pagesInRange as $page):?>
+    <? if($page!=$this->current): ?>
+        <a href="<?= $this->url(['page'=>$page])?>"> <?= $page?></a>
+    <? else:?>
+        <?= $page?>
+    <? endif;?>
+<?endforeach;?>
+<? if(isset($this->next)): ?>
+    <a href="<?= $this->url(['page'=>$this->next])?>">Следующая</a>
+<? endif;?>
+<? if($page!=$this->last): ?>
+    <a href="<?= $this->url(['page'=>$this->last])?>">Последняя</a>
+<? else:?>
+    <?= 'Последняя'?>
+<? endif;?>

@@ -1,0 +1,19 @@
+<form action="<?= $this->element->getAction()?>" method="<?= $this->element->getMethod()?>">
+    <fieldset>
+        <legend>
+            Данные моей формы
+        </legend>
+        <div class="">
+            <?= $this->element->text?>
+            <? foreach($this->element->text->getMessages() as $msg):?>
+            <p><?= $msg?></p>
+            <? endforeach; ?>
+        </div>
+        <div class="">
+            <?= $this->element->multiCheckbox?>
+        </div>
+        <div class="">
+            <?= $this->element->submit?>
+        </div>
+    </fieldset>
+</form>

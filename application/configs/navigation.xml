@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigation>
+    <nav>
+        <home>
+            <label>Главная</label>
+            <controller>index</controller>
+            <action>index</action>
+        </home>
+        <articles>
+            <label>Статьи</label>
+            <controller>articles</controller>
+            <action>index</action>
+            <pages>
+                <addArticle>
+                    <label>Добавить статью</label>
+                    <controller>articles</controller>
+                    <action>add-article</action>
+                </addArticle>
+                <editArticle>
+                    <label>Реадктировать статью</label>
+                    <controller>articles</controller>
+                    <action>edit-article</action>
+                </editArticle>
+                <deleteArticle>
+                    <label>Удалить статью</label>
+                    <controller>index</controller>
+                    <action>delete-article</action>
+                </deleteArticle>
+            </pages>
+        </articles>
+    </nav>
+</navigation>

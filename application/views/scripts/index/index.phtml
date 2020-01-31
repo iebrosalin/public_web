@@ -1,43 +1,37 @@
-<style>
-    a:link,
-    a:visited
-    {
-        color: #0398CA;
-    }
+<?
+    $this->headTitle('Main','PREPEND');
+    $this->headMeta()->appendName('keywords','ZF1')
+            ->appendName('description', 'Main ZF1');
+?>
+<!--<pre>-->
+<!--    id=--><?//=$this->lastid."\n"?>
+<!--    --><?// print_r($this->posts);?>
+<!--</pre>-->
 
-    span#zf-name
-    {
-        color: #91BE3F;
-    }
+<?// $url=$this->url(
+//        [
+//            'controller'=> 'index',
+//            'action'=>'index',
+//            'a'=> 333
+//        ],
+//        'default'
+//    );?>
+<!---->
+<!--<a href="--><?//= $url?><!--"> Ref</a>-->
 
-    div#welcome
-    {
-        color: #FFFFFF;
-        background-image: url(http://framework.zend.com/images/bkg_header.jpg);
-        width:  600px;
-        height: 400px;
-        border: 2px solid #444444;
-        overflow: hidden;
-        text-align: center;
-    }
+<!--<pre>-->
+<!--    --><?// foreach ($this->posts as $post):?>
+<!--        --><?// print_r($post)?>
+<!--    --><?// endforeach; ?>
+<!--</pre>-->
+<?///*= $this->paginationControl($this->posts,'sliding','paginator.phtml')*/?>
+<?//= $this->paginationControl($this->posts,'jumping','paginator.phtml')?>
+<!---->
+<!--<br/>-->
+<?//= microtime(true)-$this->start; ?>
 
-    div#more-information
-    {
-        background-image: url(http://framework.zend.com/images/bkg_body-bottom.gif);
-        height: 100%;
-    }
-</style>
-<div id="welcome">
-    <h1>Welcome to the <span id="zf-name">Zend Framework!</span></h1>
+<?= $this->form?>
 
-    <h3>This is your project's main page</h3>
 
-    <div id="more-information">
-        <p><img src="http://framework.zend.com/images/PoweredBy_ZF_4LightBG.png" /></p>
-        <p>
-            Helpful Links: <br />
-            <a href="http://framework.zend.com/">Zend Framework Website</a> |
-            <a href="http://framework.zend.com/manual/en/">Zend Framework Manual</a>
-        </p>
-    </div>
-</div>
+
+

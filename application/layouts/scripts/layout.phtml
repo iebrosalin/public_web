@@ -1,0 +1,22 @@
+<?= $this->doctype() ?>
+<html>
+<head>
+    <?=$this->headTitle()."\n"?>
+    <?= $this->headMeta()."\n"?>
+    <?= $this->headLink()."\n"?>
+    <?= $this->headScript()."\n"?>
+</head>
+<body>
+<?= $this->navigation();?>
+<?//= $this->navigation()->menu()->setMinDepth(0)->setMaxDepth(0);?>
+<?//= $this->navigation()->menu()->setMinDepth(1)->setMaxDepth(1);?>
+<?//= $this->navigation()->menu()->setMinDepth(1)->setMaxDepth(1)
+//    ->setOnlyActiveBranch(true)->setRenderParents(false);?>
+
+<?//= $this->navigation()->breadcrumbs()->setMinDepth(0)->setseparator(' ')->setLinkLast(true);?>
+<?= $this->render('reklama.phtml')?>
+<?= $this->myHelper();?>
+<?= $this->lastPosts();?>
+<?php echo $this->layout()->content; ?>
+</body>
+</html>
