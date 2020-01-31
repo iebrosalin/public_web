@@ -29,9 +29,8 @@
   |-------------------|------------------------------|--------|-----------|------------------|
   |12.2017            |[First site][PurePHPFirstSite]|-       | Mysql     |:white_check_mark:|
   |05.2018            |[Vedomost][PurePHPVedomost]   |-       | Mysql     |:white_check_mark:|
-  |01.2019            |[Diplom][ToDo]                |-       | Mysql     ||
   |04.2019            |[Bad SPA][ToDo]               |-       | Mysql     ||
-  |07.2019            |[Sandbox][PurePHPSandbox]     |-       | Mysql     ||
+  |07.2019            |[Sandbox][PurePHPSandbox]     |-       | Mysql     |:white_check_mark:|
   |07.2019            |[Sandbox PostgreSQL][ToDo]    |+       | PostgreSQL|:white_check_mark:|
   |01.2020            |[Shvec patterns][ShvecTheory] |+       | -         ||
   
@@ -46,12 +45,6 @@
   |месяц.год период создания |Название                      |Завершённость     |
   |--------------------------|------------------------------|------------------|
   |05.2018 - 07.2019         |[Bitrix samples][Bitrix]      |:white_check_mark:|
-  
-  Wordpress
-  
-  |месяц.год создания |Название                      | Docker |Db         |Завершённость     |
-  |-------------------|------------------------------|--------|-----------|------------------|
-  |01.2019            |[Wordpress samples][ToDo]     |-       | Mysql     ||
 
   ZF1
   
@@ -106,6 +99,7 @@ MIT
 
 [Pmobi]:<https://pmobi.ru/>
 
+[]:<>
 [PurePHPFirstSite]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/first_site>
 [PurePHPVedomost]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/vedomost>
 [PurePHPSandbox]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/sandbox>
