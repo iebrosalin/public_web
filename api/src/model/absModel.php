@@ -7,7 +7,7 @@ class AbsModel{
     {
         $params = [
             'host' => 'localhost',
-            'dbname' => 'sibers_test',
+            'dbname' => 'spa_test',
             'user' => 'root',
             'password' => '',
         ];

@@ -6,11 +6,6 @@
       "View\\": "src/view"
     }
   },
-  "config": {
-    "platform": {
-      "php": "7.0.26"
-    }
-  },
   "require": {
     "swiftmailer/swiftmailer": "^6.0"
   }

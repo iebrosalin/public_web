@@ -15,8 +15,7 @@ class Helper extends AbsModel
     {
 
         $db = self::getConnection();
-        $sql = '';
-        $password=password_hash("sibers", PASSWORD_DEFAULT);
+        $password=password_hash("12345678", PASSWORD_DEFAULT);
         for ($i = 0; $i != 100; ++$i) {
             $user='user'.$i;
             $name='User'.$i;
@@ -34,10 +33,30 @@ QUERY;
             $result->bindParam(':UserSoname',$soname , \PDO::PARAM_STR);
 
             $result->execute();
-////            sleep(1);
-//            echo $sql;
         }
-        //return $sql;
+    }
+
+    public static function generateAdmin()
+    {
+
+        $db = self::getConnection();
+        $password=password_hash("12345678", PASSWORD_DEFAULT);
+            $user='admin';
+            $name='Admin_Name';
+            $soname='Admin_Soname';
+            $sql=<<<QUERY
+                INSERT INTO users
+                    (id, login, password, role, name, `soname`, burthday, gender)
+                VALUES (NULL, :login, :password, 'admin', :uname, :UserSoname, '2019-12-11', 'F')
+QUERY;
+
+            $result = $db->prepare($sql);
+            $result->bindParam(':login', $user, \PDO::PARAM_STR);
+            $result->bindParam(':password', $password, \PDO::PARAM_STR);
+            $result->bindParam(':uname', $name, \PDO::PARAM_STR);
+            $result->bindParam(':UserSoname',$soname , \PDO::PARAM_STR);
+
+            $result->execute();
     }
 
     public static function sanitize($string)
@@ -52,8 +71,8 @@ QUERY;
     public static function sendMail($code){
         // Create the Transport
         $transport = (new \Swift_SmtpTransport('smtp.yandex.ru', 465,'ssl'))
-            ->setUsername('siber-test@yandex.ru')
-            ->setPassword('test-siber')
+            ->setUsername('1111@yandex.ru')
+            ->setPassword('11111')
         ;
 
         // Create the Mailer using your created Transport
@@ -61,8 +80,8 @@ QUERY;
 
         // Create a message
         $message = (new \Swift_Message('Authentication'))
-            ->setFrom(['siber-test@yandex.ru' => 'Admin'])
-            ->setTo(['siber-test@yandex.ru'])
+            ->setFrom(['11111@yandex.ru' => 'Admin'])
+            ->setTo(['11111@yandex.ru'])
             ->setBody('Code for authentication '.$code)
         ;
         // Send the message

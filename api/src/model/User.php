@@ -125,7 +125,7 @@ class User extends AbsModel
             $usersList=array_slice($usersList,-\Model\User::getItemPerPage());
         }
         else{
-            $usersList=array_slice($usersList,-(\Model\User::countUsers()-(\Model\User::getMaxPage() -1)*\Model\User::getItemPerPage()));
+            $usersList=array_slice($usersList,-(\Model\User::countUsers()-\Model\User::getMaxPage()*\Model\User::getItemPerPage()));
 
         }
         return $usersList;
@@ -142,6 +142,6 @@ class User extends AbsModel
     }
 
     public static function getItemPerPage(){
-            return 12;
+            return 10;
     }
 }
