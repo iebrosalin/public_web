@@ -26,7 +26,7 @@
   |12.2017            |[First site][PurePHPFirstSite]              |-       | Mysql     |:white_check_mark:|
   |05.2018            |[Vedomost][PurePHPVedomost]                 |-       | Mysql     |:white_check_mark:|
   |04.2019            |[Bad SPA][BadSPA]                           |-       | Mysql     |:skull_and_crossbones:|
-  |07.2019            |[Sandbox][PurePHPSandbox]                   |-       | Mysql     |:white_check_mark:|
+  |07.2019            |[Sandbox][PurePHPSandbox]                   |+       | Mysql     |:white_check_mark:|
   |07.2019            |[Sandbox PostgreSQL][HandbookPostgresql]    |+       | PostgreSQL|:white_check_mark:|
   |08.2019            |[Mail checker][MailCheck]                   |+       | -         |:white_check_mark:|
   |01.2020            |[Shvec patterns][ShvecTheory]               |+       | -         ||
