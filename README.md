@@ -29,7 +29,7 @@
   |-------------------|--------------------------------------------|--------|-----------|------------------|
   |12.2017            |[First site][PurePHPFirstSite]              |-       | Mysql     |:white_check_mark:|
   |05.2018            |[Vedomost][PurePHPVedomost]                 |-       | Mysql     |:white_check_mark:|
-  |04.2019            |[Bad SPA][ToDo]                             |-       | Mysql     |:skull_and_crossbones:|
+  |04.2019            |[Bad SPA][BadSPA]                           |-       | Mysql     |:skull_and_crossbones:|
   |07.2019            |[Sandbox][PurePHPSandbox]                   |-       | Mysql     |:white_check_mark:|
   |07.2019            |[Sandbox PostgreSQL][HandbookPostgresql]    |+       | PostgreSQL|:white_check_mark:|
   |08.2019            |[Mail checker][MailCheck]                   |+       | -         |:white_check_mark:|
@@ -103,6 +103,7 @@ MIT
 
 [PurePHPFirstSite]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/first_site>
 [PurePHPVedomost]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/vedomost>
+[BadSPA]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/bad_spa>
 [PurePHPSandbox]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/sandbox>
 [MailCheck]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/mail_check>
 [HandbookPostgresql]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/handbook_postgresql>
