@@ -25,14 +25,16 @@
   
  #### Чистое PHP
 
-  |месяц.год создания |Название                      | Docker |Db         |Завершённость     |
-  |-------------------|------------------------------|--------|-----------|------------------|
-  |12.2017            |[First site][PurePHPFirstSite]|-       | Mysql     |:white_check_mark:|
-  |05.2018            |[Vedomost][PurePHPVedomost]   |-       | Mysql     |:white_check_mark:|
-  |04.2019            |[Bad SPA][ToDo]               |-       | Mysql     |:skull_and_crossbones:|
-  |07.2019            |[Sandbox][PurePHPSandbox]     |-       | Mysql     |:white_check_mark:|
-  |07.2019            |[Sandbox PostgreSQL][ToDo]    |+       | PostgreSQL|:white_check_mark:|
-  |01.2020            |[Shvec patterns][ShvecTheory] |+       | -         ||
+  |месяц.год создания |Название                                    | Docker |Db         |Завершённость     |
+  |-------------------|--------------------------------------------|--------|-----------|------------------|
+  |12.2017            |[First site][PurePHPFirstSite]              |-       | Mysql     |:white_check_mark:|
+  |05.2018            |[Vedomost][PurePHPVedomost]                 |-       | Mysql     |:white_check_mark:|
+  |04.2019            |[Bad SPA][ToDo]                             |-       | Mysql     |:skull_and_crossbones:|
+  |07.2019            |[Sandbox][PurePHPSandbox]                   |-       | Mysql     |:white_check_mark:|
+  |07.2019            |[Sandbox PostgreSQL][HandbookPostgresql]    |+       | PostgreSQL|:white_check_mark:|
+  |08.2019            |[Mail checker][MailCheck]                   |+       | -         |:white_check_mark:|
+  |01.2020            |[Shvec patterns][ShvecTheory]               |+       | -         ||
+  |01.2020            |[Drafts][Drafts]                            |-       | -         ||
   
  #### Symfony
   
@@ -102,7 +104,10 @@ MIT
 [PurePHPFirstSite]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/first_site>
 [PurePHPVedomost]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/vedomost>
 [PurePHPSandbox]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/sandbox>
+[MailCheck]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/mail_check>
+[HandbookPostgresql]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/handbook_postgresql>
 [ShvecTheory]:<https://github.com/iebrosalin/public_web/tree/backend/theory/shvec>
+[Drafts]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/drafts>
 
 [EliseevLaravelMasterClass]:<https://github.com/iebrosalin/public_web/tree/backend/laravel/afanasyev/season1>
 [AfanasyevSeason1]:<https://github.com/iebrosalin/public_web/tree/backend/laravel/afanasyev/season1>
