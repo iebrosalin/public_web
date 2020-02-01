@@ -58,12 +58,6 @@ class AdminProductController
             if (empty($errors)) {
                 $id = Product::createProduct($options);
 
-                if ($id) {
-                    if (is_uploaded_file($_FILES["image"]["tmp_name"])) {
-                        move_uploaded_file($_FILES["image"]["tmp_name"], $_SERVER['DOCUMENT_ROOT'] . "/upload/images/products/{$id}.jpg");
-                    }
-                }
-
                 header("Location: /admin/product");
             }
         }
@@ -103,7 +97,7 @@ class AdminProductController
             $options['status'] = empty($_POST['status'])?0:1;
 
             if (Product::updateProductById($id, $options)) {
-                $product = Product::getProductById($id);
+                header("Location: /admin/product");
             }
         }
 

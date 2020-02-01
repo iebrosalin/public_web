@@ -74,7 +74,7 @@ CONTENT;
     public static function renderBtnCreate($title): string
     {
         $href=$_SERVER['REQUEST_URI'];
-        $href= (mb_substr($href, -1)==='/')?$href.'create':'/create';
+        $href= (mb_substr($href, -1)==='/')?$href.'create':$href.'/create';
         return <<<CONTENT
             <div class="row">
                 <div class="col">

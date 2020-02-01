@@ -27,6 +27,7 @@ class AdminCategoryController
 
     public function create()
     {
+
         if (isset($_POST['submit'])) {
             foreach ($_POST as $key=>$val) {
                 $_POST[$key]=Helpers::sanitize($val);

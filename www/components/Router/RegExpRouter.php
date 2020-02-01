@@ -42,7 +42,7 @@ class RegExpRouter implements Router
                         call_user_func_array([new Error(), 'error404'], []);
 
                     }
-                } catch (Exception $error) {
+                } catch (\Error $error) {
                     call_user_func_array([new Error(), 'error500'], [$error->getMessage()]);
                 }
                 break;
