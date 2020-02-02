@@ -16,8 +16,6 @@
     
 * PHP-fpm latest
 * Ngnix
-* Postgresql 10
-* Adminer
 </details>
 
 
