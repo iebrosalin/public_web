@@ -106,7 +106,7 @@ MIT
 [ShvecTheory]:<https://github.com/iebrosalin/public_web/tree/backend/theory/shvec>
 [Drafts]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/drafts>
 
-[EliseevLaravelMasterClass]:<https://github.com/iebrosalin/public_web/tree/backend/laravel/afanasyev/season1>
+[EliseevLaravelMasterClass]:<https://github.com/iebrosalin/public_web/tree/backend/laravel/eliseev>
 [AfanasyevSeason1]:<https://github.com/iebrosalin/public_web/tree/backend/laravel/afanasyev/season1>
 [AfanasyevSeason2]:<https://github.com/iebrosalin/public_web/tree/backend/laravel/afanasyev/season2>
 [AfanasyevPatterns]:<https://github.com/iebrosalin/public_web/tree/backend/laravel/afanasyev/patterns>
