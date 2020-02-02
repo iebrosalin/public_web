@@ -1,4 +1,4 @@
-# Laravel season 2
+# Laravel patterns
 
 В процессе наполнения.
 
