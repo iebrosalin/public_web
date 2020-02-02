@@ -10,38 +10,38 @@
 
 |Название                                                 | Статус        | Наличие примера на PHP|
 |-----------------------                                  |-------        | ----------------------|
-|[Фабричный метод (Factory method)][FactoryMethod]        |разрабатывается| +                     |
-|[Абстрактная фабрика (Abstract factory)][AbstractFactory]|разрабатывается| +                     |
-|[Стритель (Builder)][Builder]                            |разрабатывается| +                     |
-|[Прототип (Prototype)][Prototype]                        |разрабатывается| +                     |
-|[Одиночка (Singleton)][Singleton]                        |разрабатывается| +                     |
+|[Фабричный метод (Factory method)][FactoryMethod]        || +                     |
+|[Абстрактная фабрика (Abstract factory)][AbstractFactory]|| +                     |
+|[Стритель (Builder)][Builder]                            || +                     |
+|[Прототип (Prototype)][Prototype]                        || +                     |
+|[Одиночка (Singleton)][Singleton]                        || +                     |
 
 ### Структурные
 
 |Название                                                             | Статус        | Наличие примера на PHP|
 |-----------------------                                              |-------        | ----------------------|
-|[Адаптер (Adapter)][Adapter]                                         |разрабатывается| +                     |
-|[Мост (Bridge)][Bridge]                                              |разрабатывается| +                     |
-|[Компоновщик (Composite)][Composite]                                 |разрабатывается| +                     |
-|[Декоратор (Decorator)][Decorator]                                   |разрабатывается| +                     |
-|[Фасад (Facade)][Facade]                                             |разрабатывается| +                     |
-|[Легковес (Flyweight)][Flyweight]                                    |разрабатывается| -                     |
-|[Заместитель (Proxy)][Proxy]                                         |разрабатывается| +                     |
+|[Адаптер (Adapter)][Adapter]                                         || +                     |
+|[Мост (Bridge)][Bridge]                                              || +                     |
+|[Компоновщик (Composite)][Composite]                                 || +                     |
+|[Декоратор (Decorator)][Decorator]                                   || +                     |
+|[Фасад (Facade)][Facade]                                             || +                     |
+|[Легковес (Flyweight)][Flyweight]                                    || -                     |
+|[Заместитель (Proxy)][Proxy]                                         || +                     |
 
 ### Поведенческие
 
 |Название                                                             | Статус        | Наличие примера на PHP|
 |-----------------------                                              |-------        | ----------------------|
-|[Цепочка обязанностей (Chain of responsibility)][ChainResponsobility]|разрабатывается| +                     |
-|[Комманда (Command)][Command]                                        |разрабатывается| +                     |
-|[Итератор (Iterator)][Iterator]                                      |разрабатывается| +                     |
-|[Посредник (Mediator][Mediator]                                      |разрабатывается| +                     |
-|[Снимок (Memento)][Mediator]                                         |разрабатывается| -                     |
-|[Наблюдатель (Observer)][Observer]                                   |разрабатывается| +                     |
-|[Состояние (State)][State]                                           |разрабатывается| -                     |
-|[Статегия (Strategy)][Strategy]                                      |разрабатывается| +                     |
-|[Шаблонный метод(Template method)][TemplateMethod]                   |разрабатывается| +                     |
-|[Посетитель(Visitor][Visitor]                                        |разрабатывается| +                     |
+|[Цепочка обязанностей (Chain of responsibility)][ChainResponsobility]|| +                     |
+|[Комманда (Command)][Command]                                        || +                     |
+|[Итератор (Iterator)][Iterator]                                      || +                     |
+|[Посредник (Mediator][Mediator]                                      || +                     |
+|[Снимок (Memento)][Mediator]                                         || -                     |
+|[Наблюдатель (Observer)][Observer]                                   || +                     |
+|[Состояние (State)][State]                                           || -                     |
+|[Статегия (Strategy)][Strategy]                                      || +                     |
+|[Шаблонный метод(Template method)][TemplateMethod]                   || +                     |
+|[Посетитель(Visitor][Visitor]                                        || +                     |
 
 [RefBook]:<https://refactoring.guru/ru/design-patterns/book>
 
