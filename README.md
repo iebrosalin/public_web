@@ -105,20 +105,31 @@ Production composer build
 ## Демо
 
 <details>
-    <summary>Состав контейнера</summary>
-    
+    <summary>Тестовая форма</summary>
+
+Форма создаёт посты в одноимённой таблице.
+
+![form demo][FormDemo]    
 </details>
 
 <details>
-    <summary>Состав контейнера</summary>
-    
+    <summary>Другие примеры</summary>
+
+Страница большую часть утрированных примеров.
+
+![show demo][ShowDemo]    
 </details>
 
 <details>
-    <summary>Состав контейнера</summary>
+    <summary>Сгенерированное Gii</summary>
     
+![demo guu][DemoGii]
 </details>
 
 ## [Список всех моих проектов][ListAllMyProject]
 
 [ListAllMyProject]:<https://github.com/iebrosalin/all_public_projects>
+
+[FormDemo]:<https://github.com/iebrosalin/public_web/blob/backend/yii2/theory/descriptions/gif/form_demo.gif>
+[ShowDemo]:<https://github.com/iebrosalin/public_web/blob/backend/yii2/theory/descriptions/gif/show_demo.gif>
+[DemoGii]:<https://github.com/iebrosalin/public_web/blob/backend/yii2/theory/descriptions/gif/demo_gii.gif>
