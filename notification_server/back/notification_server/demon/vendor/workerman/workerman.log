@@ -1,0 +1,969 @@
+2019-05-14 15:01:01 pid:4388 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 15:05:22 pid:5076 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 15:05:34 pid:5087 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 15:06:36 pid:5156 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 15:08:50 pid:5706 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 15:20:04 pid:7615 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 15:22:54 pid:7615 Workerman[push-server.php] stopping ...
+2019-05-14 15:22:54 pid:7615 Workerman[push-server.php] has been stopped
+2019-05-14 15:28:54 pid:8963 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 15:29:47 pid:8963 Workerman[push-server.php] stopping ...
+2019-05-14 15:29:47 pid:8963 Workerman[push-server.php] has been stopped
+2019-05-14 15:40:49 pid:10892 Workerman[push-server.php] start in DAEMON mode
+2019-05-14 15:41:10 pid:10916 Workerman[push-server.php] start in DAEMON mode
+2019-05-14 15:41:10 pid:10916 Workerman[push-server.php] already running
+2019-05-14 15:49:30 pid:12235 Workerman[push-server.php] stop 
+2019-05-14 15:49:30 pid:12235 Workerman[push-server.php] is stopping ...
+2019-05-14 15:49:30 pid:10894 Workerman[push-server.php] stopping ...
+2019-05-14 15:49:30 pid:10894 Workerman[push-server.php] has been stopped
+2019-05-14 15:49:30 pid:12235 Workerman[push-server.php] stop success
+2019-05-14 15:59:02 pid:13732 Workerman[push-server.php] start in DAEMON mode
+2019-05-14 15:59:17 pid:13748 Workerman[push-server.php] stop 
+2019-05-14 15:59:17 pid:13748 Workerman[push-server.php] is stopping ...
+2019-05-14 15:59:17 pid:13734 Workerman[push-server.php] stopping ...
+2019-05-14 15:59:17 pid:13734 Workerman[push-server.php] has been stopped
+2019-05-14 15:59:17 pid:13748 Workerman[push-server.php] stop success
+2019-05-14 16:00:10 pid:13922 Workerman[push-server.php] start in DAEMON mode
+2019-05-14 16:04:37 pid:14608 Workerman[push-server.php] start in DAEMON mode
+2019-05-14 16:04:37 pid:14608 Workerman[push-server.php] already running
+2019-05-14 16:04:40 pid:14612 Workerman[push-server.php] start in DAEMON mode
+2019-05-14 16:04:40 pid:14612 Workerman[push-server.php] already running
+2019-05-14 16:04:43 pid:14615 Workerman[push-server.php] start in DAEMON mode
+2019-05-14 16:04:43 pid:14615 Workerman[push-server.php] already running
+2019-05-14 16:05:22 pid:14655 Workerman[push-server.php] start in DAEMON mode
+2019-05-14 16:05:22 pid:14655 Workerman[push-server.php] already running
+2019-05-14 16:13:08 pid:16567 Workerman[push-server.php] start in DAEMON mode
+2019-05-14 16:13:08 pid:16567 Workerman[push-server.php] already running
+2019-05-14 16:14:41 pid:16699 Workerman[push-server.php] start in DAEMON mode
+2019-05-14 16:14:41 pid:16699 Workerman[push-server.php] already running
+2019-05-14 16:18:13 pid:17297 Workerman[push-server.php] start in DAEMON mode
+2019-05-14 16:18:13 pid:17297 Workerman[push-server.php] already running
+2019-05-14 16:18:25 pid:17313 Workerman[push-server.php] start in DAEMON mode
+2019-05-14 16:18:25 pid:17313 Workerman[push-server.php] already running
+2019-05-14 16:42:53 pid:20732 Workerman[push-server.php] start in DAEMON mode
+2019-05-14 16:42:53 pid:20732 Workerman[push-server.php] already running
+2019-05-14 20:41:54 pid:26180 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 20:45:23 pid:26180 Workerman[push-server.php] stopping ...
+2019-05-14 20:45:23 pid:26180 Workerman[push-server.php] has been stopped
+2019-05-14 20:45:30 pid:26819 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 20:48:40 pid:26819 Workerman[push-server.php] stopping ...
+2019-05-14 20:48:40 pid:26819 Workerman[push-server.php] has been stopped
+2019-05-14 20:48:44 pid:27450 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 20:49:00 pid:27450 Workerman[push-server.php] stopping ...
+2019-05-14 20:49:00 pid:27450 Workerman[push-server.php] has been stopped
+2019-05-14 20:49:03 pid:27476 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 21:13:04 pid:31310 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 21:22:45 pid:31310 Workerman[push-server.php] stopping ...
+2019-05-14 21:22:45 pid:31310 Workerman[push-server.php] has been stopped
+2019-05-14 21:22:50 pid:321 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 21:24:03 pid:321 Workerman[push-server.php] stopping ...
+2019-05-14 21:24:03 pid:321 Workerman[push-server.php] has been stopped
+2019-05-14 21:24:04 pid:806 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 21:27:50 pid:806 Workerman[push-server.php] stopping ...
+2019-05-14 21:27:50 pid:806 Workerman[push-server.php] has been stopped
+2019-05-14 21:29:39 pid:1666 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 21:32:27 pid:1666 Workerman[push-server.php] stopping ...
+2019-05-14 21:32:28 pid:1666 Workerman[push-server.php] has been stopped
+2019-05-14 21:56:51 pid:5860 Workerman[push-server.php] start in DEBUG mode
+2019-05-14 22:03:27 pid:5860 Workerman[push-server.php] stopping ...
+2019-05-14 22:03:27 pid:5860 Workerman[push-server.php] has been stopped
+2019-05-14 22:03:29 pid:7129 Workerman[push-server.php] start in DEBUG mode
+2019-05-15 04:25:19 pid:15539 Workerman[push-server.php] start in DAEMON mode
+2019-05-15 05:24:32 pid:26415 Workerman[push-server.php] stop 
+2019-05-15 05:24:32 pid:26415 Workerman[push-server.php] is stopping ...
+2019-05-15 05:24:32 pid:15544 Workerman[push-server.php] stopping ...
+2019-05-15 05:24:34 pid:15544 worker[none:15547] exit with status 9
+2019-05-15 05:24:34 pid:15544 worker[none:15548] exit with status 9
+2019-05-15 05:24:34 pid:15544 worker[ChannelServer:15545] exit with status 9
+2019-05-15 05:24:34 pid:15544 worker[none:15550] exit with status 9
+2019-05-15 05:24:34 pid:15544 worker[none:15546] exit with status 9
+2019-05-15 05:24:34 pid:15544 worker[none:15549] exit with status 9
+2019-05-15 05:24:34 pid:15544 Workerman[push-server.php] has been stopped
+2019-05-15 05:24:34 pid:26415 Workerman[push-server.php] stop success
+2019-05-15 05:24:46 pid:26424 Workerman[push-server.php] start in DAEMON mode
+2019-05-15 05:36:16 pid:27987 Workerman[push-server.php] stop 
+2019-05-15 05:36:16 pid:27987 Workerman[push-server.php] is stopping ...
+2019-05-15 05:36:16 pid:26426 Workerman[push-server.php] stopping ...
+2019-05-15 05:36:16 pid:26426 Workerman[push-server.php] has been stopped
+2019-05-15 05:36:16 pid:27987 Workerman[push-server.php] stop success
+2019-05-15 05:36:20 pid:28032 Workerman[push-server.php] start in DAEMON mode
+2019-05-15 05:38:07 pid:28138 Workerman[push-server.php] stop 
+2019-05-15 05:38:07 pid:28138 Workerman[push-server.php] is stopping ...
+2019-05-15 05:38:07 pid:28034 Workerman[push-server.php] stopping ...
+2019-05-15 05:38:07 pid:28034 Workerman[push-server.php] has been stopped
+2019-05-15 05:38:07 pid:28138 Workerman[push-server.php] stop success
+2019-05-15 05:38:22 pid:28536 Workerman[push-server.php] start in DAEMON mode
+2019-05-15 05:52:59 pid:30684 Workerman[push-server.php] stop 
+2019-05-15 05:52:59 pid:30684 Workerman[push-server.php] is stopping ...
+2019-05-15 05:52:59 pid:28538 Workerman[push-server.php] stopping ...
+2019-05-15 05:52:59 pid:28538 Workerman[push-server.php] has been stopped
+2019-05-15 05:52:59 pid:30684 Workerman[push-server.php] stop success
+2019-05-15 05:53:02 pid:30692 Workerman[push-server.php] start in DAEMON mode
+2019-05-15 05:55:28 pid:31333 Workerman[push-server.php] stop 
+2019-05-15 05:55:28 pid:31333 Workerman[push-server.php] is stopping ...
+2019-05-15 05:55:28 pid:30694 Workerman[push-server.php] stopping ...
+2019-05-15 05:55:28 pid:30694 Workerman[push-server.php] has been stopped
+2019-05-15 05:55:28 pid:31333 Workerman[push-server.php] stop success
+2019-05-15 05:55:31 pid:31336 Workerman[push-server.php] start in DAEMON mode
+2019-05-15 06:13:53 pid:2137 Workerman[push-server.php] stop 
+2019-05-15 06:13:53 pid:2137 Workerman[push-server.php] is stopping ...
+2019-05-15 06:13:53 pid:31338 Workerman[push-server.php] stopping ...
+2019-05-15 06:13:53 pid:31338 Workerman[push-server.php] has been stopped
+2019-05-15 06:13:53 pid:2137 Workerman[push-server.php] stop success
+2019-05-15 06:14:06 pid:2157 Workerman[push-server.php] start in DAEMON mode
+2019-05-15 07:28:49 pid:14062 Workerman[push-server.php] stop 
+2019-05-15 07:28:49 pid:14062 Workerman[push-server.php] is stopping ...
+2019-05-15 07:28:49 pid:2160 Workerman[push-server.php] stopping ...
+2019-05-15 07:28:51 pid:2160 worker[ChannelServer:2161] exit with status 9
+2019-05-15 07:28:51 pid:2160 Workerman[push-server.php] has been stopped
+2019-05-15 07:28:52 pid:14062 Workerman[push-server.php] stop success
+2019-05-15 07:28:56 pid:14072 Workerman[push-server.php] start in DAEMON mode
+2019-05-15 18:58:37 pid:19837 Workerman[push-server.php] stop 
+2019-05-15 18:58:37 pid:19837 Workerman[push-server.php] is stopping ...
+2019-05-15 18:58:38 pid:14074 Workerman[push-server.php] stopping ...
+2019-05-15 18:58:40 pid:14074 worker[ChannelServer:14075] exit with status 9
+2019-05-15 18:58:40 pid:14074 worker[none:14076] exit with status 9
+2019-05-15 18:58:40 pid:14074 worker[none:14077] exit with status 9
+2019-05-15 18:58:40 pid:14074 worker[none:14078] exit with status 9
+2019-05-15 18:58:40 pid:14074 worker[none:14079] exit with status 9
+2019-05-15 18:58:40 pid:14074 worker[none:14080] exit with status 9
+2019-05-15 18:58:40 pid:14074 Workerman[push-server.php] has been stopped
+2019-05-15 18:58:42 pid:19837 Workerman[push-server.php] stop fail
+2019-05-15 18:58:55 pid:19851 Workerman[push-server.php] start in DAEMON mode
+2019-05-16 05:05:25 pid:15897 Workerman[push-server.php] stop 
+2019-05-16 05:05:25 pid:15897 Workerman[push-server.php] is stopping ...
+2019-05-16 05:05:26 pid:19853 Workerman[push-server.php] stopping ...
+2019-05-16 05:05:29 pid:19853 worker[ChannelServer:19854] exit with status 9
+2019-05-16 05:05:29 pid:19853 worker[none:19855] exit with status 9
+2019-05-16 05:05:29 pid:19853 worker[none:19856] exit with status 9
+2019-05-16 05:05:29 pid:19853 worker[none:19857] exit with status 9
+2019-05-16 05:05:29 pid:19853 worker[none:19858] exit with status 9
+2019-05-16 05:05:29 pid:19853 worker[none:19859] exit with status 9
+2019-05-16 05:05:30 pid:15897 Workerman[push-server.php] stop fail
+2019-05-16 05:05:30 pid:19853 Workerman[push-server.php] has been stopped
+2019-05-16 05:05:38 pid:15906 Workerman[push-server.php] start in DAEMON mode
+2019-05-16 05:06:36 pid:15993 Workerman[push-server.php] stop 
+2019-05-16 05:06:36 pid:15993 Workerman[push-server.php] not run
+2019-05-16 05:06:44 pid:16000 Workerman[push-server.php] start in DAEMON mode
+2019-05-25 07:31:09 pid:16002 Workerman[push-server.php] stopping ...
+2019-05-25 07:32:07 pid:16004 worker[16004] remains 1 connection(s)
+2019-05-25 07:32:07 pid:16006 worker[16006] remains 0 connection(s)
+2019-05-25 07:32:07 pid:16005 worker[16005] remains 0 connection(s)
+2019-05-25 07:32:07 pid:16007 worker[16007] remains 0 connection(s)
+2019-05-25 07:32:09 pid:16004 worker[16004] remains 1 connection(s)
+2019-05-25 07:32:10 pid:16004 worker[16004] remains 1 connection(s)
+2019-05-25 07:32:11 pid:16004 worker[16004] remains 1 connection(s)
+2019-05-25 07:32:12 pid:16004 worker[16004] remains 1 connection(s)
+2019-05-25 07:32:13 pid:16004 worker[16004] remains 1 connection(s)
+2019-05-25 07:32:14 pid:16004 worker[16004] remains 1 connection(s)
+2019-05-25 07:55:54 pid:29031 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-05-25 08:01:32 pid:29769 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 08:03:28 pid:30270 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 08:03:45 pid:30282 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 08:06:17 pid:30424 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 08:07:51 pid:30485 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 08:15:21 pid:32049 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 08:17:46 pid:32049 Workerman[push-server.php] stopping ...
+2019-05-25 08:17:46 pid:32049 Workerman[push-server.php] has been stopped
+2019-05-25 08:19:30 pid:32657 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 08:23:04 pid:32657 Workerman[push-server.php] stopping ...
+2019-05-25 08:23:05 pid:32657 Workerman[push-server.php] has been stopped
+2019-05-25 08:23:21 pid:836 Workerman[push-server.php] stop 
+2019-05-25 08:23:21 pid:836 Workerman[push-server.php] not run
+2019-05-25 08:23:34 pid:851 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 09:17:41 pid:851 Workerman[push-server.php] stopping ...
+2019-05-25 09:17:41 pid:851 Workerman[push-server.php] has been stopped
+2019-05-25 09:17:45 pid:8554 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 09:59:48 pid:14842 Workerman[push-server.php] stop 
+2019-05-25 09:59:48 pid:14842 Workerman[push-server.php] is stopping ...
+2019-05-25 09:59:48 pid:8554 Workerman[push-server.php] stopping ...
+2019-05-25 09:59:48 pid:8554 Workerman[push-server.php] has been stopped
+2019-05-25 09:59:48 pid:14842 Workerman[push-server.php] stop success
+2019-05-25 09:59:55 pid:14846 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 10:22:54 pid:18102 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 10:22:54 pid:18102 Workerman[push-server.php] already running
+2019-05-25 10:23:07 pid:18194 Workerman[push-server.php] stop 
+2019-05-25 10:23:07 pid:18194 Workerman[push-server.php] is stopping ...
+2019-05-25 10:23:07 pid:14846 Workerman[push-server.php] stopping ...
+2019-05-25 10:23:07 pid:14846 Workerman[push-server.php] has been stopped
+2019-05-25 10:23:07 pid:18194 Workerman[push-server.php] stop success
+2019-05-25 10:23:46 pid:18585 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 10:31:14 pid:18585 Workerman[push-server.php] stopping ...
+2019-05-25 10:31:14 pid:18585 Workerman[push-server.php] has been stopped
+2019-05-25 10:31:30 pid:19423 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 10:42:52 pid:19423 Workerman[push-server.php] stopping ...
+2019-05-25 10:42:52 pid:19423 Workerman[push-server.php] has been stopped
+2019-05-25 10:42:55 pid:21104 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 10:52:38 pid:21104 Workerman[push-server.php] stopping ...
+2019-05-25 10:52:38 pid:21104 Workerman[push-server.php] has been stopped
+2019-05-25 10:52:43 pid:22378 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 10:53:12 pid:22378 Workerman[push-server.php] stopping ...
+2019-05-25 10:53:12 pid:22378 Workerman[push-server.php] has been stopped
+2019-05-25 10:53:28 pid:22815 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 11:24:26 pid:22815 Workerman[push-server.php] stopping ...
+2019-05-25 11:24:26 pid:22815 Workerman[push-server.php] has been stopped
+2019-05-25 11:24:42 pid:27217 Workerman[push-server.php] stop 
+2019-05-25 11:24:42 pid:27217 Workerman[push-server.php] not run
+2019-05-25 11:24:46 pid:27218 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 11:33:48 pid:27218 Workerman[push-server.php] stopping ...
+2019-05-25 11:33:48 pid:27218 Workerman[push-server.php] has been stopped
+2019-05-25 11:38:50 pid:29102 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 12:03:42 pid:32701 Workerman[push-server.php] start in DEBUG mode
+2019-05-25 12:03:42 pid:32701 Workerman[push-server.php] already running
+2019-05-25 15:17:28 pid:28180 Workerman[push-server.php] start in DAEMON mode
+2019-05-26 08:49:01 pid:23927 Workerman[cronAddJobs.php] stop 
+2019-05-26 08:49:01 pid:23927 Workerman[cronAddJobs.php] not run
+2019-05-26 13:04:51 pid:26165 Workerman[cronAddJobs.php] stop 
+2019-05-26 13:04:51 pid:26165 Workerman[cronAddJobs.php] not run
+2019-06-26 12:40:58 pid:19883 Workerman[cronAddJobs.php] stop 
+2019-06-26 12:40:58 pid:19883 Workerman[cronAddJobs.php] not run
+2019-06-26 12:42:35 pid:19944 Workerman[cronAddJobs.php] stop 
+2019-06-26 12:42:35 pid:19944 Workerman[cronAddJobs.php] not run
+2019-06-26 13:59:20 pid:30851 Workerman[cronAddJobs.php] stop 
+2019-06-26 13:59:20 pid:30851 Workerman[cronAddJobs.php] not run
+2019-06-26 17:39:23 pid:28258 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-26 18:38:19 pid:28264 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #367)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-26 18:38:19 pid:28264 Worker[28264] process terminated
+2019-06-26 18:38:19 pid:28261 worker[none:28264] exit with status 64000
+2019-06-26 18:47:54 pid:5383 Workerman[cronAddJobs.php] stop 
+2019-06-26 18:47:54 pid:5383 Workerman[cronAddJobs.php] is stopping ...
+2019-06-26 18:47:54 pid:28261 Workerman[cronAddJobs.php] stopping ...
+2019-06-26 18:47:54 pid:28261 Workerman[cronAddJobs.php] has been stopped
+2019-06-26 18:47:54 pid:5383 Workerman[cronAddJobs.php] stop success
+2019-06-26 18:48:04 pid:5759 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-26 18:49:47 pid:5830 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #361)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-26 18:49:47 pid:5830 Worker[5830] process terminated
+2019-06-26 18:49:47 pid:5819 worker[none:5830] exit with status 64000
+2019-06-26 18:51:05 pid:5832 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #361)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-26 18:51:05 pid:5832 Worker[5832] process terminated
+2019-06-26 18:51:05 pid:5819 worker[none:5832] exit with status 64000
+2019-06-26 19:06:40 pid:6010 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #363)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#13 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#14 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#15 {main}
+2019-06-26 19:06:40 pid:6010 Worker[6010] process terminated
+2019-06-26 19:06:40 pid:5819 worker[none:6010] exit with status 64000
+2019-06-26 19:13:06 pid:6090 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #364)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#13 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#14 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#15 {main}
+2019-06-26 19:13:06 pid:6090 Worker[6090] process terminated
+2019-06-26 19:13:06 pid:5819 worker[none:6090] exit with status 64000
+2019-06-26 19:23:44 pid:5829 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #363)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-26 19:23:44 pid:5829 Worker[5829] process terminated
+2019-06-26 19:23:44 pid:5819 worker[none:5829] exit with status 64000
+2019-06-26 19:25:55 pid:10836 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #367)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#13 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#14 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#15 {main}
+2019-06-26 19:25:55 pid:10836 Worker[10836] process terminated
+2019-06-26 19:25:55 pid:5819 worker[none:10836] exit with status 64000
+2019-06-26 19:28:30 pid:11846 Workerman[cronAddJobs.php] stop 
+2019-06-26 19:28:30 pid:11846 Workerman[cronAddJobs.php] is stopping ...
+2019-06-26 19:28:30 pid:5819 Workerman[cronAddJobs.php] stopping ...
+2019-06-26 19:28:30 pid:5819 Workerman[cronAddJobs.php] has been stopped
+2019-06-26 19:28:30 pid:11846 Workerman[cronAddJobs.php] stop success
+2019-06-26 19:28:39 pid:11853 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-27 04:38:24 pid:11860 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #378)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(115): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 04:38:27 pid:11860 Worker[11860] process terminated
+2019-06-27 04:38:37 pid:11855 worker[none:11860] exit with status 64000
+2019-06-27 04:43:10 pid:29323 Workerman[cronAddJobs.php] stop 
+2019-06-27 04:43:10 pid:29323 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 04:43:10 pid:11855 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 04:43:12 pid:11855 worker[none:11858] exit with status 9
+2019-06-27 04:43:12 pid:11855 worker[none:11857] exit with status 9
+2019-06-27 04:43:12 pid:11855 worker[ChannelServer:11856] exit with status 9
+2019-06-27 04:43:12 pid:11855 worker[none:11861] exit with status 9
+2019-06-27 04:43:12 pid:11855 worker[none:28703] exit with status 9
+2019-06-27 04:43:12 pid:11855 worker[none:11859] exit with status 9
+2019-06-27 04:43:12 pid:11855 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 04:43:13 pid:29323 Workerman[cronAddJobs.php] stop success
+2019-06-27 04:43:20 pid:29625 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-27 04:50:21 pid:29695 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #364)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 04:50:22 pid:29695 Worker[29695] process terminated
+2019-06-27 04:50:22 pid:29670 worker[none:29695] exit with status 64000
+2019-06-27 04:51:32 pid:30624 Workerman[cronAddJobs.php] stop 
+2019-06-27 04:51:32 pid:30624 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 04:51:32 pid:29670 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 04:51:32 pid:29670 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 04:51:32 pid:30624 Workerman[cronAddJobs.php] stop success
+2019-06-27 04:51:35 pid:30625 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-27 04:51:54 pid:30633 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #363)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 04:51:54 pid:30633 Worker[30633] process terminated
+2019-06-27 04:51:54 pid:30627 worker[none:30633] exit with status 64000
+2019-06-27 04:53:01 pid:30629 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #362)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 04:53:01 pid:30629 Worker[30629] process terminated
+2019-06-27 04:53:01 pid:30627 worker[none:30629] exit with status 64000
+2019-06-27 04:55:54 pid:30692 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #363)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#13 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#14 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#15 {main}
+2019-06-27 04:55:54 pid:30692 Worker[30692] process terminated
+2019-06-27 04:55:54 pid:30627 worker[none:30692] exit with status 64000
+2019-06-27 04:57:58 pid:30632 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #361)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 04:57:58 pid:30632 Worker[30632] process terminated
+2019-06-27 04:57:59 pid:30627 worker[none:30632] exit with status 64000
+2019-06-27 05:01:34 pid:30646 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #362)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#13 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#14 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#15 {main}
+2019-06-27 05:01:34 pid:30646 Worker[30646] process terminated
+2019-06-27 05:01:34 pid:30627 worker[none:30646] exit with status 64000
+2019-06-27 05:02:35 pid:30631 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #398)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 05:02:35 pid:30631 Worker[30631] process terminated
+2019-06-27 05:02:35 pid:30627 worker[none:30631] exit with status 64000
+2019-06-27 05:05:01 pid:31269 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #366)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#13 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#14 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#15 {main}
+2019-06-27 05:05:01 pid:31269 Worker[31269] process terminated
+2019-06-27 05:05:01 pid:30627 worker[none:31269] exit with status 64000
+2019-06-27 05:05:06 pid:32252 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #369)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#13 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#14 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#15 {main}
+2019-06-27 05:05:06 pid:32252 Worker[32252] process terminated
+2019-06-27 05:05:06 pid:30627 worker[none:32252] exit with status 64000
+2019-06-27 05:05:17 pid:781 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #369)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#13 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#14 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#15 {main}
+2019-06-27 05:05:17 pid:781 Worker[781] process terminated
+2019-06-27 05:05:17 pid:30627 worker[none:781] exit with status 64000
+2019-06-27 05:08:01 pid:792 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(84): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #373)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#13 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(114): Workerman\Worker::runAll()
+#14 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#15 {main}
+2019-06-27 05:08:01 pid:792 Worker[792] process terminated
+2019-06-27 05:08:01 pid:30627 worker[none:792] exit with status 64000
+2019-06-27 05:18:49 pid:3172 Workerman[cronAddJobs.php] stop 
+2019-06-27 05:18:49 pid:3172 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 05:18:49 pid:30627 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 05:18:49 pid:30627 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 05:18:49 pid:3172 Workerman[cronAddJobs.php] stop success
+2019-06-27 05:18:51 pid:3174 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-27 05:19:28 pid:3201 Workerman[cronAddJobs.php] stop 
+2019-06-27 05:19:28 pid:3201 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 05:19:28 pid:3176 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 05:19:28 pid:3176 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 05:19:28 pid:3201 Workerman[cronAddJobs.php] stop success
+2019-06-27 05:19:31 pid:3203 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-27 05:20:24 pid:3206 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(85): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #351)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(115): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 05:20:24 pid:3206 Worker[3206] process terminated
+2019-06-27 05:20:24 pid:3205 worker[none:3206] exit with status 64000
+2019-06-27 05:22:45 pid:3377 Workerman[cronAddJobs.php] stop 
+2019-06-27 05:22:45 pid:3377 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 05:22:45 pid:3205 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 05:22:45 pid:3205 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 05:22:45 pid:3377 Workerman[cronAddJobs.php] stop success
+2019-06-27 05:22:47 pid:3380 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-27 05:23:14 pid:3385 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(85): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #349)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(115): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 05:23:14 pid:3385 Worker[3385] process terminated
+2019-06-27 05:23:14 pid:3382 worker[none:3385] exit with status 64000
+2019-06-27 05:31:10 pid:3820 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(85): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #346)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1622): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1571): Workerman\Worker::monitorWorkersForLinux()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(511): Workerman\Worker::monitorWorkers()
+#13 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(115): Workerman\Worker::runAll()
+#14 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#15 {main}
+2019-06-27 05:31:10 pid:3820 Worker[3820] process terminated
+2019-06-27 05:31:10 pid:3382 worker[none:3820] exit with status 64000
+2019-06-27 05:32:31 pid:4677 Workerman[cronAddJobs.php] stop 
+2019-06-27 05:32:31 pid:4677 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 05:32:31 pid:3382 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 05:32:31 pid:3382 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 05:32:31 pid:4677 Workerman[cronAddJobs.php] stop success
+2019-06-27 05:32:34 pid:4680 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-27 05:32:59 pid:4685 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(85): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #345)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(115): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 05:32:59 pid:4685 Worker[4685] process terminated
+2019-06-27 05:32:59 pid:4682 worker[none:4685] exit with status 64000
+2019-06-27 05:37:18 pid:5292 Workerman[cronAddJobs.php] stop 
+2019-06-27 05:37:18 pid:5292 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 05:37:18 pid:4682 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 05:37:18 pid:4682 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 05:37:18 pid:5292 Workerman[cronAddJobs.php] stop success
+2019-06-27 05:37:20 pid:5296 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-27 05:37:48 pid:5300 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(86): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #348)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(116): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 05:37:48 pid:5300 Worker[5300] process terminated
+2019-06-27 05:37:48 pid:5298 worker[none:5300] exit with status 64000
+2019-06-27 05:39:47 pid:6132 Workerman[cronAddJobs.php] stop 
+2019-06-27 05:39:47 pid:6132 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 05:39:47 pid:5298 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 05:39:47 pid:5298 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 05:39:47 pid:6132 Workerman[cronAddJobs.php] stop success
+2019-06-27 05:39:48 pid:6134 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-27 05:40:25 pid:6137 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(86): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #345)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(116): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 05:40:25 pid:6137 Worker[6137] process terminated
+2019-06-27 05:40:25 pid:6136 worker[none:6137] exit with status 64000
+2019-06-27 05:41:53 pid:6262 Workerman[cronAddJobs.php] stop 
+2019-06-27 05:41:53 pid:6262 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 05:41:53 pid:6136 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 05:41:53 pid:6136 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 05:41:53 pid:6262 Workerman[cronAddJobs.php] stop success
+2019-06-27 05:41:54 pid:6263 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-27 05:42:18 pid:6268 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(87): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #345)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(117): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 05:42:18 pid:6268 Worker[6268] process terminated
+2019-06-27 05:42:18 pid:6265 worker[none:6268] exit with status 64000
+2019-06-27 05:52:48 pid:7519 Workerman[cronAddJobs.php] stop 
+2019-06-27 05:52:48 pid:7519 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 05:52:48 pid:6265 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 05:52:48 pid:6265 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 05:52:48 pid:7519 Workerman[cronAddJobs.php] stop success
+2019-06-27 05:52:49 pid:7520 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-27 05:53:17 pid:7523 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(86): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #345)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(117): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 05:53:17 pid:7523 Worker[7523] process terminated
+2019-06-27 05:53:17 pid:7522 worker[none:7523] exit with status 64000
+2019-06-27 06:03:06 pid:8833 Workerman[cronAddJobs.php] stop 
+2019-06-27 06:03:06 pid:8833 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 06:03:06 pid:7522 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 06:03:06 pid:7522 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 06:03:06 pid:8833 Workerman[cronAddJobs.php] stop success
+2019-06-27 06:03:09 pid:8841 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-27 06:03:34 pid:8854 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(87): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #348)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(120): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 06:03:34 pid:8854 Worker[8854] process terminated
+2019-06-27 06:03:34 pid:8851 worker[none:8854] exit with status 64000
+2019-06-27 06:05:18 pid:9324 Workerman[cronAddJobs.php] stop 
+2019-06-27 06:05:18 pid:9324 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 06:05:18 pid:8851 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 06:05:18 pid:8851 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 06:05:18 pid:9324 Workerman[cronAddJobs.php] stop success
+2019-06-27 06:05:19 pid:9327 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-27 06:05:45 pid:9333 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(87): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #345)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(120): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 06:05:45 pid:9333 Worker[9333] process terminated
+2019-06-27 06:05:45 pid:9329 worker[none:9333] exit with status 64000
+2019-06-27 06:07:20 pid:9427 Workerman[cronAddJobs.php] stop 
+2019-06-27 06:07:20 pid:9427 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 06:07:20 pid:9329 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 06:07:20 pid:9329 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 06:07:20 pid:9427 Workerman[cronAddJobs.php] stop success
+2019-06-27 06:07:22 pid:9431 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-27 06:07:48 pid:9434 Exception: You can't send(array) to client, you need to convert it to a string.  in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Protocols/Websocket.php:236
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(344): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(87): Workerman\Connection\TcpConnection->send(Array)
+#2 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #349)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(119): Workerman\Worker::runAll()
+#12 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#13 {main}
+2019-06-27 06:07:48 pid:9434 Worker[9434] process terminated
+2019-06-27 06:07:48 pid:9433 worker[none:9434] exit with status 64000
+2019-06-27 06:15:58 pid:10921 Workerman[cronAddJobs.php] stop 
+2019-06-27 06:15:58 pid:10921 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 06:15:58 pid:9433 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 06:15:58 pid:9433 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 06:15:58 pid:10921 Workerman[cronAddJobs.php] stop success
+2019-06-27 06:15:59 pid:10922 Workerman[cronAddJobs.php] start in DAEMON mode
+2019-06-27 06:18:23 pid:11440 Workerman[cronAddJobs.php] stop 
+2019-06-27 06:18:23 pid:11440 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 06:18:23 pid:10924 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 06:18:23 pid:10924 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 06:18:23 pid:11440 Workerman[cronAddJobs.php] stop success
+2019-06-27 06:18:27 pid:11444 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 06:19:31 pid:11444 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 06:19:31 pid:11444 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 06:21:14 pid:11588 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 06:21:52 pid:11588 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 06:21:52 pid:11588 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 06:23:38 pid:12112 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 06:23:42 pid:12112 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 06:23:42 pid:12112 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 06:23:52 pid:12121 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 07:31:43 pid:21312 Workerman[cronAddJobs.php] stop 
+2019-06-27 07:31:43 pid:21312 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 07:31:43 pid:12121 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 07:31:43 pid:12121 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 07:31:43 pid:21312 Workerman[cronAddJobs.php] stop success
+2019-06-27 07:31:45 pid:21315 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 16:19:56 pid:26569 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 16:19:56 pid:26569 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 16:19:58 pid:27214 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 16:20:10 pid:27217 ArgumentCountError: Too few arguments to function NotificationDemon\ProductInfo::getHistory(), 0 passed in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php on line 86 and exactly 1 expected in /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/src/ProductInfo.php:54
+Stack trace:
+#0 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(86): NotificationDemon\ProductInfo->getHistory()
+#1 [internal function]: CronNotificationPush::{closure}(Object(Workerman\Connection\TcpConnection), 'productInfo')
+#2 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), 'productInfo')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #356)
+#4 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#6 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#7 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#9 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#10 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/include/libs/notification_server/demon/bin/CronNotificationPush.php(124): Workerman\Worker::runAll()
+#11 /home/sidorov/domains/maximus.sidorov.spb4.webdoka.ru/public_html/bitrix/php_interface/cronAddJobs.php(107): CronNotificationPush::run()
+#12 {main}
+2019-06-27 16:20:11 pid:27217 Worker[27217] process terminated
+2019-06-27 16:20:11 pid:27214 worker[none:27217] exit with status 64000
+2019-06-27 17:28:29 pid:4201 Workerman[cronAddJobs.php] stop 
+2019-06-27 17:28:29 pid:4201 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 17:28:29 pid:27214 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 17:28:29 pid:27214 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 17:28:29 pid:4201 Workerman[cronAddJobs.php] stop success
+2019-06-27 17:28:31 pid:4203 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 18:32:42 pid:12404 Workerman[cronAddJobs.php] stop 
+2019-06-27 18:32:42 pid:12404 Workerman[cronAddJobs.php] is stopping ...
+2019-06-27 18:32:42 pid:4203 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 18:32:42 pid:4203 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 18:32:42 pid:12404 Workerman[cronAddJobs.php] stop success
+2019-06-27 18:32:44 pid:12405 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 18:39:32 pid:12405 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 18:39:32 pid:12405 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 18:39:35 pid:13814 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 18:40:20 pid:13814 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 18:40:20 pid:13814 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 18:43:19 pid:14411 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 18:43:44 pid:14411 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 18:43:44 pid:14411 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 18:53:03 pid:15268 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 18:53:27 pid:15268 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 18:53:27 pid:15268 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 18:55:44 pid:15777 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 18:56:03 pid:15777 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 18:56:03 pid:15777 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 18:57:14 pid:15834 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 18:57:28 pid:15834 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 18:57:28 pid:15834 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 18:58:45 pid:16331 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 18:59:03 pid:16331 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 18:59:03 pid:16331 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 19:02:32 pid:16481 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 19:03:00 pid:16481 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 19:03:00 pid:16481 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 19:08:18 pid:17539 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 19:09:51 pid:17539 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 19:09:52 pid:17539 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 19:09:54 pid:17923 Workerman[cronAddJobs.php] start in DEBUG mode
+2019-06-27 19:10:30 pid:17923 Workerman[cronAddJobs.php] stopping ...
+2019-06-27 19:10:30 pid:17923 Workerman[cronAddJobs.php] has been stopped
+2019-06-27 19:10:32 pid:17978 Workerman[cronAddJobs.php] start in DEBUG mode
