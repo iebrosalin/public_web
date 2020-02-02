@@ -94,7 +94,7 @@ Production composer build
 <details>
     <summary>CRUD продуктов</summary>
     
-    
+![product][Producct]
 </details>
 
 
@@ -107,16 +107,20 @@ Production composer build
 <details>
     <summary>Форма тестирования санитизации</summary>
     
-    
+![echo request][EchoRequest]
 </details>
 
 
 <details>
     <summary>Ошибки</summary>
     
-    
+![errors][Errors] 
 </details>
  
 
 [FirstSite]:<https://github.com/iebrosalin/public_web/tree/backend/pure_php/first_site>
-[]:<>
+
+[Producct]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/sandbox/descriptions/gif/product.gif>
+[Category]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/sandbox/descriptions/gif/category.gif>
+[EchoRequest]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/sandbox/descriptions/gif/echo-request.gif>
+[Errors]:<https://github.com/iebrosalin/public_web/blob/backend/pure_php/sandbox/descriptions/gif/errors.gif>
