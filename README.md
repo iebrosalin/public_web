@@ -9,6 +9,76 @@
 
 От этого же работодателя сделал [другой проект][FormWebsocket] по схожей по тематике. 
 
+
+## Установка
+<details>
+    <summary>Состав контейнера</summary>
+    
+* PHP-fpm latest
+* Ngnix
+* Postgresql 10
+* Adminer
+</details>
+
+
+<details>
+    <summary>Команды для управления контейнерм</summary>
+    
+   Первый запуск
+    
+```
+make start
+```
+ 
+ Остановка
+    
+```
+make stop
+```   
+
+Старт
+
+```
+make start
+```  
+	
+Рестарт
+	
+```
+make restart
+```
+
+Прекращение работы контейнера
+
+```
+make stop
+```
+
+Аналог composer update
+
+```
+make composer-update
+```
+
+Аналог composer install
+
+```
+make composer-install
+```
+
+Инициализация зависимостей composer c update
+
+```
+make composer
+```
+	
+Production composer build
+	
+```
+   make composer-prod
+```
+</details>
+
 ## Демо
 
 <details>
