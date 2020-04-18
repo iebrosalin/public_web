@@ -304,3 +304,33 @@ php artisan make:observer BlogCategoryObserver --model=Models\BlogCategory
 
 //        $result = BlogPost::find($id)->forceDelete();
 ```
+## Отправление почты с изменением конфигурации на лету
+
+```
+        // Backup your default mailer
+        $backup = Mail::getSwiftMailer();
+
+        // Setup your gmail mailer
+        $transport = Swift_SmtpTransport::newInstance(
+            env('APP_MAIL_HOST'),
+            env('APP_MAIL_PORT'));
+        $transport->setUsername(env('APP_MAIL_USERNAME'));
+        $transport->setPassword(env('APP_MAIL_PASSWORD'));
+        // Any other mailer configuration stuff needed...
+
+        $gmail = new Swift_Mailer($transport);
+
+        // Set the mailer as gmail
+        Mail::setSwiftMailer($gmail);
+
+        // Send your message
+        Mail::send('public.mail.reset_password', ['email' => $request->get('email')], function ($message) use ($request){
+            $message->from('test@mail.ru', 'Отдыхай Алтай');
+
+            $message->to($request->get('email'))//$user->mail //$user->name
+            ->subject('Регистрация новой базы');
+        });
+
+        // Restore your original mailer
+        Mail::setSwiftMailer($backup);
+```
