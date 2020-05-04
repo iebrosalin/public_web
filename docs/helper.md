@@ -304,3 +304,71 @@ php artisan make:observer BlogCategoryObserver --model=Models\BlogCategory
 
 //        $result = BlogPost::find($id)->forceDelete();
 ```
+
+## Очереди
+
+Комманды создания таблицы для очередей
+
+- до 6.0
+
+```
+php artisan queue:table
+php artisan meigrate
+```
+
+
+- в 6.0
+
+```
+php artisan queue:table
+php artisan queue:failed-table
+php artisan meigrate
+```
+
+Создание job
+
+```
+php artisan make:job NameClass
+```
+
+Запуск очереди
+
+```
+/*
+    Запускает процесс обработки задач очереди как демон. Все изменения сделанные в коде приняты не 
+    будут, потреьбуется перезапуск вручную.
+*/
+php artisan queue:work
+
+/*
+    Сначала выпоняются все задачи из очереди queueName1, а потом queueName2
+*/
+php artisan queue:work --queue=queueName1,queueName2
+
+/*
+    Запускает процесс обработки задач очереди. Применяет изменения в коде. Хуже производительность 
+    по сравнению queue:work. 
+*/
+php artisan queue:listen
+
+/*
+    Мягкий перезапуск демона queue:work после того как завершит последнюю задачу
+*/
+php artisan queue:restart
+
+
+/*
+    Просмотр таблицы проваленных задач
+*/
+php artisan queue:failed
+
+/*
+    Возврат в очередь выполнения всех проваленных задач
+*/
+php artisan queue:retry all
+
+/*
+    Возврат в очередь выполнения проваленной задачи с id 5
+*/
+php artisan queue:retry 5
+```
