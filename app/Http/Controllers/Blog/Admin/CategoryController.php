@@ -39,7 +39,7 @@ class CategoryController extends BaseController
      */
     public function create()
     {
-        $item = new BlogCategory();
+        $item = BlogCategory::make();
         $categoryList = $this->blogCategoryRepository->getForComboBox();
 
         return view( 'blog.admin.categories.edit',
@@ -60,7 +60,7 @@ class CategoryController extends BaseController
             $data ['slug'] = Str::slug($data['title']);
         }
 
-        $item = (new BlogCategory())->create($data);
+        $item = BlogCategory::create($data);
 
         if($item){
             return redirect()->route('blog.admin.categories.edit', [$item->id])
